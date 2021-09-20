@@ -5,3 +5,5 @@ cd vim/src
 git checkout v8.2.3451
 ./configure --prefix=$WKDIR/spiro
 make -j48 install
+
+# EOF.
