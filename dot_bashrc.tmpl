@@ -2,6 +2,8 @@
 
 {{- if contains "spiro" .chezmoi.hostname }}
 # Linux spiro.
+export WKDIR=/stck/jvanhare/wkdir
+export PATH=$WKDIR/spiro/bin:$PATH
 export no_proxy=.onera.net,.onera.fr,.onecert.fr
 export http_proxy=proxy.onera:80
 export https_proxy=proxy.onera:80
