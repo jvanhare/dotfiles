@@ -7,6 +7,7 @@ module purge
 export VISU=/visu/jvanhare
 export WKDIR=/stck/jvanhare/wkdir
 export SCRATH=/scratchm/jvanhare
+export SRC=$WKDIR/src
 
 # Aliases.
 alias ls="ls -ltrGh --color=auto"
