@@ -13,6 +13,7 @@ export SCRATH=/scratchm/jvanhare
 alias wkdir="cd $WKDIR"
 alias visu="cd $VISU"
 alias scratch="cd $SCRATH"
+alias ls="ls -ltrGh --color=auto"
 
 # Export proxy for git clone, wget, etc.
 export http_proxy=proxy.onera:80
