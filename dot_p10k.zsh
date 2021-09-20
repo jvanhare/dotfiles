@@ -1,10 +1,3 @@
-# Config file for Powerlevel10k with the style of robbyrussell theme from Oh My Zsh.
-#
-# Original: https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#robbyrussell.
-#
-# Replication of robbyrussell theme is exact. The only observable difference is in
-# performance. Powerlevel10k prompt is very fast everywhere, even in large Git repositories.
-#
 # Usage: Source this file either before or after loading Powerlevel10k.
 #
 #   source ~/powerlevel10k/config/p10k-robbyrussell.zsh

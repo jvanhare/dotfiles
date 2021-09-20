@@ -1,0 +1,52 @@
+### Common configuration. ###
+
+# Set the language environment
+export LANG=en_US.UTF-8
+
+# Antigen setup.
+source $HOME/.antigen.zsh
+antigen use oh-my-zsh
+antigen bundle git
+antigen bundle heroku
+antigen bundle pip
+antigen bundle lein
+antigen bundle command-not-found
+antigen bundle docker
+antigen bundle colorize
+antigen bundle magic-enter
+antigen bundle safe-paste
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-completions
+antigen bundle ael-code/zsh-colored-man-pages
+antigen bundle kennethreitz/autoenv
+antigen bundle b4b4r07/enhancd
+antigen bundle supercrabtree/k
+antigen bundle esc/conda-zsh-completion
+antigen theme romkatv/powerlevel10k
+antigen apply
+
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+DISABLE_AUTO_UPDATE="true"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Global aliases.
+alias ls="ls -ltrGh"
+
+### Machine specific environments. ###
+
+# MacOs freyja.
+{{- if contains "freyja" .chezmoi.hostname }}
+source $HOME/.envs/freyja.zsh
+{{- end }}
+
+# EOF
