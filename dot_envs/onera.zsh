@@ -4,16 +4,15 @@
 module purge
 
 # Working directory and path.
-export PATH=$WKDIR/bin:$PATH
-export WKDIR=/stck/jvanhare
 export VISU=/visu/jvanhare
+export WKDIR=/stck/jvanhare/wkdir
 export SCRATH=/scratchm/jvanhare
 
 # Aliases.
-alias wkdir="cd $WKDIR"
-alias visu="cd $VISU"
-alias scratch="cd $SCRATH"
 alias ls="ls -ltrGh --color=auto"
+alias visu="cd $VISU"
+alias wkdir="cd $WKDIR"
+alias scratch="cd $SCRATH"
 
 # Export proxy for git clone, wget, etc.
 export http_proxy=proxy.onera:80
