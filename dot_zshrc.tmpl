@@ -44,9 +44,19 @@ alias ls="ls -ltrGh"
 
 ### Machine specific environments. ###
 
-# MacOs freyja.
 {{- if contains "freyja" .chezmoi.hostname }}
+# MacOs freyja.
 source $HOME/.envs/freyja.zsh
+{{- end }}
+
+{{- if contains "spiro" .chezmoi.hostname }}
+# Linux spiro.
+source $HOME/.envs/spiro.zsh
+{{- end }}
+
+{{- if contains "tanit" .chezmoi.hostname }}
+# IBM PowerPC tanit.
+source $HOME/.envs/tanit.zsh
 {{- end }}
 
 # EOF

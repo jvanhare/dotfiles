@@ -1,4 +1,3 @@
-
 ### Set freyja's environment. ###
 
 # Working directory and path.
@@ -31,4 +30,4 @@ export CXX=/usr/local/bin/g++-11
 export ASAN_OPTIONS="detect_leaks=1"
 export LSAN_OPTIONS="suppressions=/Users/jvanhare/.lsan:print_suppressions=false"
 
-# EOF
+# EOF.

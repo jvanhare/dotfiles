@@ -1,0 +1,17 @@
+### Machine specific environments. ###
+
+{{- if contains "spiro" .chezmoi.hostname }}
+# Linux spiro.
+export no_proxy=.onera.net,.onera.fr,.onecert.fr
+export http_proxy=proxy.onera:80
+export https_proxy=proxy.onera:80
+{{- end }}
+
+{{- if contains "tanit" .chezmoi.hostname }}
+# IBM PowerPC tanit.
+export no_proxy=.onera.net,.onera.fr,.onecert.fr
+export http_proxy=proxy.onera:80
+export https_proxy=proxy.onera:80
+{{- end }}
+
+# EOF
