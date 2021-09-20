@@ -39,3 +39,7 @@ auto_completion_tab_key_behavior = "smart"
 name = 'shell'
 default_position = 'top'
 default_height = 30
+
+[[layers]]
+name = 'lang#c'
+enable_clang_syntax_highlight = true
