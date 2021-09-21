@@ -33,6 +33,8 @@
     
     # Yellow Python virtualenv
     typeset -g POWERLEVEL9K_ANACONDA_FOREGROUND=yellow
+    typeset -g POWERLEVEL9K_ANACONDA_PREFIX="["
+    typeset -g POWERLEVEL9K_ANACONDA_SUFFIX="]"
     # Context
     typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=magenta
     # Time
