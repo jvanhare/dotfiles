@@ -22,7 +22,7 @@
     # Left prompt segments.
     typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(prompt_char time context dir vcs)
     # Right prompt segments.
-    typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv)
+    typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(anaconda)
     
     # Basic style options that define the overall prompt look.
     typeset -g POWERLEVEL9K_BACKGROUND=                            # transparent background
@@ -32,7 +32,7 @@
     typeset -g POWERLEVEL9K_VISUAL_IDENTIFIER_EXPANSION=           # no segment icons
     
     # Yellow Python virtualenv
-    typeset -g POWERLEVEL9K_VIRTUALENV_FOREGROUND=yellow
+    typeset -g POWERLEVEL9K_ANACONDA_FOREGROUND=yellow
     # Context
     typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=magenta
     # Time
