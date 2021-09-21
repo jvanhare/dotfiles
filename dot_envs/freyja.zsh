@@ -4,15 +4,19 @@
 export WKDIR=$HOME/Desktop/wkdir
 export PATH=$WKDIR/bin:$PATH
 
-# Get all Python versions in path.
-export PATH="$PATH:/usr/local/opt/python@3.7/bin"
-export PATH="$PATH:/usr/local/opt/python@3.8/bin"
-export PATH="$PATH:/usr/local/opt/python@3.9/bin"
-
-# Python virtualenvs settings
-export WORKON_HOME=~/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
-workon python@3.9
+# Conda configuration.
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/jvanhare/desktop/wkdir/miniconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/jvanhare/desktop/wkdir/miniconda/etc/profile.d/conda.sh" ]; then
+        . "/Users/jvanhare/desktop/wkdir/miniconda/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/jvanhare/desktop/wkdir/miniconda/bin:$PATH"
+    fi
+fi
+unset __conda_setup
 
 # MPI configuration
 export PMIX_MCA_gds=hash
