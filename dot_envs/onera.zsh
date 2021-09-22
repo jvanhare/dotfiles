@@ -16,8 +16,8 @@ alias wkdir="cd $WKDIR"
 alias scratch="cd $SCRATH"
 
 # Export proxy for git clone, wget, etc.
-export http_proxy=proxy.onera:80
-export https_proxy=proxy.onera:80
+export http_proxy=http://proxy.onera:80
+export https_proxy=http://proxy.onera:80
 export no_proxy=.onera.net,.onera.fr,.onecert.fr
 
 # EOF.
