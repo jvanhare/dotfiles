@@ -7,8 +7,8 @@ export WKDIR=/stck/jvanhare/wkdir
 export PATH=$WKDIR/spiro/bin:$PATH
 export PATH=$WKDIR/spiro/conda/envs/helios/bin:$PATH
 export no_proxy=.onera.net,.onera.fr,.onecert.fr
-export http_proxy=proxy.onera:80
-export https_proxy=proxy.onera:80
+export http_proxy=http://proxy.onera:80
+export https_proxy=http://proxy.onera:80
 # Conda configuration.
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/stck/jvanhare/wkdir/spiro/conda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
@@ -28,8 +28,8 @@ unset __conda_setup
 # IBM PowerPC tanit.
 source /etc/profile.d/modules.sh
 export no_proxy=.onera.net,.onera.fr,.onecert.fr
-export http_proxy=proxy.onera:80
-export https_proxy=proxy.onera:80
+export http_proxy=http://proxy.onera:80
+export https_proxy=http://proxy.onera:80
 {{- end }}
 
 # EOF
