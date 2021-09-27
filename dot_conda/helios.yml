@@ -9,6 +9,7 @@ dependencies:
   - scipy
   - sympy
   - matplotlib
+  - snakemake
   - python=3.9.7
   - cmake=3.21.3
   - gmsh=4.8.4
