@@ -3,7 +3,12 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - pip
   - mamba
+  - numpy
+  - scipy
+  - sympy
+  - matplotlib
   - python=3.9.7
   - cmake=3.21.3
   - gmsh=4.8.4
