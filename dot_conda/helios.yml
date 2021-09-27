@@ -1,6 +1,7 @@
 name: helios
 channels:
   - conda-forge
+  - bioconda
   - defaults
 dependencies:
   - pip
