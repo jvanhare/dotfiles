@@ -3,3 +3,9 @@
     url = "https://github.com/tmux-plugins/tpm/archive/master.tar.gz"
     exact = true
     stripComponents = 1
+
+[".envs/spack"]
+    type = "archive"
+    url = "https://github.com/spack/spack/archive/v0.16.3.tar.gz"
+    exact = true
+    stripComponents = 1
