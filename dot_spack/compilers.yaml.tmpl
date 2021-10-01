@@ -1,7 +1,5 @@
 {{- if contains "freyja" .chezmoi.hostname }}
-
 # MacOs freyja compilers configuration.
-
 compilers:
 - compiler:
     spec: gcc@11.2.0
@@ -16,5 +14,4 @@ compilers:
     modules: []
     environment: {}
     extra_rpaths: []
-
 {{- end }}
