@@ -1,5 +1,8 @@
+{{- if contains "freyja" .chezmoi.hostname }}
+# MacOs freyja packages configuration.
 packages:
   all:
     compiler: [gcc]
     providers:
       mpi: [openmpi]
+{{- end }}
