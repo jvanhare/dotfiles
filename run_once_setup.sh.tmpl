@@ -7,9 +7,8 @@ curl -L git.io/antigen > ~/.antigen.zsh
 curl -sLf https://spacevim.org/install.sh | bash
 
 {{- if contains "freyja" .chezmoi.hostname }}
-# MacOs freyja.
+# Install brew on MacOs freyja.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 {{- end }}
-
 
 # EOF.
