@@ -5,6 +5,11 @@ export WKDIR=$HOME/Desktop/wkdir
 export PATH=$WKDIR/bin:$PATH
 export SRC=$WKDIR/src
 
+# Python virtualenvs settings
+export WORKON_HOME=~/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+workon base
+
 # MPI configuration
 export PMIX_MCA_gds=hash
 export OMPI_MCA_btl=vader,self
