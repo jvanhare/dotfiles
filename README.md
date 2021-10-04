@@ -29,6 +29,32 @@ dependencies:
 
 
 
+brew
+
+
+git
+git-flow
+hdf5-mpi
+pandoc
+pandoc-crossref
+vim
+imagemagick
+ffmpeg
+ninja
+clang-format
+python
+zsh
+cmake
+gcc
+open-mpi
+cppcheck
+lapack
+lcov
+font-fira-code
+
+
+
+
 # This is a Spack Environment file.
 #
 # It describes a set of packages to be installed, along with
