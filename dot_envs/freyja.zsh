@@ -5,11 +5,6 @@ export WKDIR=$HOME/Desktop/wkdir
 export PATH=$WKDIR/bin:$PATH
 export SRC=$WKDIR/src
 
-# Spack configuration.
-if [ -f $HOME/.envs/spack/share/spack/setup-env.sh ]; then
-    source $HOME/.envs/spack/share/spack/setup-env.sh
-fi
-
 # MPI configuration
 export PMIX_MCA_gds=hash
 export OMPI_MCA_btl=vader,self
