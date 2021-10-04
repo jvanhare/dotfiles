@@ -14,6 +14,11 @@ workon base
 export PMIX_MCA_gds=hash
 export OMPI_MCA_btl=vader,self
 
+# Default compilers
+export FC=/usr/local/bin/gfortran-11
+export CC=/usr/local/bin/gcc-11
+export CXX=/usr/local/bin/g++-11
+
 # Address sanitizer and memory leaks detection
 export ASAN_OPTIONS="detect_leaks=1"
 export LSAN_OPTIONS="suppressions=/Users/jvanhare/.lsan:print_suppressions=false"
