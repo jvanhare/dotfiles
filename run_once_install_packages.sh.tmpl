@@ -1,0 +1,26 @@
+#!/bin/sh
+
+{{- if contains "freyja" .chezmoi.hostname }}
+# Install brew packages on MacOs freyja.
+brew install zsh
+brew install git
+brew install git-flow
+brew install vim
+brew install ninja
+brew install cmake
+brew install cppcheck
+brew install clang-format
+brew install font-fira-code
+brew install gcc
+brew install lcov
+brew install python
+brew install open-mpi
+brew install hdf5-mpi
+brew install lapack
+brew install pandoc
+brew install pandoc-crossref
+brew install ffmpeg
+brew install imagemagick
+{{- end }}
+
+# EOF.
