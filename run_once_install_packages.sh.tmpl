@@ -27,7 +27,9 @@ brew install imagemagick
 pip3 install virtualenvwrapper
 export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
-
+mkvirtualenv -p /usr/local/bin/python3 base
+workon base
+pip install numpy scipy sympy matplotlib mpi4py
 {{- end }}
 
 # EOF.
