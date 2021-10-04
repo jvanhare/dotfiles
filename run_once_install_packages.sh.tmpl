@@ -13,6 +13,7 @@ brew install clang-format
 brew install font-fira-code
 brew install gcc
 brew install lcov
+brew install doxygen
 brew install python
 brew install open-mpi
 brew install hdf5-mpi
@@ -29,7 +30,7 @@ export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 mkvirtualenv -p /usr/local/bin/python3 base
 workon base
-pip install numpy scipy sympy matplotlib mpi4py
+pip install numpy scipy sympy matplotlib mpi4py ipython pygments
 {{- end }}
 
 # EOF.
