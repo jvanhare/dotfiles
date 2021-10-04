@@ -4,3 +4,4 @@ README.md
 .envs/spack/opt
 .envs/spack/var/spack/cache
 .envs/spack/var/spack/junit-report
+.envs/spack/share/spack/modules
