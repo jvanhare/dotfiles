@@ -30,7 +30,11 @@ export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 mkvirtualenv -p /usr/local/bin/python3 base
 workon base
-pip install numpy scipy sympy matplotlib mpi4py ipython pygments cmakelang build tox black
+pip install numpy scipy sympy matplotlib mpi4py ipython 
+pip install pygments cmakelang build tox black rich
+pip install typer jinja2 pathlib pytomlpp xmltodict
+pip install traitlets
+
 {{- end }}
 
 # EOF.
