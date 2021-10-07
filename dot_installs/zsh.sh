@@ -12,3 +12,4 @@ git checkout zsh-5.8
 make -j48 install
 cd ..
 rm -fr zsh
+### EOF. ###

@@ -1,0 +1,1 @@
+chmod -R u+x $HOME/.installs
