@@ -11,6 +11,12 @@ export LD_LIBRARY_PATH=$WKDIR/spiro/lib:$LD_LIBRARY_PATH
 # Module based configuration.
 module load CFD/5.0-intel-19.impi-19
 
+# Python virtualenvs settings
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=python3
+source $HOME/.local/bin/virtualenvwrapper.sh
+workon base
+
 # ZSH install function.
 install_zsh() {
     cd $SRC

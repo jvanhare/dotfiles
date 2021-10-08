@@ -6,7 +6,7 @@ export PATH=$WKDIR/bin:$PATH
 export SRC=$WKDIR/src
 
 # Python virtualenvs settings
-export WORKON_HOME=~/.virtualenvs
+export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 workon base
 
