@@ -45,7 +45,7 @@ pip install traitlets flatdict ninja
 module load CFD/5.0-intel-19.impi-19
 pip3 install virtualenvwrapper --user
 export WORKON_HOME=$HOME/.virtualenvs
-source $HOME/.local/bin
+source $HOME/.local/bin/virtualenvwrapper.sh
 mkvirtualenv -p python3 base
 workon base
 pip install numpy scipy sympy matplotlib mpi4py ipython 
