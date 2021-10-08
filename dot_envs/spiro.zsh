@@ -5,7 +5,11 @@ source $HOME/.envs/onera.zsh
 
 # Path configuration.
 export PATH=$WKDIR/spiro/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 export LD_LIBRARY_PATH=$WKDIR/spiro/lib:$LD_LIBRARY_PATH
+
+# Module based configuration.
+module load CFD/5.0-intel-19.impi-19
 
 # ZSH install function.
 install_zsh() {
