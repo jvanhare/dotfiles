@@ -48,12 +48,10 @@ export PATH=$HOME/.local/bin:$PATH
 export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=python3
 source $HOME/.local/bin/virtualenvwrapper.sh
-mkvirtualenv -p python3 base
+mkvirtualenv --system-site-packages -p python3 base
 workon base
-pip install numpy scipy sympy matplotlib mpi4py ipython 
-pip install pygments cmakelang build tox black rich
-pip install typer jinja2 pathlib pytomlpp xmltodict
-pip install traitlets flatdict ninja
+pip install ipython cmakelang build tox black rich
+pip install typer pytomlpp xmltodict flatdict ninja
 
 {{- end }}
 
