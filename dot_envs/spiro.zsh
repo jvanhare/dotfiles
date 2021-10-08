@@ -67,7 +67,7 @@ install_ninja() {
 }
 
 # Git Flow install function.
-intall_gitflow() {
+install_gitflow() {
     cd $SRC
     if [[ -d "gitflow" ]]
     then
