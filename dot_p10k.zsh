@@ -22,7 +22,7 @@
     # Left prompt segments.
     typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(prompt_char time context dir vcs)
     # Right prompt segments.
-    typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv example)
+    typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv env)
     
     # Basic style options that define the overall prompt look.
     typeset -g POWERLEVEL9K_BACKGROUND=                            # transparent background
@@ -35,6 +35,10 @@
     typeset -g POWERLEVEL9K_VIRTUALENV_FOREGROUND=yellow
     typeset -g POWERLEVEL9K_VIRTUALENV_PREFIX="["
     typeset -g POWERLEVEL9K_VIRTUALENV_SUFFIX="]"
+    # Yellow env
+    typeset -g POWERLEVEL9K_ENV_FOREGROUND=yellow
+    typeset -g POWERLEVEL9K_ENV_PREFIX="["
+    typeset -g POWERLEVEL9K_ENV_SUFFIX="]"
     # Context
     typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=magenta
     # Time
@@ -89,8 +93,8 @@
     # POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS. It displays an icon and orange text greeting the user.
     #
     # Type `p10k help segment` for documentation and a more sophisticated example.
-    function prompt_example() {
-        p10k segment -f 208 -i '⭐' -t 'hello, %n'
+    function prompt_env() {
+        p10k segment -t 'hello, %n'
     }
     
     # Instant prompt mode.
