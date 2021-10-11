@@ -17,11 +17,22 @@ export VIRTUALENVWRAPPER_PYTHON=python3
 source $HOME/.local/bin/virtualenvwrapper.sh
 workon base
 
+# Compilers environments.
+source_intel_19_0_2() {
+    module purge
+    module load intel/19.0.2
+    module load impi/19
+    module load zlib/1.2.8-intel-19
+    module load python/3.7.4-intel-19
+    module load hdf5/1.10.5-intel-19.impi-19
+    module load gdb/9.2    
+}
+
 # CEDRE environments.
-cedre_intel_19_0_2() {
+source_cedre_intel_19_0_2() {
     module purge
     module load CFD/5.0-intel-19.impi-19
-
+    
     export PCEDRE=/stck/$USER/ccm_wa/cedre/P_CEDRE~$USER/P_CEDRE
     export CL_LICENSE_FILE=/stck/$USER/ccm_wa/cedre/P_CEDRE~$USER/P_CEDRE/PRIVE/CLE_CEDRE
     export CEDRE_CLE_PATH=/stck/$USER/ccm_wa/cedre/P_CEDRE~$USER/P_CEDRE/CEDRE/LIBRAIRIES/LIBCLE/MOLOCH/libcle.a
