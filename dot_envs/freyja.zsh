@@ -30,4 +30,20 @@ alias ls="ls -ltrGh"
 alias wkdir="cd $WKDIR"
 alias src="cd $SRC"
 
+# OpenMPI install function.
+install_openmpi() {
+    cd $SRC
+    if [[ -d "openmpi-4.1.1" ]]
+    then
+        rm -fr openmpi-4.1.1
+    fi
+    wget https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.1.tar.gz
+    tar xzvf openmpi-4.1.1.tar.gz
+    cd openmpi-4.1.1
+    ./configure --prefix=$WKDIR/spiro
+    make -j16 install
+    cd $HOME
+    rm -fr $SRC/openmpi-4.1.1
+}
+
 # EOF.
