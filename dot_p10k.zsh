@@ -22,7 +22,7 @@
     # Left prompt segments.
     typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(prompt_char time context dir vcs)
     # Right prompt segments.
-    typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv)
+    typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv example)
     
     # Basic style options that define the overall prompt look.
     typeset -g POWERLEVEL9K_BACKGROUND=                            # transparent background
@@ -83,6 +83,15 @@
     typeset -g POWERLEVEL9K_VCS_LOADING_CONTENT_EXPANSION='${$((my_git_formatter()))+${my_git_format}}'
     # Grey Git status when loading.
     typeset -g POWERLEVEL9K_VCS_LOADING_FOREGROUND=246
+    
+    # Example of a user-defined prompt segment. Function prompt_example will be called on every
+    # prompt if `example` prompt segment is added to POWERLEVEL9K_LEFT_PROMPT_ELEMENTS or
+    # POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS. It displays an icon and orange text greeting the user.
+    #
+    # Type `p10k help segment` for documentation and a more sophisticated example.
+    function prompt_example() {
+        p10k segment -f 208 -i '⭐' -t 'hello, %n'
+    }
     
     # Instant prompt mode.
     #
