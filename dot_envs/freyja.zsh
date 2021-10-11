@@ -39,8 +39,9 @@ install_openmpi() {
     fi
     wget https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.1.tar.gz
     tar xzvf openmpi-4.1.1.tar.gz
+    rm openmpi-4.1.1.tar.gz
     cd openmpi-4.1.1
-    ./configure --prefix=$WKDIR/spiro
+    ./configure --prefix=$WKDIR
     make -j16 install
     cd $HOME
     rm -fr $SRC/openmpi-4.1.1
