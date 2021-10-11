@@ -94,7 +94,7 @@
     #
     # Type `p10k help segment` for documentation and a more sophisticated example.
     function prompt_env() {
-        p10k segment -t "${basename ${VIRTUAL_ENV}}"
+        p10k segment -t "$(basename ${VIRTUAL_ENV})"
     }
     
     # Instant prompt mode.
