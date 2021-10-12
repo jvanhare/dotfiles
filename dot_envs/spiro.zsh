@@ -30,8 +30,7 @@ source_intel_19_0_2() {
 
 # CEDRE environments.
 source_cedre_intel_19_0_2() {
-    module purge
-    module load CFD/5.0-intel-19.impi-19
+    source_intel_19_0_2
     
     export PCEDRE=/stck/$USER/ccm_wa/cedre/P_CEDRE~$USER/P_CEDRE
     export CL_LICENSE_FILE=/stck/$USER/ccm_wa/cedre/P_CEDRE~$USER/P_CEDRE/PRIVE/CLE_CEDRE
