@@ -94,7 +94,9 @@
     #
     # Type `p10k help segment` for documentation and a more sophisticated example.
     function prompt_env() {
-        p10k segment -e -t "${CC_BASENAME} ${CC_VERSION} - $(python -V) ($(basename ${VIRTUAL_ENV}))"
+        if [ -n ${VIRTUAL_ENV} ]; then
+            p10k segment -e -t "${CC_BASENAME} ${CC_VERSION} - $(python -V) ($(basename ${VIRTUAL_ENV}))"
+        fi
     }
     
     # Instant prompt mode.
