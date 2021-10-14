@@ -17,7 +17,6 @@ source_dev_intel_19_0_2() {
     module load python/3.7.4-intel-19
     module load hdf5/1.10.5-intel-19.impi-19
     module load gdb/9.2
-    module load cgns/3.2.1-intel-19
     # Python virtualenvs settings.
     export WORKON_HOME=$HOME/.virtualenvs
     export VIRTUALENVWRAPPER_PYTHON=python3
