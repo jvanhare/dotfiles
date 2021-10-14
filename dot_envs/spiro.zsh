@@ -8,33 +8,36 @@ export PATH=$WKDIR/spiro/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export LD_LIBRARY_PATH=$WKDIR/spiro/lib:$LD_LIBRARY_PATH
 
-# Module based configuration.
-module load CFD/5.0-intel-19.impi-19
-
-# Python virtualenvs settings
-export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=python3
-source $HOME/.local/bin/virtualenvwrapper.sh
-workon base
-
-# Compilers environments.
-source_intel_19_0_2() {
+# Development environments.
+source_dev_intel_19_0_2() {
+    # Modules settings.
     module purge
     module load intel/19.0.2
     module load impi/19
     module load zlib/1.2.8-intel-19
     module load python/3.7.4-intel-19
     module load hdf5/1.10.5-intel-19.impi-19
-    module load gdb/9.2    
+    module load gdb/9.2
+    # Python virtualenvs settings.
+    export WORKON_HOME=$HOME/.virtualenvs
+    export VIRTUALENVWRAPPER_PYTHON=python3
+    source $HOME/.local/bin/virtualenvwrapper.sh
+    workon base
 }
 
 # CEDRE environments.
-source_cedre_intel_19_0_2() {
-    source_intel_19_0_2
-    
-    export PCEDRE=/stck/$USER/ccm_wa/cedre/P_CEDRE~$USER/P_CEDRE
-    export CL_LICENSE_FILE=/stck/$USER/ccm_wa/cedre/P_CEDRE~$USER/P_CEDRE/PRIVE/CLE_CEDRE
-    export CEDRE_CLE_PATH=/stck/$USER/ccm_wa/cedre/P_CEDRE~$USER/P_CEDRE/CEDRE/LIBRAIRIES/LIBCLE/MOLOCH/libcle.a
+source_cedre_dev_intel_19_0_2() {
+    source_dev_intel_19_0_2
+    export PDM_DIR=$WKDIR/spiro
+    export PCEDRE=$HOME/ccm_wa/cedre/P_CEDRE~$USER/P_CEDRE
+    export CL_LICENSE_FILE=$HOME/ccm_wa/cedre/P_CEDRE~$USER/P_CEDRE/PRIVE/CLE_CEDRE
+    export CEDRE_CLE_PATH=$HOME/ccm_wa/cedre/P_CEDRE~$USER/P_CEDRE/CEDRE/LIBRAIRIES/LIBCLE/MOLOCH/libcle.a
+}
+
+source_cedre_8_1_0_3() {
+    module purge
+    module use /stck/cedre/module/chaine_cedre
+    module load cedre/8.1.0.3/intel17_impi17
 }
 
 # ZSH install function.

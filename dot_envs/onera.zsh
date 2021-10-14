@@ -4,7 +4,7 @@
 module purge
 
 # Working directory and path.
-export WKDIR=/stck/jvanhare/wkdir
+export WKDIR=$HOME/wkdir
 export SRC=$WKDIR/src
 export SCRATH=/scratchm/jvanhare
 export VISU=/visu/jvanhare
