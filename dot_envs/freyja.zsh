@@ -5,16 +5,16 @@ export WKDIR=$HOME/Desktop/wkdir
 export PATH=$WKDIR/bin:$PATH
 export SRC=$WKDIR/src
 
+# Python virtualenvs settings
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+workon base
+
 # Source spack.
 if [[ -d $WKDIR/spack ]]
 then
     source $WKDIR/spack/share/spack/setup-env.sh
 fi
-
-# Python virtualenvs settings
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
-workon base
 
 # MPI configuration
 export PMIX_MCA_gds=hash
