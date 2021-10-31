@@ -6,7 +6,7 @@ export SRC=$WKDIR/src
 # Aliases. #####################################################################
 alias ls="ls -ltrGh"
 # Source spack. ################################################################
-test -d $WKDIR/spack && source $WKDIR/spack/share/spack/setup-env.sh
+test -d $SRC/spack && source $SRC/spack/share/spack/setup-env.sh
 # MPI configuration. ###########################################################
 export PMIX_MCA_gds=hash
 export OMPI_MCA_btl=vader,self
