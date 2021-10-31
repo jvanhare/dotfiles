@@ -3,8 +3,7 @@
 {{- if contains "freyja" .chezmoi.hostname }}
 # Install brew packages on MacOs freyja.
 brew install zsh wget vim font-fira-code git git-flow
-brew install cppcheck clang-format 
-brew install gcc lcov
+brew install cppcheck clang-format gcc lcov tmux
 brew install imagemagick ffmpeg pandoc pandoc-crossref
 {{- end }}
 
