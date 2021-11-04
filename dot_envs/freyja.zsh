@@ -5,8 +5,10 @@ export PATH=$WKDIR/bin:$PATH
 export SRC=$WKDIR/src
 # Aliases. #####################################################################
 alias ls="ls -ltrGh"
-# Source poetry. ################################################################
+# Source poetry and install completions. #######################################
 export PATH=$HOME/Library/Python/3.9/bin:$PATH
+test ! -d $SRC/spack && mkdir $HOME/.zfunc
+fpath+=~/.zfunc
 # Source spack. ################################################################
 test -d $SRC/spack && source $SRC/spack/share/spack/setup-env.sh
 # MPI configuration. ###########################################################
