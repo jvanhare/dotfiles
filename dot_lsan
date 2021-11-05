@@ -1,3 +1,4 @@
+leak:pmix
 leak:ompi_mpi_init
 leak:ompi_mpi_finalize
 leak:hwloc
