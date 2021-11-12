@@ -35,12 +35,14 @@ spack:
       environment: {}
       extra_rpaths: []
   specs:
+  - llvm@11.0.1
   - ninja@1.10.1
   - python@3.8.6
   - py-pip@20.2
   - netlib-lapack@3.8.0
   - openmpi@3.1.6
   - hdf5@1.12.0
+  - libmeshb@7.60
   - parmetis@4.0.3 +int64
   - scotch@6.1.1 +int64
   - tetgen@1.5.0
