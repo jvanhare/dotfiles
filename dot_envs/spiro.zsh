@@ -55,17 +55,4 @@ install_zsh() {
     rm -fr $SRC/zsh
 }
 
-# Git Flow install function.
-install_gitflow() {
-    cd $SRC
-    if [[ -d "gitflow" ]]
-    then
-        rm -fr gitflow
-    fi
-    wget -q  https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh
-    PREFIX=$WKDIR/spiro bash gitflow-installer.sh install stable
-    rm -fr gitflow-installer.sh gitflow
-    cd $HOME
-}
-
 # EOF.
