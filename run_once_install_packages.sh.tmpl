@@ -7,18 +7,4 @@ brew install python python@3.9 python@3.8 python@3.7
 brew install imagemagick ffmpeg pandoc pandoc-crossref
 {{- end }}
 
-
-{{- if contains "spiro" .chezmoi.hostname }}
-module load CFD/5.0-intel-19.impi-19
-pip3 install virtualenvwrapper --user
-export PATH=$HOME/.local/bin:$PATH
-export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=python3
-source $HOME/.local/bin/virtualenvwrapper.sh
-mkvirtualenv --system-site-packages -p python3 base
-workon base
-pip install ipython cmakelang build tox black rich
-pip install typer pytomlpp xmltodict flatdict ninja
-{{- end }}
-
 # EOF.
