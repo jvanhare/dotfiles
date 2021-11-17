@@ -1,9 +1,7 @@
-### Common configuration. ###
-
-# Set the language environment
+# Common configuration. ########################################################
+# Set the language environment. ################################################
 export LANG=en_US.UTF-8
-
-# Antigen setup.
+# Antigen setup. ###############################################################
 source $HOME/.antigen.zsh
 antigen use oh-my-zsh
 antigen bundle git
@@ -21,34 +19,34 @@ antigen bundle supercrabtree/k
 antigen bundle bobthecow/git-flow-completion
 antigen theme romkatv/powerlevel10k
 antigen apply
-
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
+# Enable Powerlevel10k instant prompt. #########################################
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
     source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
+# Uncomment the following line to disable bi-weekly auto-update checks. ########
 DISABLE_AUTO_UPDATE="true"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh. ###############
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-### Machine specific environments. ###
+# Machine specific environments. ###############################################
 
 {{- if contains "freyja" .chezmoi.hostname }}
-# MacOs freyja.
+# MacOs freyja. ################################################################
 source $HOME/.envs/freyja.zsh
 {{- end }}
 
+{{- if contains "ldmpe055z" .chezmoi.hostname }}
+# CentOS 8 ldmpe055z. ##########################################################
+source $HOME/.envs/ldmpe055z.zsh
+{{- end }}
+
 {{- if contains "spiro" .chezmoi.hostname }}
-# Linux spiro.
+# CentOS 7 spiro. ##############################################################
 source $HOME/.envs/spiro.zsh
 {{- end }}
 
 {{- if contains "tanit" .chezmoi.hostname }}
-# IBM PowerPC tanit.
+# IBM PowerPC tanit. ###########################################################
 source $HOME/.envs/tanit.zsh
 {{- end }}
 
