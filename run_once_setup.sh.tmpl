@@ -17,6 +17,7 @@ curl -L git.io/antigen > ~/.antigen.zsh
 curl -sLf https://spacevim.org/install.sh | bash
 # Install poetry: the python packaging and dependency management made easy. ####
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | python3 -
+
 {{- if contains "freyja" .chezmoi.hostname }}
 # Install brew on MacOs freyja. ################################################
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -25,4 +26,13 @@ brew install zsh git wget vim font-fira-code gcc
 brew install python python@3.9 python@3.8 python@3.7
 brew install imagemagick ffmpeg pandoc pandoc-crossref
 {{- end }}
+
+{{- if contains "ldmpe055z" .chezmoi.hostname }}
+# Install vizir on CentOS 8 ldmpe055z. #########################################
+cd /stck/$USER/wkdir/ldmpe055z/bin
+wget --no-check-certificate https://pyamg.saclay.inria.fr/download/vizir/exes/Linux/vizir4_centos.2021.07.06.tar.gz
+tar xzvf vizir4_centos.2021.07.06.tar.gz
+rm vizir4_centos.2021.07.06.tar.gz
+{{- end }}
+
 # EOF. #########################################################################
