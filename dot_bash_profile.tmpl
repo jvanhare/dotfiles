@@ -1,12 +1,16 @@
-# Source .bashrc
-
+# Source .bashrc ###############################################################
 if [ -f ~/.bashrc ]; then
     source ~/.bashrc
 fi
 
+{{- if contains "ldmpe055z" .chezmoi.hostname }}
+# Run ZSH on ldpme055z login. ##################################################
+[ -f /usr/bin/zsh ] && exec /usr/bin/zsh -l
+{{- end }}
+
 {{- if contains "spiro" .chezmoi.hostname }}
-# Run ZSH on spiro login.
+# Run ZSH on spiro login. ######################################################
 [ -f $WKDIR/spiro/bin/zsh ] && exec $WKDIR/spiro/bin/zsh -l
 {{- end }}
 
-# EOF
+# EOF. #########################################################################

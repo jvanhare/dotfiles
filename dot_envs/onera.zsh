@@ -2,10 +2,10 @@
 # Purge modules. ###############################################################
 module purge
 # Working directory and path. ##################################################
-export WKDIR=$HOME/wkdir
+export WKDIR=/stck/$USER/wkdir
 export SRC=$WKDIR/src
-export SCRATH=/scratchm/jvanhare
-export VISU=/visu/jvanhare
+export SCRATH=/scratchm/$USER
+export VISU=/visu/$USER
 # Aliases. #####################################################################
 alias ls="ls -ltrGh --color=auto"
 alias wkdir="cd $WKDIR"
