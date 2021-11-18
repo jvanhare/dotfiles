@@ -5,6 +5,8 @@ source $HOME/.envs/onera.zsh
 export PATH=$WKDIR/spiro/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export LD_LIBRARY_PATH=$WKDIR/spiro/lib:$LD_LIBRARY_PATH
+# Source spack. ################################################################
+test -d $SRC/spack && source $SRC/spack/share/spack/setup-env.sh
 # ZSH install function. ########################################################
 install_zsh() {
     cd $SRC
