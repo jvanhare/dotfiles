@@ -31,13 +31,13 @@ DISABLE_AUTO_UPDATE="true"
 # Machine specific environments. ###############################################
 case $(hostname -s) in
   # MacOS freyja. ##############################################################
-  freyja) source $HOME/.envs/freyja.zsh ;;
+  freyja) source $HOME/.envs/freyja.sh ;;
   # CentOS 8 ldmpe055z. ########################################################
-  ldmpe055z) source $HOME/.envs/ldmpe055z.zsh ;;
+  ldmpe055z) source $HOME/.envs/ldmpe055z.sh ;;
   # CentOS 7 spiro. ############################################################
-  spiro*) source $HOME/.envs/spiro.zsh ;;
+  spiro*) source $HOME/.envs/spiro.sh ;;
   # IBM PowerPC tanit. #########################################################
-  tanit) source $HOME/.envs/tanit.zsh ;;
+  tanit) source $HOME/.envs/tanit.sh ;;
   # Default. ###################################################################
   *) echo -n "Unknown host. Default environment settings..." ;;
 esac
