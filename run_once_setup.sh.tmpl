@@ -35,4 +35,21 @@ tar xzvf vizir4_centos.2021.07.06.tar.gz
 rm vizir4_centos.2021.07.06.tar.gz
 {{- end }}
 
+{{- if contains "spiro" .chezmoi.hostname }}
+# Install ZSH on CentOS 7 spiro. ###############################################
+cd /stck/$USER/wkdir/src
+if [[ -d "zsh" ]]
+then
+    rm -fr zsh
+fi
+git clone https://github.com/zsh-users/zsh.git
+cd zsh
+git checkout zsh-5.8
+./Util/preconfig
+./configure --prefix=/stck/$USER/wkdir/spiro
+make -j48 install
+cd ..
+rm -fr zsh
+{{- end }}
+
 # EOF. #########################################################################

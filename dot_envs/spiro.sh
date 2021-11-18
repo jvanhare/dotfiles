@@ -7,22 +7,6 @@ export PATH=$HOME/.local/bin:$PATH
 export LD_LIBRARY_PATH=$WKDIR/spiro/lib:$LD_LIBRARY_PATH
 # Source spack. ################################################################
 test -d $SRC/spack && source $SRC/spack/share/spack/setup-env.sh
-# ZSH install function. ########################################################
-install_zsh() {
-    cd $SRC
-    if [[ -d "zsh" ]]
-    then
-        rm -fr zsh
-    fi
-    git clone https://github.com/zsh-users/zsh.git
-    cd zsh
-    git checkout zsh-5.8
-    ./Util/preconfig
-    ./configure --prefix=$WKDIR/spiro
-    make -j48 install
-    cd $HOME
-    rm -fr $SRC/zsh
-}
 # EOF. #########################################################################
 
 
