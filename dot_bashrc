@@ -1,0 +1,21 @@
+# Machine specific environments. ###############################################
+case $(hostname -s) in
+  # CentOS 8 ldmpe055z. ########################################################
+  ldmpe055z)
+    source $HOME/.envs/ldmpe055z.zsh
+    ;;
+  # CentOS 7 spiro. ############################################################
+  spiro*)
+    source /opt/tools/Modules/init/bash
+    source $HOME/.envs/spiro.zsh
+    ;;
+  # IBM PowerPC tanit. #########################################################
+  tanit)
+    source /etc/profile.d/modules.sh
+    source $HOME/.envs/tanit.zsh
+    ;;
+  *)
+    echo -n "Unknown host."
+    ;;
+esac
+# EOF. #########################################################################

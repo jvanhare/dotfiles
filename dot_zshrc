@@ -29,25 +29,16 @@ DISABLE_AUTO_UPDATE="true"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Machine specific environments. ###############################################
-
-{{- if contains "freyja" .chezmoi.hostname }}
-# MacOs freyja. ################################################################
-source $HOME/.envs/freyja.zsh
-{{- end }}
-
-{{- if contains "ldmpe055z" .chezmoi.hostname }}
-# CentOS 8 ldmpe055z. ##########################################################
-source $HOME/.envs/ldmpe055z.zsh
-{{- end }}
-
-{{- if contains "spiro" .chezmoi.hostname }}
-# CentOS 7 spiro. ##############################################################
-source $HOME/.envs/spiro.zsh
-{{- end }}
-
-{{- if contains "tanit" .chezmoi.hostname }}
-# IBM PowerPC tanit. ###########################################################
-source $HOME/.envs/tanit.zsh
-{{- end }}
-
-# EOF
+case $(hostname -s) in
+  # MacOS freyja. ##############################################################
+  freyja) source $HOME/.envs/freyja.zsh ;;
+  # CentOS 8 ldmpe055z. ########################################################
+  ldmpe055z) source $HOME/.envs/ldmpe055z.zsh ;;
+  # CentOS 7 spiro. ############################################################
+  spiro*) source $HOME/.envs/spiro.zsh ;;
+  # IBM PowerPC tanit. #########################################################
+  tanit) source $HOME/.envs/tanit.zsh ;;
+  # Default. ###################################################################
+  *) echo -n "Unknown host. Default environment settings..." ;;
+esac
+# EOF. #########################################################################
