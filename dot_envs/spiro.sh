@@ -1,6 +1,6 @@
 # Set spiro's environment. #####################################################
 # Get ONERA's environment. #####################################################
-source $HOME/.envs/onera.zsh
+source $HOME/.envs/onera.sh
 # Path configuration. ##########################################################
 export PATH=$WKDIR/spiro/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH

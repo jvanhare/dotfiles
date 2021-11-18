@@ -1,6 +1,6 @@
 # Set ldmpe055z's environment. #################################################
 # Get ONERA's environment. #####################################################
-source $HOME/.envs/onera.zsh
+source $HOME/.envs/onera.sh
 # Path configuration. ##########################################################
 export PATH=$WKDIR/ldmpe055z/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
