@@ -14,6 +14,6 @@ alias scratch="cd $SCRATH"
 alias visu="cd $VISU"
 # Export proxy for git clone, wget, etc. #######################################
 export http_proxy=http://proxy.onera:80
-export https_proxy=https://proxy.onera:80
+export https_proxy=http://proxy.onera:80
 export no_proxy=.onera.net,.onera.fr,.onecert.fr
 # EOF. #########################################################################
