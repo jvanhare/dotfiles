@@ -1,0 +1,232 @@
+# vim@8.2.2541%apple-clang@12.0.5~cscope~gui~lua~perl~python~ruby~x features=normal arch=darwin-bigsur-skylake
+module load vim-8.2.2541-apple-clang-12.0.5-7m5263e
+# ncurses@6.2%apple-clang@12.0.5~symlinks+termlib abi=none arch=darwin-bigsur-skylake
+module load ncurses-6.2-apple-clang-12.0.5-ljewpul
+# ninja@1.10.1%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load ninja-1.10.1-apple-clang-12.0.5-eefmn6q
+# python@3.8.6%apple-clang@12.0.5+bz2+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93189bc278fbc37a50ed7f183bd8aaf249a8e1670a465f0db6bb4f8cf87,4c2457325f2b608b1b6a2c63087df8c26e07db3e3d493caf36a56f0ecf6fb768,f2fd060afc4b4618fe8104c4c5d771f36dc55b1db5a4623785a4ea707ec72fb4 arch=darwin-bigsur-skylake
+module load python-3.8.6-apple-clang-12.0.5-rode6og
+# apple-libuuid@1353.100.2%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load apple-libuuid-1353.100.2-apple-clang-12.0.5-uo7absz
+# bzip2@1.0.8%apple-clang@12.0.5~debug~pic+shared arch=darwin-bigsur-skylake
+module load bzip2-1.0.8-apple-clang-12.0.5-mihqaqj
+# expat@2.4.1%apple-clang@12.0.5~libbsd arch=darwin-bigsur-skylake
+module load expat-2.4.1-apple-clang-12.0.5-acp7avd
+# gdbm@1.19%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load gdbm-1.19-apple-clang-12.0.5-ypehljr
+# readline@8.1%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load readline-8.1-apple-clang-12.0.5-epokush
+# ncurses@6.2%apple-clang@12.0.5~symlinks+termlib abi=none arch=darwin-bigsur-skylake
+module load ncurses-6.2-apple-clang-12.0.5-ljewpul
+# gettext@0.21%apple-clang@12.0.5+bzip2+curses+git~libunistring+libxml2+tar+xz arch=darwin-bigsur-skylake
+module load gettext-0.21-apple-clang-12.0.5-w4cmuss
+# libiconv@1.16%apple-clang@12.0.5 libs=shared,static arch=darwin-bigsur-skylake
+module load libiconv-1.16-apple-clang-12.0.5-mr66qut
+# libxml2@2.9.12%apple-clang@12.0.5~python arch=darwin-bigsur-skylake
+module load libxml2-2.9.12-apple-clang-12.0.5-kkfxpd6
+# xz@5.2.5%apple-clang@12.0.5~pic libs=shared,static arch=darwin-bigsur-skylake
+module load xz-5.2.5-apple-clang-12.0.5-4xxvh5l
+# zlib@1.2.11%apple-clang@12.0.5+optimize+pic+shared arch=darwin-bigsur-skylake
+module load zlib-1.2.11-apple-clang-12.0.5-6zvh4ue
+# tar@1.34%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load tar-1.34-apple-clang-12.0.5-qo2af23
+# libffi@3.3%apple-clang@12.0.5 patches=26f26c6f29a7ce9bf370ad3ab2610f99365b4bdd7b82e7c31df41a3370d685c0 arch=darwin-bigsur-skylake
+module load libffi-3.3-apple-clang-12.0.5-st74wz5
+# openssl@1.1.1l%apple-clang@12.0.5~docs certs=system arch=darwin-bigsur-skylake
+module load openssl-1.1.1l-apple-clang-12.0.5-ozupmsw
+# sqlite@3.36.0%apple-clang@12.0.5+column_metadata+fts~functions~rtree arch=darwin-bigsur-skylake
+module load sqlite-3.36.0-apple-clang-12.0.5-rwoyqlw
+# py-pip@20.2%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load py-pip-20.2-apple-clang-12.0.5-ofhahje
+# py-setuptools@58.2.0%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load py-setuptools-58.2.0-apple-clang-12.0.5-fnuaemj
+# python@3.8.6%apple-clang@12.0.5+bz2+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93189bc278fbc37a50ed7f183bd8aaf249a8e1670a465f0db6bb4f8cf87,4c2457325f2b608b1b6a2c63087df8c26e07db3e3d493caf36a56f0ecf6fb768,f2fd060afc4b4618fe8104c4c5d771f36dc55b1db5a4623785a4ea707ec72fb4 arch=darwin-bigsur-skylake
+module load python-3.8.6-apple-clang-12.0.5-rode6og
+# apple-libuuid@1353.100.2%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load apple-libuuid-1353.100.2-apple-clang-12.0.5-uo7absz
+# bzip2@1.0.8%apple-clang@12.0.5~debug~pic+shared arch=darwin-bigsur-skylake
+module load bzip2-1.0.8-apple-clang-12.0.5-mihqaqj
+# expat@2.4.1%apple-clang@12.0.5~libbsd arch=darwin-bigsur-skylake
+module load expat-2.4.1-apple-clang-12.0.5-acp7avd
+# gdbm@1.19%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load gdbm-1.19-apple-clang-12.0.5-ypehljr
+# readline@8.1%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load readline-8.1-apple-clang-12.0.5-epokush
+# ncurses@6.2%apple-clang@12.0.5~symlinks+termlib abi=none arch=darwin-bigsur-skylake
+module load ncurses-6.2-apple-clang-12.0.5-ljewpul
+# gettext@0.21%apple-clang@12.0.5+bzip2+curses+git~libunistring+libxml2+tar+xz arch=darwin-bigsur-skylake
+module load gettext-0.21-apple-clang-12.0.5-w4cmuss
+# libiconv@1.16%apple-clang@12.0.5 libs=shared,static arch=darwin-bigsur-skylake
+module load libiconv-1.16-apple-clang-12.0.5-mr66qut
+# libxml2@2.9.12%apple-clang@12.0.5~python arch=darwin-bigsur-skylake
+module load libxml2-2.9.12-apple-clang-12.0.5-kkfxpd6
+# xz@5.2.5%apple-clang@12.0.5~pic libs=shared,static arch=darwin-bigsur-skylake
+module load xz-5.2.5-apple-clang-12.0.5-4xxvh5l
+# zlib@1.2.11%apple-clang@12.0.5+optimize+pic+shared arch=darwin-bigsur-skylake
+module load zlib-1.2.11-apple-clang-12.0.5-6zvh4ue
+# tar@1.34%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load tar-1.34-apple-clang-12.0.5-qo2af23
+# libffi@3.3%apple-clang@12.0.5 patches=26f26c6f29a7ce9bf370ad3ab2610f99365b4bdd7b82e7c31df41a3370d685c0 arch=darwin-bigsur-skylake
+module load libffi-3.3-apple-clang-12.0.5-st74wz5
+# openssl@1.1.1l%apple-clang@12.0.5~docs certs=system arch=darwin-bigsur-skylake
+module load openssl-1.1.1l-apple-clang-12.0.5-ozupmsw
+# sqlite@3.36.0%apple-clang@12.0.5+column_metadata+fts~functions~rtree arch=darwin-bigsur-skylake
+module load sqlite-3.36.0-apple-clang-12.0.5-rwoyqlw
+# llvm@13.0.0%apple-clang@12.0.5~all_targets+clang~code_signing+compiler-rt~cuda~flang~gold+internal_unwind~ipo+libcxx+lld+lldb~llvm_dylib~mlir+omp_as_runtime~omp_debug~omp_tsan+polly~python~shared_libs~split_dwarf build_type=Release cuda_arch=none arch=darwin-bigsur-skylake
+module load llvm-13.0.0-apple-clang-12.0.5-evbt3wt
+# hwloc@1.11.13%apple-clang@12.0.5~cairo~cuda~gl~libudev+libxml2~netloc~nvml~opencl~pci~rocm+shared patches=d1d94a4af93486c88c70b79cd930979f3a2a2b5843708e8c7c1655f18b9fc694 arch=darwin-bigsur-skylake
+module load hwloc-1.11.13-apple-clang-12.0.5-nutw3ju
+# libxml2@2.9.12%apple-clang@12.0.5~python arch=darwin-bigsur-skylake
+module load libxml2-2.9.12-apple-clang-12.0.5-kkfxpd6
+# libiconv@1.16%apple-clang@12.0.5 libs=shared,static arch=darwin-bigsur-skylake
+module load libiconv-1.16-apple-clang-12.0.5-mr66qut
+# xz@5.2.5%apple-clang@12.0.5~pic libs=shared,static arch=darwin-bigsur-skylake
+module load xz-5.2.5-apple-clang-12.0.5-4xxvh5l
+# zlib@1.2.11%apple-clang@12.0.5+optimize+pic+shared arch=darwin-bigsur-skylake
+module load zlib-1.2.11-apple-clang-12.0.5-6zvh4ue
+# ncurses@6.2%apple-clang@12.0.5~symlinks+termlib abi=none arch=darwin-bigsur-skylake
+module load ncurses-6.2-apple-clang-12.0.5-ljewpul
+# libedit@3.1-20210216%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load libedit-3.1-20210216-apple-clang-12.0.5-t4ya2a5
+# swig@4.0.2%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load swig-4.0.2-apple-clang-12.0.5-vzdmkmm
+# pcre@8.44%apple-clang@12.0.5~jit+multibyte+utf arch=darwin-bigsur-skylake
+module load pcre-8.44-apple-clang-12.0.5-ugjh7jz
+# z3@4.8.9%apple-clang@12.0.5~gmp~ipo~python build_type=RelWithDebInfo arch=darwin-bigsur-skylake
+module load z3-4.8.9-apple-clang-12.0.5-kq7f2d2
+# lcov@1.15%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load lcov-1.15-apple-clang-12.0.5-im7s3rd
+# openmpi@3.1.6%apple-clang@12.0.5~atomics~cuda~cxx~cxx_exceptions+gpfs~internal-hwloc~java~legacylaunchers~lustre~memchecker~pmi~pmix~singularity~sqlite3+static~thread_multiple+vt+wrapper-rpath fabrics=none schedulers=none arch=darwin-bigsur-skylake
+module load openmpi-3.1.6-apple-clang-12.0.5-kzxtiks
+# hwloc@1.11.13%apple-clang@12.0.5~cairo~cuda~gl~libudev+libxml2~netloc~nvml~opencl~pci~rocm+shared patches=d1d94a4af93486c88c70b79cd930979f3a2a2b5843708e8c7c1655f18b9fc694 arch=darwin-bigsur-skylake
+module load hwloc-1.11.13-apple-clang-12.0.5-nutw3ju
+# libxml2@2.9.12%apple-clang@12.0.5~python arch=darwin-bigsur-skylake
+module load libxml2-2.9.12-apple-clang-12.0.5-kkfxpd6
+# libiconv@1.16%apple-clang@12.0.5 libs=shared,static arch=darwin-bigsur-skylake
+module load libiconv-1.16-apple-clang-12.0.5-mr66qut
+# xz@5.2.5%apple-clang@12.0.5~pic libs=shared,static arch=darwin-bigsur-skylake
+module load xz-5.2.5-apple-clang-12.0.5-4xxvh5l
+# zlib@1.2.11%apple-clang@12.0.5+optimize+pic+shared arch=darwin-bigsur-skylake
+module load zlib-1.2.11-apple-clang-12.0.5-6zvh4ue
+# ncurses@6.2%apple-clang@12.0.5~symlinks+termlib abi=none arch=darwin-bigsur-skylake
+module load ncurses-6.2-apple-clang-12.0.5-ljewpul
+# openssh@8.7p1%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load openssh-8.7p1-apple-clang-12.0.5-plwcvbg
+# libedit@3.1-20210216%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load libedit-3.1-20210216-apple-clang-12.0.5-t4ya2a5
+# openssl@1.1.1l%apple-clang@12.0.5~docs certs=system arch=darwin-bigsur-skylake
+module load openssl-1.1.1l-apple-clang-12.0.5-ozupmsw
+# hdf5@1.12.0%apple-clang@12.0.5~cxx~fortran~hl~ipo~java+mpi+shared~szip~threadsafe+tools api=default build_type=RelWithDebInfo arch=darwin-bigsur-skylake
+module load hdf5-1.12.0-apple-clang-12.0.5-w4fgg5i
+# openmpi@3.1.6%apple-clang@12.0.5~atomics~cuda~cxx~cxx_exceptions+gpfs~internal-hwloc~java~legacylaunchers~lustre~memchecker~pmi~pmix~singularity~sqlite3+static~thread_multiple+vt+wrapper-rpath fabrics=none schedulers=none arch=darwin-bigsur-skylake
+module load openmpi-3.1.6-apple-clang-12.0.5-kzxtiks
+# hwloc@1.11.13%apple-clang@12.0.5~cairo~cuda~gl~libudev+libxml2~netloc~nvml~opencl~pci~rocm+shared patches=d1d94a4af93486c88c70b79cd930979f3a2a2b5843708e8c7c1655f18b9fc694 arch=darwin-bigsur-skylake
+module load hwloc-1.11.13-apple-clang-12.0.5-nutw3ju
+# libxml2@2.9.12%apple-clang@12.0.5~python arch=darwin-bigsur-skylake
+module load libxml2-2.9.12-apple-clang-12.0.5-kkfxpd6
+# libiconv@1.16%apple-clang@12.0.5 libs=shared,static arch=darwin-bigsur-skylake
+module load libiconv-1.16-apple-clang-12.0.5-mr66qut
+# xz@5.2.5%apple-clang@12.0.5~pic libs=shared,static arch=darwin-bigsur-skylake
+module load xz-5.2.5-apple-clang-12.0.5-4xxvh5l
+# zlib@1.2.11%apple-clang@12.0.5+optimize+pic+shared arch=darwin-bigsur-skylake
+module load zlib-1.2.11-apple-clang-12.0.5-6zvh4ue
+# ncurses@6.2%apple-clang@12.0.5~symlinks+termlib abi=none arch=darwin-bigsur-skylake
+module load ncurses-6.2-apple-clang-12.0.5-ljewpul
+# openssh@8.7p1%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load openssh-8.7p1-apple-clang-12.0.5-plwcvbg
+# libedit@3.1-20210216%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load libedit-3.1-20210216-apple-clang-12.0.5-t4ya2a5
+# openssl@1.1.1l%apple-clang@12.0.5~docs certs=system arch=darwin-bigsur-skylake
+module load openssl-1.1.1l-apple-clang-12.0.5-ozupmsw
+# pkgconf@1.8.0%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load pkgconf-1.8.0-apple-clang-12.0.5-grgtlcd
+# netlib-lapack@3.8.0%apple-clang@12.0.5~external-blas~ipo+lapacke+shared~xblas build_type=RelWithDebInfo patches=5c79286f3d08a0b0f1f3acba2a92ee698647716ba8c6c0ae20c9cc2713e6f139,ad3d41fe9ff94b7661e09fceaf2b2e4b8c83510c1465c016e161541b4429b5ee arch=darwin-bigsur-skylake
+module load netlib-lapack-3.8.0-apple-clang-12.0.5-b3lxr4l
+# parmetis@4.0.3%apple-clang@12.0.5~gdb+int64~ipo+shared build_type=RelWithDebInfo patches=4f892531eb0a807eb1b82e683a416d3e35154a455274cf9b162fb02054d11a5b,50ed2081bc939269689789942067c58b3e522c269269a430d5d34c00edbc5870,704b84f7c7444d4372cb59cca6e1209df4ef3b033bc4ee3cf50f369bce972a9d arch=darwin-bigsur-skylake
+module load parmetis-4.0.3-apple-clang-12.0.5-bnu2sot
+# metis@5.1.0%apple-clang@12.0.5~gdb+int64~real64+shared build_type=Release patches=4991da938c1d3a1d3dea78e49bbebecba00273f98df2a656e38b83d55b281da1 arch=darwin-bigsur-skylake
+module load metis-5.1.0-apple-clang-12.0.5-qf7qqyh
+# openmpi@3.1.6%apple-clang@12.0.5~atomics~cuda~cxx~cxx_exceptions+gpfs~internal-hwloc~java~legacylaunchers~lustre~memchecker~pmi~pmix~singularity~sqlite3+static~thread_multiple+vt+wrapper-rpath fabrics=none schedulers=none arch=darwin-bigsur-skylake
+module load openmpi-3.1.6-apple-clang-12.0.5-kzxtiks
+# hwloc@1.11.13%apple-clang@12.0.5~cairo~cuda~gl~libudev+libxml2~netloc~nvml~opencl~pci~rocm+shared patches=d1d94a4af93486c88c70b79cd930979f3a2a2b5843708e8c7c1655f18b9fc694 arch=darwin-bigsur-skylake
+module load hwloc-1.11.13-apple-clang-12.0.5-nutw3ju
+# libxml2@2.9.12%apple-clang@12.0.5~python arch=darwin-bigsur-skylake
+module load libxml2-2.9.12-apple-clang-12.0.5-kkfxpd6
+# libiconv@1.16%apple-clang@12.0.5 libs=shared,static arch=darwin-bigsur-skylake
+module load libiconv-1.16-apple-clang-12.0.5-mr66qut
+# xz@5.2.5%apple-clang@12.0.5~pic libs=shared,static arch=darwin-bigsur-skylake
+module load xz-5.2.5-apple-clang-12.0.5-4xxvh5l
+# zlib@1.2.11%apple-clang@12.0.5+optimize+pic+shared arch=darwin-bigsur-skylake
+module load zlib-1.2.11-apple-clang-12.0.5-6zvh4ue
+# ncurses@6.2%apple-clang@12.0.5~symlinks+termlib abi=none arch=darwin-bigsur-skylake
+module load ncurses-6.2-apple-clang-12.0.5-ljewpul
+# openssh@8.7p1%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load openssh-8.7p1-apple-clang-12.0.5-plwcvbg
+# libedit@3.1-20210216%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load libedit-3.1-20210216-apple-clang-12.0.5-t4ya2a5
+# openssl@1.1.1l%apple-clang@12.0.5~docs certs=system arch=darwin-bigsur-skylake
+module load openssl-1.1.1l-apple-clang-12.0.5-ozupmsw
+# scotch@6.1.1%apple-clang@12.0.5+compression~esmumps+int64~metis+mpi+shared arch=darwin-bigsur-skylake
+module load scotch-6.1.1-apple-clang-12.0.5-tugawbf
+# openmpi@3.1.6%apple-clang@12.0.5~atomics~cuda~cxx~cxx_exceptions+gpfs~internal-hwloc~java~legacylaunchers~lustre~memchecker~pmi~pmix~singularity~sqlite3+static~thread_multiple+vt+wrapper-rpath fabrics=none schedulers=none arch=darwin-bigsur-skylake
+module load openmpi-3.1.6-apple-clang-12.0.5-kzxtiks
+# hwloc@1.11.13%apple-clang@12.0.5~cairo~cuda~gl~libudev+libxml2~netloc~nvml~opencl~pci~rocm+shared patches=d1d94a4af93486c88c70b79cd930979f3a2a2b5843708e8c7c1655f18b9fc694 arch=darwin-bigsur-skylake
+module load hwloc-1.11.13-apple-clang-12.0.5-nutw3ju
+# libxml2@2.9.12%apple-clang@12.0.5~python arch=darwin-bigsur-skylake
+module load libxml2-2.9.12-apple-clang-12.0.5-kkfxpd6
+# libiconv@1.16%apple-clang@12.0.5 libs=shared,static arch=darwin-bigsur-skylake
+module load libiconv-1.16-apple-clang-12.0.5-mr66qut
+# xz@5.2.5%apple-clang@12.0.5~pic libs=shared,static arch=darwin-bigsur-skylake
+module load xz-5.2.5-apple-clang-12.0.5-4xxvh5l
+# zlib@1.2.11%apple-clang@12.0.5+optimize+pic+shared arch=darwin-bigsur-skylake
+module load zlib-1.2.11-apple-clang-12.0.5-6zvh4ue
+# ncurses@6.2%apple-clang@12.0.5~symlinks+termlib abi=none arch=darwin-bigsur-skylake
+module load ncurses-6.2-apple-clang-12.0.5-ljewpul
+# openssh@8.7p1%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load openssh-8.7p1-apple-clang-12.0.5-plwcvbg
+# libedit@3.1-20210216%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load libedit-3.1-20210216-apple-clang-12.0.5-t4ya2a5
+# openssl@1.1.1l%apple-clang@12.0.5~docs certs=system arch=darwin-bigsur-skylake
+module load openssl-1.1.1l-apple-clang-12.0.5-ozupmsw
+# libmeshb@7.60%apple-clang@12.0.5~aio~ipo+shared build_type=Release arch=darwin-bigsur-skylake
+module load libmeshb-7.60-apple-clang-12.0.5-dtgwfvw
+# argtable3@3.2.1.52f24e5%apple-clang@12.0.5~ipo+shared build_type=Release arch=darwin-bigsur-skylake
+module load argtable3-3.2.1.52f24e5-apple-clang-12.0.5-72pivyz
+# libtomlc99@0.2020.12.23%apple-clang@12.0.5~debug arch=darwin-bigsur-skylake
+module load libtomlc99-0.2020.12.23-apple-clang-12.0.5-d3duxiz
+# tetgen@1.5.0%apple-clang@12.0.5~debug~except+pic patches=250ee7a9c97fbef4ed8796c70233631559fd2f4663affe6c824896880a605a24 arch=darwin-bigsur-skylake
+module load tetgen-1.5.0-apple-clang-12.0.5-mkfgobs
+# gmsh@4.5.4%apple-clang@12.0.5+alglib~cairo~cgns+compression~eigen~external~fltk+gmp~hdf5~ipo~med+metis+mmg~mpi+netgen~oce~opencascade~openmp~petsc~privateapi+shared~slepc+tetgen+voropp build_type=RelWithDebInfo arch=darwin-bigsur-skylake
+module load gmsh-4.5.4-apple-clang-12.0.5-uhsgulz
+# gmp@6.2.1%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load gmp-6.2.1-apple-clang-12.0.5-lfwlhwi
+# mmg@5.5.2%apple-clang@12.0.5~doc~ipo+scotch+shared build_type=RelWithDebInfo arch=darwin-bigsur-skylake
+module load mmg-5.5.2-apple-clang-12.0.5-3dqtxu7
+# scotch@6.1.1%apple-clang@12.0.5+compression~esmumps+int64~metis+mpi+shared arch=darwin-bigsur-skylake
+module load scotch-6.1.1-apple-clang-12.0.5-tugawbf
+# openmpi@3.1.6%apple-clang@12.0.5~atomics~cuda~cxx~cxx_exceptions+gpfs~internal-hwloc~java~legacylaunchers~lustre~memchecker~pmi~pmix~singularity~sqlite3+static~thread_multiple+vt+wrapper-rpath fabrics=none schedulers=none arch=darwin-bigsur-skylake
+module load openmpi-3.1.6-apple-clang-12.0.5-kzxtiks
+# hwloc@1.11.13%apple-clang@12.0.5~cairo~cuda~gl~libudev+libxml2~netloc~nvml~opencl~pci~rocm+shared patches=d1d94a4af93486c88c70b79cd930979f3a2a2b5843708e8c7c1655f18b9fc694 arch=darwin-bigsur-skylake
+module load hwloc-1.11.13-apple-clang-12.0.5-nutw3ju
+# libxml2@2.9.12%apple-clang@12.0.5~python arch=darwin-bigsur-skylake
+module load libxml2-2.9.12-apple-clang-12.0.5-kkfxpd6
+# libiconv@1.16%apple-clang@12.0.5 libs=shared,static arch=darwin-bigsur-skylake
+module load libiconv-1.16-apple-clang-12.0.5-mr66qut
+# xz@5.2.5%apple-clang@12.0.5~pic libs=shared,static arch=darwin-bigsur-skylake
+module load xz-5.2.5-apple-clang-12.0.5-4xxvh5l
+# zlib@1.2.11%apple-clang@12.0.5+optimize+pic+shared arch=darwin-bigsur-skylake
+module load zlib-1.2.11-apple-clang-12.0.5-6zvh4ue
+# ncurses@6.2%apple-clang@12.0.5~symlinks+termlib abi=none arch=darwin-bigsur-skylake
+module load ncurses-6.2-apple-clang-12.0.5-ljewpul
+# openssh@8.7p1%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load openssh-8.7p1-apple-clang-12.0.5-plwcvbg
+# libedit@3.1-20210216%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load libedit-3.1-20210216-apple-clang-12.0.5-t4ya2a5
+# openssl@1.1.1l%apple-clang@12.0.5~docs certs=system arch=darwin-bigsur-skylake
+module load openssl-1.1.1l-apple-clang-12.0.5-ozupmsw
+# netlib-lapack@3.8.0%apple-clang@12.0.5~external-blas~ipo+lapacke+shared~xblas build_type=RelWithDebInfo patches=5c79286f3d08a0b0f1f3acba2a92ee698647716ba8c6c0ae20c9cc2713e6f139,ad3d41fe9ff94b7661e09fceaf2b2e4b8c83510c1465c016e161541b4429b5ee arch=darwin-bigsur-skylake
+module load netlib-lapack-3.8.0-apple-clang-12.0.5-b3lxr4l
+# doxygen@1.8.20%apple-clang@12.0.5~graphviz~ipo~mscgen build_type=RelWithDebInfo arch=darwin-bigsur-skylake
+module load doxygen-1.8.20-apple-clang-12.0.5-qg3zsen
+# libiconv@1.16%apple-clang@12.0.5 libs=shared,static arch=darwin-bigsur-skylake
+module load libiconv-1.16-apple-clang-12.0.5-mr66qut
