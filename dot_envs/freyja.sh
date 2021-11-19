@@ -13,8 +13,9 @@ fpath+=~/.zfunc
 # Source different versions of Python. #########################################
 export PATH=/usr/local/opt/python@3.7/bin:$PATH
 export PATH=/usr/local/opt/python@3.8/bin:$PATH
-# Source spack. ################################################################
+# Source spack and lmod. #######################################################
 test -d $SRC/spack && source $SRC/spack/share/spack/setup-env.sh
+source /usr/local/opt/lmod/init/zsh
 # MPI configuration. ###########################################################
 export PMIX_MCA_gds=hash
 export OMPI_MCA_btl=vader,self
