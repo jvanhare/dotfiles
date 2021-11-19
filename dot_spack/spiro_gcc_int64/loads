@@ -1,0 +1,172 @@
+# vim@8.2.2541%gcc@8.3~cscope~gui~lua~perl~python~ruby~x features=normal arch=linux-centos7-broadwell
+module load vim-8.2.2541-gcc-8.3-kasvovt
+# ncurses@6.2%gcc@8.3~symlinks+termlib abi=none arch=linux-centos7-broadwell
+module load ncurses-6.2-gcc-8.3-jpv2im2
+# cmake@3.21.4%gcc@8.3~doc+ncurses+openssl+ownlibs~qt build_type=Release arch=linux-centos7-broadwell
+module load cmake-3.21.4-gcc-8.3-55gy7sm
+# ncurses@6.2%gcc@8.3~symlinks+termlib abi=none arch=linux-centos7-broadwell
+module load ncurses-6.2-gcc-8.3-jpv2im2
+# openssl@1.1.1l%gcc@8.3~docs certs=system arch=linux-centos7-broadwell
+module load openssl-1.1.1l-gcc-8.3-ddooodi
+# zlib@1.2.11%gcc@8.3+optimize+pic+shared arch=linux-centos7-broadwell
+module load zlib-1.2.11-gcc-8.3-serfcxv
+# ninja@1.10.1%gcc@8.3 arch=linux-centos7-broadwell
+module load ninja-1.10.1-gcc-8.3-ugs5soi
+# python@3.8.6%gcc@8.3+bz2+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93189bc278fbc37a50ed7f183bd8aaf249a8e1670a465f0db6bb4f8cf87,4c2457325f2b608b1b6a2c63087df8c26e07db3e3d493caf36a56f0ecf6fb768,f2fd060afc4b4618fe8104c4c5d771f36dc55b1db5a4623785a4ea707ec72fb4 arch=linux-centos7-broadwell
+module load python-3.8.6-gcc-8.3-zmot4ap
+# bzip2@1.0.8%gcc@8.3~debug~pic+shared arch=linux-centos7-broadwell
+module load bzip2-1.0.8-gcc-8.3-ji5bcsk
+# expat@2.4.1%gcc@8.3+libbsd arch=linux-centos7-broadwell
+module load expat-2.4.1-gcc-8.3-rqgjgqf
+# libbsd@0.11.3%gcc@8.3 arch=linux-centos7-broadwell
+module load libbsd-0.11.3-gcc-8.3-ywp4poy
+# libmd@1.0.3%gcc@8.3 arch=linux-centos7-broadwell
+module load libmd-1.0.3-gcc-8.3-j4unrkz
+# gdbm@1.19%gcc@8.3 arch=linux-centos7-broadwell
+module load gdbm-1.19-gcc-8.3-yzvazag
+# readline@8.1%gcc@8.3 arch=linux-centos7-broadwell
+module load readline-8.1-gcc-8.3-boa5fny
+# ncurses@6.2%gcc@8.3~symlinks+termlib abi=none arch=linux-centos7-broadwell
+module load ncurses-6.2-gcc-8.3-jpv2im2
+# gettext@0.21%gcc@8.3+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-centos7-broadwell
+module load gettext-0.21-gcc-8.3-vjramju
+# libiconv@1.16%gcc@8.3 libs=shared,static arch=linux-centos7-broadwell
+module load libiconv-1.16-gcc-8.3-q4ylkkm
+# libxml2@2.9.12%gcc@8.3~python arch=linux-centos7-broadwell
+module load libxml2-2.9.12-gcc-8.3-rz5xboc
+# xz@5.2.5%gcc@8.3~pic libs=shared,static arch=linux-centos7-broadwell
+module load xz-5.2.5-gcc-8.3-wmn3c7l
+# zlib@1.2.11%gcc@8.3+optimize+pic+shared arch=linux-centos7-broadwell
+module load zlib-1.2.11-gcc-8.3-serfcxv
+# tar@1.34%gcc@8.3 arch=linux-centos7-broadwell
+module load tar-1.34-gcc-8.3-nsrprms
+# libffi@3.3%gcc@8.3 patches=26f26c6f29a7ce9bf370ad3ab2610f99365b4bdd7b82e7c31df41a3370d685c0 arch=linux-centos7-broadwell
+module load libffi-3.3-gcc-8.3-7uuli7b
+# openssl@1.1.1l%gcc@8.3~docs certs=system arch=linux-centos7-broadwell
+module load openssl-1.1.1l-gcc-8.3-ddooodi
+# sqlite@3.36.0%gcc@8.3+column_metadata+fts~functions~rtree arch=linux-centos7-broadwell
+module load sqlite-3.36.0-gcc-8.3-bpc5t7v
+# util-linux-uuid@2.36.2%gcc@8.3 arch=linux-centos7-broadwell
+module load util-linux-uuid-2.36.2-gcc-8.3-mf5ul4k
+# py-pip@20.2%gcc@8.3 arch=linux-centos7-broadwell
+module load py-pip-20.2-gcc-8.3-523szcn
+# py-setuptools@58.2.0%gcc@8.3 arch=linux-centos7-broadwell
+module load py-setuptools-58.2.0-gcc-8.3-7tw2x2k
+# python@3.8.6%gcc@8.3+bz2+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93189bc278fbc37a50ed7f183bd8aaf249a8e1670a465f0db6bb4f8cf87,4c2457325f2b608b1b6a2c63087df8c26e07db3e3d493caf36a56f0ecf6fb768,f2fd060afc4b4618fe8104c4c5d771f36dc55b1db5a4623785a4ea707ec72fb4 arch=linux-centos7-broadwell
+module load python-3.8.6-gcc-8.3-zmot4ap
+# bzip2@1.0.8%gcc@8.3~debug~pic+shared arch=linux-centos7-broadwell
+module load bzip2-1.0.8-gcc-8.3-ji5bcsk
+# expat@2.4.1%gcc@8.3+libbsd arch=linux-centos7-broadwell
+module load expat-2.4.1-gcc-8.3-rqgjgqf
+# libbsd@0.11.3%gcc@8.3 arch=linux-centos7-broadwell
+module load libbsd-0.11.3-gcc-8.3-ywp4poy
+# libmd@1.0.3%gcc@8.3 arch=linux-centos7-broadwell
+module load libmd-1.0.3-gcc-8.3-j4unrkz
+# gdbm@1.19%gcc@8.3 arch=linux-centos7-broadwell
+module load gdbm-1.19-gcc-8.3-yzvazag
+# readline@8.1%gcc@8.3 arch=linux-centos7-broadwell
+module load readline-8.1-gcc-8.3-boa5fny
+# ncurses@6.2%gcc@8.3~symlinks+termlib abi=none arch=linux-centos7-broadwell
+module load ncurses-6.2-gcc-8.3-jpv2im2
+# gettext@0.21%gcc@8.3+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-centos7-broadwell
+module load gettext-0.21-gcc-8.3-vjramju
+# libiconv@1.16%gcc@8.3 libs=shared,static arch=linux-centos7-broadwell
+module load libiconv-1.16-gcc-8.3-q4ylkkm
+# libxml2@2.9.12%gcc@8.3~python arch=linux-centos7-broadwell
+module load libxml2-2.9.12-gcc-8.3-rz5xboc
+# xz@5.2.5%gcc@8.3~pic libs=shared,static arch=linux-centos7-broadwell
+module load xz-5.2.5-gcc-8.3-wmn3c7l
+# zlib@1.2.11%gcc@8.3+optimize+pic+shared arch=linux-centos7-broadwell
+module load zlib-1.2.11-gcc-8.3-serfcxv
+# tar@1.34%gcc@8.3 arch=linux-centos7-broadwell
+module load tar-1.34-gcc-8.3-nsrprms
+# libffi@3.3%gcc@8.3 patches=26f26c6f29a7ce9bf370ad3ab2610f99365b4bdd7b82e7c31df41a3370d685c0 arch=linux-centos7-broadwell
+module load libffi-3.3-gcc-8.3-7uuli7b
+# openssl@1.1.1l%gcc@8.3~docs certs=system arch=linux-centos7-broadwell
+module load openssl-1.1.1l-gcc-8.3-ddooodi
+# sqlite@3.36.0%gcc@8.3+column_metadata+fts~functions~rtree arch=linux-centos7-broadwell
+module load sqlite-3.36.0-gcc-8.3-bpc5t7v
+# util-linux-uuid@2.36.2%gcc@8.3 arch=linux-centos7-broadwell
+module load util-linux-uuid-2.36.2-gcc-8.3-mf5ul4k
+# llvm@13.0.0%gcc@8.3~all_targets~build_llvm_dylib+clang~code_signing+compiler-rt~cuda~flang+gold+internal_unwind~ipo~libcxx~link_llvm_dylib+lld+lldb~mlir+omp_as_runtime~omp_debug~omp_tsan+polly~python~shared_libs~split_dwarf build_type=Release cuda_arch=none version_suffix=none arch=linux-centos7-broadwell
+module load llvm-13.0.0-gcc-8.3-r4du5mw
+# binutils@2.37%gcc@8.3~gas+gold~headers~interwork+ld~libiberty~lto+nls+plugins libs=shared,static arch=linux-centos7-broadwell
+module load binutils-2.37-gcc-8.3-3viy7ww
+# gettext@0.21%gcc@8.3+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-centos7-broadwell
+module load gettext-0.21-gcc-8.3-vjramju
+# bzip2@1.0.8%gcc@8.3~debug~pic+shared arch=linux-centos7-broadwell
+module load bzip2-1.0.8-gcc-8.3-ji5bcsk
+# libiconv@1.16%gcc@8.3 libs=shared,static arch=linux-centos7-broadwell
+module load libiconv-1.16-gcc-8.3-q4ylkkm
+# libxml2@2.9.12%gcc@8.3~python arch=linux-centos7-broadwell
+module load libxml2-2.9.12-gcc-8.3-rz5xboc
+# xz@5.2.5%gcc@8.3~pic libs=shared,static arch=linux-centos7-broadwell
+module load xz-5.2.5-gcc-8.3-wmn3c7l
+# zlib@1.2.11%gcc@8.3+optimize+pic+shared arch=linux-centos7-broadwell
+module load zlib-1.2.11-gcc-8.3-serfcxv
+# ncurses@6.2%gcc@8.3~symlinks+termlib abi=none arch=linux-centos7-broadwell
+module load ncurses-6.2-gcc-8.3-jpv2im2
+# tar@1.34%gcc@8.3 arch=linux-centos7-broadwell
+module load tar-1.34-gcc-8.3-nsrprms
+# hwloc@2.6.0%gcc@8.3~cairo~cuda~gl~libudev+libxml2~netloc~nvml~opencl+pci~rocm+shared arch=linux-centos7-broadwell
+module load hwloc-2.6.0-gcc-8.3-nqt3pmu
+# libpciaccess@0.16%gcc@8.3 arch=linux-centos7-broadwell
+module load libpciaccess-0.16-gcc-8.3-isvvv4s
+# libedit@3.1-20210216%gcc@8.3 arch=linux-centos7-broadwell
+module load libedit-3.1-20210216-gcc-8.3-wznolh3
+# swig@4.0.2%gcc@8.3 arch=linux-centos7-broadwell
+module load swig-4.0.2-gcc-8.3-eeyxqhy
+# pcre@8.44%gcc@8.3~jit+multibyte+utf arch=linux-centos7-broadwell
+module load pcre-8.44-gcc-8.3-dlw6dft
+# z3@4.8.9%gcc@8.3~gmp~ipo~python build_type=RelWithDebInfo arch=linux-centos7-broadwell
+module load z3-4.8.9-gcc-8.3-o6nixuw
+# lcov@1.15%gcc@8.3 arch=linux-centos7-broadwell
+module load lcov-1.15-gcc-8.3-nkg73ym
+# hdf5@1.12.0%gcc@8.3~cxx~fortran~hl~ipo~java+mpi+shared~szip~threadsafe+tools api=default build_type=RelWithDebInfo arch=linux-centos7-broadwell
+module load hdf5-1.12.0-gcc-8.3-zqrwdx3
+# openmpi@4.0.1%gcc@8.3~atomics~cuda~cxx~cxx_exceptions+gpfs~internal-hwloc~java~legacylaunchers~lustre~memchecker~pmi~pmix~singularity~sqlite3+static~thread_multiple+vt+wrapper-rpath fabrics=none patches=073477a76bba780c67c36e959cd3ee6910743e2735c7e76850ffba6791d498e4,60ce20bc14d98c572ef7883b9fcd254c3f232c2f3a13377480f96466169ac4c8 schedulers=none arch=linux-centos7-broadwell
+module load openmpi-4.0.1-gcc-8.3-vl557fs
+# pkgconf@1.8.0%gcc@8.3 arch=linux-centos7-broadwell
+module load pkgconf-1.8.0-gcc-8.3-eundtlk
+# zlib@1.2.11%gcc@8.3+optimize+pic+shared arch=linux-centos7-broadwell
+module load zlib-1.2.11-gcc-8.3-serfcxv
+# netlib-lapack@3.8.0%gcc@8.3~external-blas~ipo+lapacke+shared~xblas build_type=RelWithDebInfo patches=5c79286f3d08a0b0f1f3acba2a92ee698647716ba8c6c0ae20c9cc2713e6f139,ad3d41fe9ff94b7661e09fceaf2b2e4b8c83510c1465c016e161541b4429b5ee arch=linux-centos7-broadwell
+module load netlib-lapack-3.8.0-gcc-8.3-gq4sit7
+# parmetis@4.0.3%gcc@8.3~gdb+int64~ipo+shared build_type=RelWithDebInfo patches=4f892531eb0a807eb1b82e683a416d3e35154a455274cf9b162fb02054d11a5b,50ed2081bc939269689789942067c58b3e522c269269a430d5d34c00edbc5870,704b84f7c7444d4372cb59cca6e1209df4ef3b033bc4ee3cf50f369bce972a9d arch=linux-centos7-broadwell
+module load parmetis-4.0.3-gcc-8.3-q55wfle
+# metis@5.1.0%gcc@8.3~gdb+int64~real64+shared build_type=Release patches=4991da938c1d3a1d3dea78e49bbebecba00273f98df2a656e38b83d55b281da1,b1225da886605ea558db7ac08dd8054742ea5afe5ed61ad4d0fe7a495b1270d2 arch=linux-centos7-broadwell
+module load metis-5.1.0-gcc-8.3-jssp76g
+# openmpi@4.0.1%gcc@8.3~atomics~cuda~cxx~cxx_exceptions+gpfs~internal-hwloc~java~legacylaunchers~lustre~memchecker~pmi~pmix~singularity~sqlite3+static~thread_multiple+vt+wrapper-rpath fabrics=none patches=073477a76bba780c67c36e959cd3ee6910743e2735c7e76850ffba6791d498e4,60ce20bc14d98c572ef7883b9fcd254c3f232c2f3a13377480f96466169ac4c8 schedulers=none arch=linux-centos7-broadwell
+module load openmpi-4.0.1-gcc-8.3-vl557fs
+# scotch@6.1.1%gcc@8.3+compression~esmumps+int64~metis+mpi+shared arch=linux-centos7-broadwell
+module load scotch-6.1.1-gcc-8.3-7vsst2p
+# openmpi@4.0.1%gcc@8.3~atomics~cuda~cxx~cxx_exceptions+gpfs~internal-hwloc~java~legacylaunchers~lustre~memchecker~pmi~pmix~singularity~sqlite3+static~thread_multiple+vt+wrapper-rpath fabrics=none patches=073477a76bba780c67c36e959cd3ee6910743e2735c7e76850ffba6791d498e4,60ce20bc14d98c572ef7883b9fcd254c3f232c2f3a13377480f96466169ac4c8 schedulers=none arch=linux-centos7-broadwell
+module load openmpi-4.0.1-gcc-8.3-vl557fs
+# zlib@1.2.11%gcc@8.3+optimize+pic+shared arch=linux-centos7-broadwell
+module load zlib-1.2.11-gcc-8.3-serfcxv
+# libmeshb@7.60%gcc@8.3~aio~ipo+shared build_type=Release arch=linux-centos7-broadwell
+module load libmeshb-7.60-gcc-8.3-5oaustd
+# argtable3@3.2.1.52f24e5%gcc@8.3~ipo+shared build_type=Release arch=linux-centos7-broadwell
+module load argtable3-3.2.1.52f24e5-gcc-8.3-k7o2bvt
+# libtomlc99@0.2020.12.23%gcc@8.3~debug arch=linux-centos7-broadwell
+module load libtomlc99-0.2020.12.23-gcc-8.3-b3dxi6s
+# tetgen@1.5.0%gcc@8.3~debug~except+pic patches=250ee7a9c97fbef4ed8796c70233631559fd2f4663affe6c824896880a605a24 arch=linux-centos7-broadwell
+module load tetgen-1.5.0-gcc-8.3-qjwovih
+# gmsh@4.5.4%gcc@8.3+alglib~cairo~cgns+compression~eigen~external~fltk+gmp~hdf5~ipo~med+metis+mmg~mpi+netgen~oce~opencascade~openmp~petsc~privateapi+shared~slepc+tetgen+voropp build_type=RelWithDebInfo arch=linux-centos7-broadwell
+module load gmsh-4.5.4-gcc-8.3-csofzsb
+# gmp@6.2.1%gcc@8.3 arch=linux-centos7-broadwell
+module load gmp-6.2.1-gcc-8.3-33l2v2o
+# mmg@5.5.2%gcc@8.3~doc~ipo+scotch+shared build_type=RelWithDebInfo arch=linux-centos7-broadwell
+module load mmg-5.5.2-gcc-8.3-7wcu5gh
+# scotch@6.1.1%gcc@8.3+compression~esmumps+int64~metis+mpi+shared arch=linux-centos7-broadwell
+module load scotch-6.1.1-gcc-8.3-7vsst2p
+# openmpi@4.0.1%gcc@8.3~atomics~cuda~cxx~cxx_exceptions+gpfs~internal-hwloc~java~legacylaunchers~lustre~memchecker~pmi~pmix~singularity~sqlite3+static~thread_multiple+vt+wrapper-rpath fabrics=none patches=073477a76bba780c67c36e959cd3ee6910743e2735c7e76850ffba6791d498e4,60ce20bc14d98c572ef7883b9fcd254c3f232c2f3a13377480f96466169ac4c8 schedulers=none arch=linux-centos7-broadwell
+module load openmpi-4.0.1-gcc-8.3-vl557fs
+# zlib@1.2.11%gcc@8.3+optimize+pic+shared arch=linux-centos7-broadwell
+module load zlib-1.2.11-gcc-8.3-serfcxv
+# netlib-lapack@3.8.0%gcc@8.3~external-blas~ipo+lapacke+shared~xblas build_type=RelWithDebInfo patches=5c79286f3d08a0b0f1f3acba2a92ee698647716ba8c6c0ae20c9cc2713e6f139,ad3d41fe9ff94b7661e09fceaf2b2e4b8c83510c1465c016e161541b4429b5ee arch=linux-centos7-broadwell
+module load netlib-lapack-3.8.0-gcc-8.3-gq4sit7
+# doxygen@1.8.20%gcc@8.3~graphviz~ipo~mscgen build_type=RelWithDebInfo arch=linux-centos7-broadwell
+module load doxygen-1.8.20-gcc-8.3-kkp2cbd
+# libiconv@1.16%gcc@8.3 libs=shared,static arch=linux-centos7-broadwell
+module load libiconv-1.16-gcc-8.3-q4ylkkm
