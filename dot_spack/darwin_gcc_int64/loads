@@ -230,3 +230,29 @@ module load netlib-lapack-3.8.0-apple-clang-12.0.5-b3lxr4l
 module load doxygen-1.8.20-apple-clang-12.0.5-qg3zsen
 # libiconv@1.16%apple-clang@12.0.5 libs=shared,static arch=darwin-bigsur-skylake
 module load libiconv-1.16-apple-clang-12.0.5-mr66qut
+# caliper@2.7.0%apple-clang@12.0.5+adiak~cuda~fortran~gotcha~ipo~libdw~libpfm+libunwind+mpi~papi~sampler+shared~sosflow build_type=RelWithDebInfo cuda_arch=none arch=darwin-bigsur-skylake
+module load caliper-2.7.0-apple-clang-12.0.5-4p2chl3
+# adiak@0.2.1%apple-clang@12.0.5~ipo+mpi+shared build_type=RelWithDebInfo arch=darwin-bigsur-skylake
+module load adiak-0.2.1-apple-clang-12.0.5-lc7ujvu
+# openmpi@3.1.6%apple-clang@12.0.5~atomics~cuda~cxx~cxx_exceptions+gpfs~internal-hwloc~java~legacylaunchers~lustre~memchecker~pmi~pmix~singularity~sqlite3+static~thread_multiple+vt+wrapper-rpath fabrics=none schedulers=none arch=darwin-bigsur-skylake
+module load openmpi-3.1.6-apple-clang-12.0.5-kzxtiks
+# hwloc@1.11.13%apple-clang@12.0.5~cairo~cuda~gl~libudev+libxml2~netloc~nvml~opencl~pci~rocm+shared patches=d1d94a4af93486c88c70b79cd930979f3a2a2b5843708e8c7c1655f18b9fc694 arch=darwin-bigsur-skylake
+module load hwloc-1.11.13-apple-clang-12.0.5-nutw3ju
+# libxml2@2.9.12%apple-clang@12.0.5~python arch=darwin-bigsur-skylake
+module load libxml2-2.9.12-apple-clang-12.0.5-kkfxpd6
+# libiconv@1.16%apple-clang@12.0.5 libs=shared,static arch=darwin-bigsur-skylake
+module load libiconv-1.16-apple-clang-12.0.5-mr66qut
+# xz@5.2.5%apple-clang@12.0.5~pic libs=shared,static arch=darwin-bigsur-skylake
+module load xz-5.2.5-apple-clang-12.0.5-4xxvh5l
+# zlib@1.2.11%apple-clang@12.0.5+optimize+pic+shared arch=darwin-bigsur-skylake
+module load zlib-1.2.11-apple-clang-12.0.5-6zvh4ue
+# ncurses@6.2%apple-clang@12.0.5~symlinks+termlib abi=none arch=darwin-bigsur-skylake
+module load ncurses-6.2-apple-clang-12.0.5-ljewpul
+# openssh@8.7p1%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load openssh-8.7p1-apple-clang-12.0.5-plwcvbg
+# libedit@3.1-20210216%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load libedit-3.1-20210216-apple-clang-12.0.5-t4ya2a5
+# openssl@1.1.1l%apple-clang@12.0.5~docs certs=system arch=darwin-bigsur-skylake
+module load openssl-1.1.1l-apple-clang-12.0.5-ozupmsw
+# apple-libunwind@35.3%apple-clang@12.0.5 arch=darwin-bigsur-skylake
+module load apple-libunwind-35.3-apple-clang-12.0.5-77fl2yc
