@@ -2,6 +2,7 @@
 # Working directory and path. ##################################################
 export WKDIR=$HOME/Desktop/wkdir
 export PATH=$WKDIR/bin:$PATH
+export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
 export SRC=$WKDIR/src
 # Aliases. #####################################################################
 alias ls="ls -ltrGh"
