@@ -160,5 +160,29 @@ module load netlib-lapack-3.8.0-gcc-8.3-gq4sit7
 module load doxygen-1.8.20-gcc-8.3-kkp2cbd
 # libiconv@1.16%gcc@8.3 libs=shared,static arch=linux-centos7-broadwell
 module load libiconv-1.16-gcc-8.3-q4ylkkm
-# papi@6.0.0.1%gcc@8.3~cuda+example~infiniband~lmsensors~nvml~powercap~rapl~rocm~rocm_smi~sde+shared~static_tools amdgpu_target=none arch=linux-centos7-broadwell
-module load papi-6.0.0.1-gcc-8.3-m7kerzd
+# caliper@2.7.0%gcc@8.3+adiak~cuda~fortran~gotcha~ipo+libdw~libpfm+libunwind+mpi~papi+sampler+shared~sosflow build_type=RelWithDebInfo cuda_arch=none arch=linux-centos7-broadwell
+module load caliper-2.7.0-gcc-8.3-5lpnard
+# adiak@0.2.1%gcc@8.3~ipo+mpi+shared build_type=RelWithDebInfo arch=linux-centos7-broadwell
+module load adiak-0.2.1-gcc-8.3-l2ef43k
+# openmpi@4.0.1%gcc@8.3~atomics~cuda~cxx~cxx_exceptions+gpfs~internal-hwloc~java~legacylaunchers~lustre~memchecker~pmi~pmix~singularity~sqlite3+static~thread_multiple+vt+wrapper-rpath fabrics=none patches=073477a76bba780c67c36e959cd3ee6910743e2735c7e76850ffba6791d498e4,60ce20bc14d98c572ef7883b9fcd254c3f232c2f3a13377480f96466169ac4c8 schedulers=none arch=linux-centos7-broadwell
+module load openmpi-4.0.1-gcc-8.3-vl557fs
+# elfutils@0.186%gcc@8.3~bzip2~debuginfod+nls~xz arch=linux-centos7-broadwell
+module load elfutils-0.186-gcc-8.3-kwkqmzn
+# gettext@0.21%gcc@8.3+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-centos7-broadwell
+module load gettext-0.21-gcc-8.3-vjramju
+# bzip2@1.0.8%gcc@8.3~debug~pic+shared arch=linux-centos7-broadwell
+module load bzip2-1.0.8-gcc-8.3-ji5bcsk
+# libiconv@1.16%gcc@8.3 libs=shared,static arch=linux-centos7-broadwell
+module load libiconv-1.16-gcc-8.3-q4ylkkm
+# libxml2@2.9.12%gcc@8.3~python arch=linux-centos7-broadwell
+module load libxml2-2.9.12-gcc-8.3-rz5xboc
+# xz@5.2.5%gcc@8.3~pic libs=shared,static arch=linux-centos7-broadwell
+module load xz-5.2.5-gcc-8.3-wmn3c7l
+# zlib@1.2.11%gcc@8.3+optimize+pic+shared arch=linux-centos7-broadwell
+module load zlib-1.2.11-gcc-8.3-serfcxv
+# ncurses@6.2%gcc@8.3~symlinks+termlib abi=none arch=linux-centos7-broadwell
+module load ncurses-6.2-gcc-8.3-jpv2im2
+# tar@1.34%gcc@8.3 arch=linux-centos7-broadwell
+module load tar-1.34-gcc-8.3-nsrprms
+# libunwind@1.5.0%gcc@8.3~block_signals~conservative_checks~cxx_exceptions~debug~debug_frame+docs~pic+tests+weak_backtrace~xz~zlib components=none libs=shared,static arch=linux-centos7-broadwell
+module load libunwind-1.5.0-gcc-8.3-txwzpjz
