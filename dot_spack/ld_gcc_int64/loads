@@ -1,3 +1,11 @@
+# cmake@3.21.4%gcc@8.3.1~doc+ncurses+openssl+ownlibs~qt build_type=Release arch=linux-centos8-skylake
+module load cmake-3.21.4-gcc-8.3.1-oqephqd
+# ncurses@6.2%gcc@8.3.1~symlinks+termlib abi=none arch=linux-centos8-skylake
+module load ncurses-6.2-gcc-8.3.1-s7uzemx
+# openssl@1.1.1l%gcc@8.3.1~docs certs=system arch=linux-centos8-skylake
+module load openssl-1.1.1l-gcc-8.3.1-ozxnhks
+# zlib@1.2.11%gcc@8.3.1+optimize+pic+shared arch=linux-centos8-skylake
+module load zlib-1.2.11-gcc-8.3.1-hxfeuje
 # vim@8.2.2541%gcc@8.3.1~cscope~gui~lua~perl~python~ruby~x features=normal arch=linux-centos8-skylake
 module load vim-8.2.2541-gcc-8.3.1-kstwds4
 # ncurses@6.2%gcc@8.3.1~symlinks+termlib abi=none arch=linux-centos8-skylake
