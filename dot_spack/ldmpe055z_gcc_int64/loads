@@ -1,3 +1,11 @@
+# cmake@3.21.4%gcc@8.3.1~doc+ncurses+openssl+ownlibs~qt build_type=Release arch=linux-centos8-skylake
+module load cmake-3.21.4-gcc-8.3.1-oqephqd
+# ncurses@6.2%gcc@8.3.1~symlinks+termlib abi=none arch=linux-centos8-skylake
+module load ncurses-6.2-gcc-8.3.1-s7uzemx
+# openssl@1.1.1l%gcc@8.3.1~docs certs=system arch=linux-centos8-skylake
+module load openssl-1.1.1l-gcc-8.3.1-ozxnhks
+# zlib@1.2.11%gcc@8.3.1+optimize+pic+shared arch=linux-centos8-skylake
+module load zlib-1.2.11-gcc-8.3.1-hxfeuje
 # vim@8.2.2541%gcc@8.3.1~cscope~gui~lua~perl~python~ruby~x features=normal arch=linux-centos8-skylake
 module load vim-8.2.2541-gcc-8.3.1-kstwds4
 # ncurses@6.2%gcc@8.3.1~symlinks+termlib abi=none arch=linux-centos8-skylake
@@ -162,3 +170,29 @@ module load netlib-lapack-3.8.0-gcc-8.3.1-26iceu6
 module load doxygen-1.8.20-gcc-8.3.1-2vtceet
 # libiconv@1.16%gcc@8.3.1 libs=shared,static arch=linux-centos8-skylake
 module load libiconv-1.16-gcc-8.3.1-dmhrbrs
+# caliper@2.7.0%gcc@8.3.1+adiak~cuda~fortran~gotcha~ipo+libdw~libpfm+libunwind+mpi~papi+sampler+shared~sosflow build_type=RelWithDebInfo cuda_arch=none arch=linux-centos8-skylake
+module load caliper-2.7.0-gcc-8.3.1-f7l2enp
+# adiak@0.2.1%gcc@8.3.1~ipo+mpi+shared build_type=RelWithDebInfo arch=linux-centos8-skylake
+module load adiak-0.2.1-gcc-8.3.1-3aydjbk
+# openmpi@4.0.5%gcc@8.3.1~atomics~cuda~cxx~cxx_exceptions+gpfs~internal-hwloc~java~legacylaunchers~lustre~memchecker~pmi~pmix~singularity~sqlite3+static~thread_multiple+vt+wrapper-rpath fabrics=none patches=60ce20bc14d98c572ef7883b9fcd254c3f232c2f3a13377480f96466169ac4c8 schedulers=none arch=linux-centos8-skylake
+module load openmpi-4.0.5-gcc-8.3.1-sg33hvp
+# elfutils@0.186%gcc@8.3.1~bzip2~debuginfod+nls~xz arch=linux-centos8-skylake
+module load elfutils-0.186-gcc-8.3.1-ll245ho
+# gettext@0.21%gcc@8.3.1+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-centos8-skylake
+module load gettext-0.21-gcc-8.3.1-okn5rvl
+# bzip2@1.0.8%gcc@8.3.1~debug~pic+shared arch=linux-centos8-skylake
+module load bzip2-1.0.8-gcc-8.3.1-7rxtdpr
+# libiconv@1.16%gcc@8.3.1 libs=shared,static arch=linux-centos8-skylake
+module load libiconv-1.16-gcc-8.3.1-dmhrbrs
+# libxml2@2.9.12%gcc@8.3.1~python arch=linux-centos8-skylake
+module load libxml2-2.9.12-gcc-8.3.1-ztkyxaw
+# xz@5.2.5%gcc@8.3.1~pic libs=shared,static arch=linux-centos8-skylake
+module load xz-5.2.5-gcc-8.3.1-pounl63
+# zlib@1.2.11%gcc@8.3.1+optimize+pic+shared arch=linux-centos8-skylake
+module load zlib-1.2.11-gcc-8.3.1-hxfeuje
+# ncurses@6.2%gcc@8.3.1~symlinks+termlib abi=none arch=linux-centos8-skylake
+module load ncurses-6.2-gcc-8.3.1-s7uzemx
+# tar@1.34%gcc@8.3.1 arch=linux-centos8-skylake
+module load tar-1.34-gcc-8.3.1-rv4odnk
+# libunwind@1.5.0%gcc@8.3.1~block_signals~conservative_checks~cxx_exceptions~debug~debug_frame+docs~pic+tests+weak_backtrace~xz~zlib components=none libs=shared,static arch=linux-centos8-skylake
+module load libunwind-1.5.0-gcc-8.3.1-fjer7pm
