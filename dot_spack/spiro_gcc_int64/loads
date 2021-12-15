@@ -160,3 +160,5 @@ module load netlib-lapack-3.8.0-gcc-8.3-gq4sit7
 module load doxygen-1.8.20-gcc-8.3-kkp2cbd
 # libiconv@1.16%gcc@8.3 libs=shared,static arch=linux-centos7-broadwell
 module load libiconv-1.16-gcc-8.3-q4ylkkm
+# papi@6.0.0.1%gcc@8.3~cuda+example~infiniband~lmsensors~nvml~powercap~rapl~rocm~rocm_smi~sde+shared~static_tools amdgpu_target=none arch=linux-centos7-broadwell
+module load papi-6.0.0.1-gcc-8.3-m7kerzd
