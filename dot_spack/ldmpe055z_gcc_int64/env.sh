@@ -1,6 +1,5 @@
 module purge
-SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
-source $SCRIPT_DIR/loads
+source $HOME/.spack/ldmpe055z_gcc_int64/loads
 
 export CC=/usr/bin/gcc
 export CXX=/usr/bin/g++
