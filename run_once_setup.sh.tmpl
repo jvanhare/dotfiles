@@ -65,8 +65,12 @@ sudo apt-get install -y zsh git wget curl vim gcc lmod python python3.8-venv
 sudo apt-get install -y imagemagick ffmpeg pandoc
 sudo apt-get install -y fontconfig xfonts-utils
 install_gitflow $HOME/wkdir
-sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
-sudo apt-get install -y gcc-11
+cd /tmp
+wget https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
+sudo apt-key add GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
+rm GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
+sudo add-apt-repository "deb https://apt.repos.intel.com/oneapi all main"
+sudo apt-get install intel-basekit intel-hpckit
 {{   end }}
 {{ end }}
 
