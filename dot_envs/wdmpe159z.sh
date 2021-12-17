@@ -4,7 +4,7 @@ export WKDIR=$HOME/wkdir
 export PATH=$WKDIR/bin:$PATH
 export SRC=$WKDIR/src
 # Aliases. #####################################################################
-alias ls="ls -ltrGh"
+alias ls="ls -ltrGh --color=auto"
 # Source poetry and install completions. #######################################
 export PATH=$HOME/.local/bin:$PATH
 test ! -d $HOME/.zfunc && mkdir $HOME/.zfunc
