@@ -14,7 +14,7 @@ poetry completions zsh > $HOME/.zfunc/_poetry
 fpath+=~/.zfunc
 # Source spack and lmod. #######################################################
 # test -d $SRC/spack && source $SRC/spack/share/spack/setup-env.sh
-# source /usr/local/opt/lmod/init/zsh
+source /usr/share/lmod/lmod/init/zsh
 # MPI configuration. ###########################################################
 export PMIX_MCA_gds=hash
 export OMPI_MCA_btl=vader,self
