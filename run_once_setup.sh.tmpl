@@ -61,10 +61,12 @@ rm -fr zsh
 {{ if (eq .chezmoi.os "linux") }}
 {{   if (.chezmoi.kernel.osrelease | lower | contains "microsoft") }}
 # WSL Ubuntu install. ##########################################################
-sudo apt-get install zsh git wget curl vim gcc gcc-11 lmod python python3.8-venv
-sudo apt-get install imagemagick ffmpeg pandoc pandoc-crossref
-sudo apt-get install fontconfig xfonts-utils
+sudo apt-get install -y zsh git wget curl vim gcc lmod python python3.8-venv
+sudo apt-get install -y imagemagick ffmpeg pandoc pandoc-crossref
+sudo apt-get install -y fontconfig xfonts-utils
 install_gitflow $HOME/wkdir
+sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+sudo apt-get install -y gcc-11
 {{   end }}
 {{ end }}
 
