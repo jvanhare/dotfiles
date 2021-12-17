@@ -6,10 +6,10 @@ export SRC=$WKDIR/src
 # Aliases. #####################################################################
 alias ls="ls -ltrGh"
 # Source poetry and install completions. #######################################
-# export PATH=$HOME/Library/Python/3.9/bin:$PATH
-# test ! -d $HOME/.zfunc && mkdir $HOME/.zfunc
-# poetry completions zsh > $HOME/.zfunc/_poetry
-# fpath+=~/.zfunc
+export PATH=$HOME/.local/bin:$PATH
+test ! -d $HOME/.zfunc && mkdir $HOME/.zfunc
+poetry completions zsh > $HOME/.zfunc/_poetry
+fpath+=~/.zfunc
 # Source spack and lmod. #######################################################
 # test -d $SRC/spack && source $SRC/spack/share/spack/setup-env.sh
 # source /usr/local/opt/lmod/init/zsh
