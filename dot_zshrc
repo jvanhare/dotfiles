@@ -38,6 +38,8 @@ case $(hostname -s) in
   spiro*) source $HOME/.envs/spiro.sh ;;
   # IBM PowerPC tanit. #########################################################
   tanit) source $HOME/.envs/tanit.sh ;;
+  # WSL Ubuntu. ################################################################
+  WDMPE159Z) source $HOME/.envs/wdmpe159z.sh ;;
   # Default. ###################################################################
   *) echo -n "Unknown host. Default environment settings..." ;;
 esac

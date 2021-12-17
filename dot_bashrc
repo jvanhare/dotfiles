@@ -14,6 +14,10 @@ case $(hostname -s) in
     source /etc/profile.d/modules.sh
     source $HOME/.envs/tanit.sh
     ;;
+  # WSL Ubuntu. ################################################################
+  WDMPE159Z)
+    source $HOME/.envs/wdmpe159z.sh
+    ;;
   *)
     echo -n "Unknown host."
     ;;
