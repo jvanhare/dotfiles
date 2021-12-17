@@ -59,11 +59,11 @@ rm -fr zsh
 {{- end }}
 
 {{ if (eq .chezmoi.os "linux") }}
-    {{ if (.chezmoi.kernel.osrelease | lower | contains "microsoft") }}
+{{   if (.chezmoi.kernel.osrelease | lower | contains "microsoft") }}
 sudo apt-get install zsh git wget curl vim gcc lmod python python3.8-venv
 sudo apt-get install imagemagick ffmpeg pandoc pandoc-crossref
 install_gitflow $HOME/wkdir
-    {{ end }}
+{{   end }}
 {{ end }}
 
 # Install antigen: the zsh package manager. ####################################
