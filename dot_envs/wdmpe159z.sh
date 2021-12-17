@@ -25,4 +25,6 @@ export LSAN_OPTIONS="suppressions=$HOME/.lsan:print_suppressions=false"
 export http_proxy=http://proxy.onera:80
 export https_proxy=http://proxy.onera:80
 export no_proxy=.onera.net,.onera.fr,.onecert.fr
+# Source Intel compilers. ######################################################
+source /opt/intel/oneapi/setvars.sh
 # EOF. #########################################################################
