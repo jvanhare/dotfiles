@@ -5,6 +5,9 @@ export PATH=$WKDIR/bin:$PATH
 export PATH=/Applications/vizir.app/Contents/MacOS:$PATH
 export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
 export SRC=$WKDIR/src
+# Source the system's library. #################################################
+export SYSLIB=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+export LIBRARY_PATH=$LIBRARY_PATH:$SYSLIB
 # Aliases. #####################################################################
 alias ls="ls -ltrGh"
 # Source poetry and install completions. #######################################
