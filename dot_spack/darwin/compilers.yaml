@@ -38,3 +38,16 @@ compilers:
     modules: []
     environment: {}
     extra_rpaths: []
+- compiler:
+    spec: clang@13.0.0
+    paths:
+      cc: /usr/local/Cellar/llvm/13.0.0_2/bin/clang
+      cxx: /usr/local/Cellar/llvm/13.0.0_2/bin/clang++
+      f77: /usr/local/Cellar/flang/13.0.0/bin/flang
+      fc: /usr/local/Cellar/flang/13.0.0/bin/flang
+    flags: {}
+    operating_system: bigsur
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
