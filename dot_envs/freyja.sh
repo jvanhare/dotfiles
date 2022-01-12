@@ -15,7 +15,6 @@ export LD_LIBRARY_PATH=$MACOSX_SDK/lib:$LD_LIBRARY_PATH
 export DYLD_LIBRARY_PATH=$MACOSX_SDK/lib:$DYLD_LIBRARY_PATH
 # Aliases. #####################################################################
 alias ls="ls -ltrGh"
-alias cat="bat --paging=never"
 # Source poetry and install completions. #######################################
 export PATH=$HOME/Library/Python/3.9/bin:$PATH
 test ! -d $HOME/.zfunc && mkdir $HOME/.zfunc
