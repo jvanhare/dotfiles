@@ -22,7 +22,7 @@
     # Left prompt segments.
     typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(prompt_char time context dir vcs)
     # Right prompt segments.
-    typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+    typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(spack_env)
     
     # Basic style options that define the overall prompt look.
     typeset -g POWERLEVEL9K_BACKGROUND=                            # transparent background
@@ -58,6 +58,10 @@
     # typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_last
     # Bold directory.
     typeset -g POWERLEVEL9K_DIR_CONTENT_EXPANSION='%B$P9K_CONTENT'
+    
+    function prompt_spack_env() {
+        p10k segment -f 208 -i '⭐' -t 'hello, %n'
+    }
     
     # Git status formatter.
     function my_git_formatter() {
