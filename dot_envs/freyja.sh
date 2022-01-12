@@ -11,6 +11,7 @@ export MACOSX_SDK=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr
 export CXXFLAGS=-I$MACOSX_SDK/include
 export CFLAGS=-I$MACOSX_SDK/include
 export LIBRARY_PATH=$MACOSX_SDK/lib:$LIBRARY_PATH
+export LD_LIBRARY_PATH=$MACOSX_SDK/lib:$LD_LIBRARY_PATH
 # Aliases. #####################################################################
 alias ls="ls -ltrGh"
 alias cat="bat --paging=never"
