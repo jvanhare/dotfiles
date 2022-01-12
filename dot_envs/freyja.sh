@@ -9,7 +9,7 @@ export SRC=$WKDIR/src
 export SYSLIB=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
 export LIBRARY_PATH=$LIBRARY_PATH:$SYSLIB
 # Aliases. #####################################################################
-alias ls="exa -1lhm --git --octal-permissions -s=changed --time-style=full-iso"
+alias ls="ls -ltrGh"
 alias cat="bat --paging=never"
 # Source poetry and install completions. #######################################
 export PATH=$HOME/Library/Python/3.9/bin:$PATH
