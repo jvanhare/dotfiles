@@ -6,6 +6,7 @@ export PATH=/Applications/vizir.app/Contents/MacOS:$PATH
 export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
 export SRC=$WKDIR/src
 # Source the system's library. #################################################
+export MACOSX_DEPLOYMENT_TARGET=11.5
 export SYSLIB=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
 export LIBRARY_PATH=$LIBRARY_PATH:$SYSLIB
 # Aliases. #####################################################################
