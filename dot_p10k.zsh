@@ -60,8 +60,10 @@
     typeset -g POWERLEVEL9K_DIR_CONTENT_EXPANSION='%B$P9K_CONTENT'
     
     function prompt_spack_env() {
-        typeset -g SPACK_ENV_PARSED=$(basename $SPACK_ENV)
-        p10k segment -f '#ffb86c' -t "${SPACK_ENV_PARSED}"
+        if [[ -n $SPACK_ENV ]]; then
+            typeset -g SPACK_ENV_PARSED=$(basename $SPACK_ENV)
+            p10k segment -f '#ffb86c' -t "${SPACK_ENV_PARSED}"
+        fi
     }
     
     # Git status formatter.
