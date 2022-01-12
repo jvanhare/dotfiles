@@ -43,8 +43,8 @@ compilers:
     paths:
       cc: /usr/local/Cellar/llvm/13.0.0_2/bin/clang
       cxx: /usr/local/Cellar/llvm/13.0.0_2/bin/clang++
-      f77: /usr/local/Cellar/flang/13.0.0/bin/flang
-      fc: /usr/local/Cellar/flang/13.0.0/bin/flang
+      f77: /usr/local/bin/gfortran-11
+      fc: /usr/local/bin/gfortran-11
     flags: {}
     operating_system: bigsur
     target: x86_64

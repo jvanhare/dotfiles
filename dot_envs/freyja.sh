@@ -10,6 +10,7 @@ export SYSLIB=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
 export LIBRARY_PATH=$LIBRARY_PATH:$SYSLIB
 # Aliases. #####################################################################
 alias ls="ls -ltrGh"
+alias cat="bat --paging=never"
 # Source poetry and install completions. #######################################
 export PATH=$HOME/Library/Python/3.9/bin:$PATH
 test ! -d $HOME/.zfunc && mkdir $HOME/.zfunc
