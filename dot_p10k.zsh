@@ -62,7 +62,7 @@
     function prompt_spack_env() {
         if [[ -n $SPACK_ENV ]]; then
             typeset -g SPACK_ENV_PARSED=$(basename $SPACK_ENV)
-            p10k segment -f '#ffb86c' -t "${SPACK_ENV_PARSED}"
+            p10k segment -f '#ffb86c' -t "[${SPACK_ENV_PARSED}]"
         fi
     }
     
