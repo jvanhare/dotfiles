@@ -60,7 +60,7 @@
     typeset -g POWERLEVEL9K_DIR_CONTENT_EXPANSION='%B$P9K_CONTENT'
     
     function prompt_spack_env() {
-        p10k segment -f 208 -i '⭐' -t 'hello, %n'
+        p10k segment -f 'red' -i '⭐' -t 'hello, %n'
     }
     
     # Git status formatter.
