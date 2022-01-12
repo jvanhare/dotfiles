@@ -5,10 +5,12 @@ export PATH=$WKDIR/bin:$PATH
 export PATH=/Applications/vizir.app/Contents/MacOS:$PATH
 export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
 export SRC=$WKDIR/src
-# Source the system's library. #################################################
+# Source the system's library for Intel compilers. #############################
 export MACOSX_DEPLOYMENT_TARGET=11.5
-export SYSLIB=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
-export LIBRARY_PATH=$LIBRARY_PATH:$SYSLIB
+export MACOSX_SDK=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr
+export CXXFLAGS=-I$MACOSX_SDK/include
+export CFLAGS=-I$MACOSX_SDK/include
+export LIBRARY_PATH=$LIBRARY_PATH:$MACOSX_SDK/lib
 # Aliases. #####################################################################
 alias ls="ls -ltrGh"
 alias cat="bat --paging=never"
