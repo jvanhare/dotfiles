@@ -20,9 +20,6 @@ export PATH=$HOME/Library/Python/3.9/bin:$PATH
 test ! -d $HOME/.zfunc && mkdir $HOME/.zfunc
 poetry completions zsh > $HOME/.zfunc/_poetry
 fpath+=~/.zfunc
-# Source different versions of Python. #########################################
-export PATH=/usr/local/opt/python@3.7/bin:$PATH
-export PATH=/usr/local/opt/python@3.8/bin:$PATH
 # Source spack and lmod. #######################################################
 test -d $SRC/spack && source $SRC/spack/share/spack/setup-env.sh
 source /usr/local/opt/lmod/init/zsh
