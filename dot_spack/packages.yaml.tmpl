@@ -1,0 +1,8 @@
+{{- if contains "freyja" .chezmoi.hostname }}
+packages:
+    python:
+      externals:
+      - spec: python @3.9.9
+        prefix: /usr/local/Cellar/python@3.9/3.9.9
+      buildable: false
+{{- end }}
