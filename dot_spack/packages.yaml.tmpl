@@ -3,49 +3,44 @@
 # So, they are installed with brew which contains the necessary patches.
 # Python only compiles with the Apple Clang compiler.
 packages:
-    python:
-      externals:
-      - spec: python @3.9.9
-        prefix: /usr/local/Cellar/python@3.9/3.9.9
-      buildable: false
-    findutils:
-      externals:
-      - spec: findutils @4.8.0
-        prefix: /usr/local/opt/findutils/libexec/gnubin
-      buildable: false
-    vim:
-      externals:
-      - spec: vim @8.2.4050
-        prefix: /usr/local/Cellar/vim/8.2.4050
-      buildable: false
-    cmake:
-      externals:
-      - spec: cmake @3.22.1
-        prefix: /usr/local/Cellar/cmake/3.22.1
-      buildable: false
-    libevent:
-      externals:
-      - spec: libevent @2.1.12
-        prefix: /usr/local/Cellar/libevent/2.1.12
-      buildable: false
-    z3:
-      externals:
-      - spec: z3 @4.8.14
-        prefix: /usr/local/Cellar/z3/4.8.14
-      buildable: false
-    flex:
-      externals:
-      - spec: flex @2.6.4
-        prefix: /usr/local/Cellar/flex/2.6.4_2
-      buildable: false
-    doxygen:
-      externals:
-      - spec: doxygen @1.9.3
-        prefix: /usr/local/Cellar/doxygen/1.9.3_1
-      buildable: false
-    llvm:
-      externals:
-      - spec: llvm @13.0.0
-        prefix: /usr/local/Cellar/llvm/13.0.0_2
-      buildable: false
+  vim:
+    externals:
+    - spec: vim @8.2.4050
+      prefix: /usr/local/Cellar/vim/8.2.4050
+    buildable: false
+  python:
+    externals:
+    - spec: python @3.9.9
+      prefix: /usr/local/Cellar/python@3.9/3.9.9
+    buildable: false
+  findutils:
+    externals:
+    - spec: findutils @4.8.0
+      prefix: /usr/local/opt/findutils/libexec/gnubin
+    buildable: false
+  cmake:
+    externals:
+    - spec: cmake @3.22.1
+      prefix: /usr/local/Cellar/cmake/3.22.1
+    buildable: false
+  libevent:
+    externals:
+    - spec: libevent @2.1.12
+      prefix: /usr/local/Cellar/libevent/2.1.12
+    buildable: false
+  flex:
+    externals:
+    - spec: flex @2.6.4
+      prefix: /usr/local/Cellar/flex/2.6.4_2
+    buildable: false
+  doxygen:
+    externals:
+    - spec: doxygen @1.9.3
+      prefix: /usr/local/Cellar/doxygen/1.9.3_1
+    buildable: false
+  llvm:
+    externals:
+    - spec: llvm @13.0.0
+      prefix: /usr/local/Cellar/llvm/13.0.0_2
+    buildable: false
 {{- end }}
