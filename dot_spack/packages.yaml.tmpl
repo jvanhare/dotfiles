@@ -1,12 +1,13 @@
 {{- if contains "freyja" .chezmoi.hostname }}
+# On MacOS, some packages (Python and system libraries for example) can not be easily compiled.
+# So, they are installed with brew which contains the necessary patches.
+# Python only compiles with the Apple Clang compiler.
 packages:
-    # On MacOS, Python only compiles with the Apple Clang compiler.
     python:
       externals:
       - spec: python @3.9.9
         prefix: /usr/local/Cellar/python@3.9/3.9.9
       buildable: false
-    # On Mac0S, findutils does not compile so install it with brew which contains the necessary patches.
     findutils:
       externals:
       - spec: findutils @4.8.0
@@ -21,5 +22,20 @@ packages:
       externals:
       - spec: cmake @3.22.1
         prefix: /usr/local/Cellar/cmake/3.22.1
+      buildable: false
+    libevent:
+      externals:
+      - spec: libevent @2.1.12
+        prefix: /usr/local/Cellar/libevent/2.1.12
+      buildable: false
+    z3:
+      externals:
+      - spec: z3 @4.8.14
+        prefix: /usr/local/Cellar/z3/4.8.14
+      buildable: false
+    flex:
+      externals:
+      - spec: flex @2.6.4
+        prefix: /usr/local/Cellar/flex/2.6.4_2
       buildable: false
 {{- end }}
