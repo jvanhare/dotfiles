@@ -1,25 +1,26 @@
 # Machine specific environments. ###############################################
 case $(hostname -s) in
-  # CentOS 8 ldmpe055z. ########################################################
-  ldmpe055z)
-    source $HOME/.envs/ldmpe055z.sh
+    # CentOS 8 ldmpe055z. ######################################################
+    ldmpe055z)
+        source $HOME/.envs/ldmpe055z.sh
     ;;
-  # CentOS 7 spiro. ############################################################
-  spiro*)
-    source /opt/tools/Modules/init/bash
-    source $HOME/.envs/spiro.sh
+    # CentOS 7 spiro. ##########################################################
+    spiro*)
+        source /opt/tools/Modules/init/bash
+        source $HOME/.envs/spiro.sh
     ;;
-  # IBM PowerPC tanit. #########################################################
-  tanit)
-    source /etc/profile.d/modules.sh
-    source $HOME/.envs/tanit.sh
+    # IBM PowerPC tanit. #######################################################
+    tanit)
+        source /etc/profile.d/modules.sh
+        source $HOME/.envs/tanit.sh
     ;;
-  # WSL Ubuntu. ################################################################
-  WDMPE159Z)
-    source $HOME/.envs/wdmpe159z.sh
+    # MacOS freyja. ############################################################
+    freyja)
+        source $HOME/.envs/freyja.sh
     ;;
-  *)
-    echo -n "Unknown host."
+    # Unknown host. ############################################################
+    *)
+        echo -n "Unknown host."
     ;;
 esac
 # EOF. #########################################################################
