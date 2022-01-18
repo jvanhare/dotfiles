@@ -1,27 +1,40 @@
 compilers:
 - compiler:
-    spec: clang@10.0.1
+    spec: gcc@10.2.0
     paths:
-      cc: /usr/bin/clang
-      cxx: /usr/bin/clang++
-      f77: null
-      fc: null
+      cc: /opt/tools/gcc/10.2.0/bin/gcc
+      cxx: /opt/tools/gcc/10.2.0/bin/g++
+      f77: /opt/tools/gcc/10.2.0/bin/gfortran
+      fc: /opt/tools/gcc/10.2.0/bin/gfortran
     flags: {}
     operating_system: centos8
     target: x86_64
-    modules: []
+    modules: [gcc/10.2.0]
     environment: {}
     extra_rpaths: []
 - compiler:
-    spec: gcc@8.3.1
+    spec: intel@2021.2.0
     paths:
-      cc: /usr/bin/gcc
-      cxx: /usr/bin/g++
-      f77: /usr/bin/gfortran
-      fc: /usr/bin/gfortran
+      cc: /opt/tools/intel/oneapi/2021.2.0/compiler/2021.2.0/linux/bin/intel64/icc
+      cxx: /opt/tools/intel/oneapi/2021.2.0/compiler/2021.2.0/linux/bin/intel64/icpc
+      f77: /opt/tools/intel/oneapi/2021.2.0/compiler/2021.2.0/linux/bin/intel64/ifort
+      fc: /opt/tools/intel/oneapi/2021.2.0/compiler/2021.2.0/linux/bin/intel64/ifort
     flags: {}
     operating_system: centos8
     target: x86_64
-    modules: []
+    modules: [intel/21.2.0]
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: oneapi@2021.2.0
+    paths:
+      cc: /opt/tools/intel/oneapi/2021.2.0/compiler/2021.2.0/linux/bin/icx
+      cxx: /opt/tools/intel/oneapi/2021.2.0/compiler/2021.2.0/linux/bin/icpx
+      f77: /opt/tools/intel/oneapi/2021.2.0/compiler/2021.2.0/linux/bin/ifx
+      fc: /opt/tools/intel/oneapi/2021.2.0/compiler/2021.2.0/linux/bin/ifx
+    flags: {}
+    operating_system: centos8
+    target: x86_64
+    modules: [intel/21.2.0]
     environment: {}
     extra_rpaths: []
