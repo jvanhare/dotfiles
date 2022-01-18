@@ -61,7 +61,7 @@
     
     function prompt_spack_env() {
         if [[ -n $SPACK_ENV ]]; then
-            p10k segment -f '#ffb86c' -t "[${$(basename $SPACK_ENV)}]"
+            p10k segment -f 'yellow' -t "[${$(basename $SPACK_ENV)}]"
         fi
     }
     
