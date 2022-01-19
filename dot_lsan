@@ -4,3 +4,5 @@ leak:opal
 leak:hwloc
 leak:wrap_getifaddrs
 leak:info_constructor
+leak:avx_component_op_query
+leak:wrap_vasprintf
