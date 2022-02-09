@@ -7,3 +7,4 @@
 [".spack/solverstack"]
     type = "archive"
     url = "https://gitlab.inria.fr/solverstack/spack-repo/-/archive/master/spack-repo-master.tar.gz"
+    stripComponents = 1
