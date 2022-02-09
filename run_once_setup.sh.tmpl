@@ -43,7 +43,9 @@ rm -fr clang+llvm-13.0.0-x86_64-linux-gnu-ubuntu-20.04
 cd /stck/$USER/wkdir/ldmpe055z/bin
 wget --no-check-certificate https://pyamg.saclay.inria.fr/download/vizir/exes/Linux/vizir4_centos.2021.07.06.tar.gz
 tar xzvf vizir4_centos.2021.07.06.tar.gz
+cp vizir4_centos.2021.07.06/vizir4 .
 rm vizir4_centos.2021.07.06.tar.gz
+rm -fr vizir4_centos.2021.07.06
 {{- end }}
 
 {{- if contains "spiro" .chezmoi.hostname }}
