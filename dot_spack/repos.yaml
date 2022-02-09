@@ -1,3 +1,4 @@
 repos:
 - ~/.spack/repo
+- ~/.spack/solverstack
 - $spack/var/spack/repos/builtin
