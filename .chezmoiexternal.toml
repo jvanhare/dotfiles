@@ -1,10 +1,15 @@
 [".tmux/plugins/tpm"]
-    type = "archive"
-    url = "https://github.com/tmux-plugins/tpm/archive/master.tar.gz"
-    exact = true
-    stripComponents = 1
+exact = true
+stripComponents = 1
+type = "archive"
+url = "https://github.com/tmux-plugins/tpm/archive/master.tar.gz"
 
 [".spack/solverstack"]
-    type = "archive"
-    url = "https://gitlab.inria.fr/solverstack/spack-repo/-/archive/master/spack-repo-master.tar.gz"
-    stripComponents = 1
+stripComponents = 1
+type = "archive"
+url = "https://gitlab.inria.fr/solverstack/spack-repo/-/archive/master/spack-repo-master.tar.gz"
+
+[".spack/pm2"]
+stripComponents = 1
+type = "archive"
+url = "https://gitlab.inria.fr/pm2/packaging/-/archive/master/packaging-master.tar.gz"
