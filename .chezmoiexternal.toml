@@ -3,3 +3,7 @@
     url = "https://github.com/tmux-plugins/tpm/archive/master.tar.gz"
     exact = true
     stripComponents = 1
+
+[".spack/solverstack"]
+    type = "archive"
+    url = "https://gitlab.inria.fr/solverstack/spack-repo/-/archive/master/spack-repo-master.tar.gz"
