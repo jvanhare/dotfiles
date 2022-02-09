@@ -32,6 +32,13 @@ brew install imagemagick ffmpeg pandoc pandoc-crossref
 {{- if contains "ldmpe055z" .chezmoi.hostname }}
 # Install gitflow on CentOS 8 ldmpe055z. #######################################
 install_gitflow /stck/$USER/wkdir/ldmpe055z
+# Install clang-format on CentOS 8 ldmpe055z. ##################################
+cd /stck/$USER/wkdir/ldmpe055z/bin
+wget https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.0/clang+llvm-13.0.0-x86_64-linux-gnu-ubuntu-20.04.tar.xz
+tar xf clang+llvm-13.0.0-x86_64-linux-gnu-ubuntu-20.04.tar.xz
+cp clang+llvm-13.0.0-x86_64-linux-gnu-ubuntu-20.04/bin/clang-format .
+rm clang+llvm-13.0.0-x86_64-linux-gnu-ubuntu-20.04.tar.xz
+rm -fr clang+llvm-13.0.0-x86_64-linux-gnu-ubuntu-20.04
 # Install vizir on CentOS 8 ldmpe055z. #########################################
 cd /stck/$USER/wkdir/ldmpe055z/bin
 wget --no-check-certificate https://pyamg.saclay.inria.fr/download/vizir/exes/Linux/vizir4_centos.2021.07.06.tar.gz
