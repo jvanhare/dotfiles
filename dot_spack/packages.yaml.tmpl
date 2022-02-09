@@ -3,6 +3,11 @@
 # So, they are installed with brew which contains the necessary patches.
 # Python only compiles with the Apple Clang compiler.
 packages:
+  git:
+    externals:
+    - spec: git @2.34.1
+      prefix: /usr/local/Cellar/git/2.34.1
+    buildable: false
   vim:
     externals:
     - spec: vim @8.2.4050
