@@ -52,9 +52,9 @@ packages:
     - spec: openmpi@4.0.5%gcc@10.2.0
       prefix: /opt/tools/openmpi/4.0.5-gnu1020
     buildable: false
-  intel-mpi:
+  intel-oneapi-mpi:
     externals:
-    - spec: intel-mpi@21.2.0%intel@21.2.0
-      prefix: /opt/tools/intel/oneapi/2021.2.0/mpi/2021.2.0
+    - spec: intel-oneapi-mpi@2021.2.0%intel@2021.2.0
+      prefix: /opt/tools/intel/oneapi/2021.2.0/mpi/2021.2.0/
     buildable: false
 {{- end }}
