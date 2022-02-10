@@ -99,6 +99,7 @@ class Maphys(CMakePackage):
 
     patch('mumps_openmp.patch')
     patch('pack_gmres.patch')
+    patch('pack_cg.patch')
     patch('slatec.patch')
 
     def cmake_args(self):
