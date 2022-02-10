@@ -3,6 +3,9 @@
 # So, they are installed with brew which contains the necessary patches.
 # Python only compiles with the Apple Clang compiler.
 packages:
+  all:
+     providers:
+      lapack: [netlib-lapack]
   git:
     externals:
     - spec: git @2.34.1
