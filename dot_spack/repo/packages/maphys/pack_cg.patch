@@ -9,10 +9,10 @@ index c241b32..06ff7ad 100644
 -if(MAPHYS_BLASMT AND BLAS_PAR_LIBRARIES)
 -  target_link_libraries(packcg ${BLAS_PAR_LIBRARIES})
 +if(MAPHYS_BLASMTAND AND BLAS_PAR_LIBRARIES AND LAPACK_PAR_LIBRARIES)
-+  target_link_libraries(slatec ${LAPACK_PAR_LIBRARIES})
++  target_link_libraries(packcg ${LAPACK_PAR_LIBRARIES})
  else()
 -  target_link_libraries(packcg ${BLAS_LIBRARIES})
-+  target_link_libraries(slatec ${LAPACK_LIBRARIES})
++  target_link_libraries(packcg ${LAPACK_LIBRARIES})
  endif()
  
  # installation
