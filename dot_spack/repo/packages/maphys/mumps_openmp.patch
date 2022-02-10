@@ -1,0 +1,21 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 0b78cb8..97bda06 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -226,6 +226,7 @@ if (MORSE_DISTRIB_DIR OR EXISTS "${CMAKE_SOURCE_DIR}/cmake_modules/")
+       PTSCOTCH
+       METIS
+       PARMETIS
++      OPENMP
+       )
+ 
+     if (MAPHYS_BLASMT)
+@@ -245,7 +246,7 @@ if (MORSE_DISTRIB_DIR OR EXISTS "${CMAKE_SOURCE_DIR}/cmake_modules/")
+         link_directories( ${MUMPS_LIBRARY_DIRS} )
+         message(STATUS "MUMPS library found is located in: ${MUMPS_LIBRARY_DIRS}")
+       endif()
+-      list(APPEND MAPHYS_EXTRA_LIBRARIES ${MUMPS_LIBRARIES_DEP})
++      list(APPEND MAPHYS_EXTRA_LIBRARIES ${MUMPS_LIBRARIES_DEP} ${OpenMP_Fortran_LIBRARIES})
+     else()
+       message(FATAL_ERROR "MUMPS is required but was not found."
+         " Please provide a MUMPS library in your environment or "

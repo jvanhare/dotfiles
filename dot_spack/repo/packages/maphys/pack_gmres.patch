@@ -1,0 +1,13 @@
+diff --git a/packgmres/CMakeLists.txt b/packgmres/CMakeLists.txt
+index d7f6090..fc441db 100644
+--- a/packgmres/CMakeLists.txt
++++ b/packgmres/CMakeLists.txt
+@@ -39,7 +39,7 @@ add_library(packgmres ${MAPHYS_PACKGMRES})
+ if(MAPHYS_BLASMT AND BLAS_PAR_LIBRARIES)
+   target_link_libraries(packgmres ${BLAS_PAR_LIBRARIES})
+ else()
+-  target_link_libraries(packgmres ${BLAS_LIBRARIES})
++  target_link_libraries(packgmres ${BLAS_LIBRARIES} ${LAPACK_LIBRARIES})
+ endif()
+ 
+ # installation
