@@ -1,0 +1,18 @@
+diff --git a/packcg/CMakeLists.txt b/packcg/CMakeLists.txt
+index c241b32..cd75ea2 100644
+--- a/packcg/CMakeLists.txt
++++ b/packcg/CMakeLists.txt
+@@ -36,10 +36,10 @@ set(MAPHYS_PACKCG
+ # Define the library from sources
+ # -------------------------------
+ add_library(packcg ${MAPHYS_PACKCG})
+-if(MAPHYS_BLASMT AND BLAS_PAR_LIBRARIES)
+-  target_link_libraries(packcg ${BLAS_PAR_LIBRARIES})
++if(MAPHYS_BLASMT AND BLAS_PAR_LIBRARIES AND LAPACK_PAR_LIBRARIES)
++  target_link_libraries(packcg ${BLAS_PAR_LIBRARIES} ${LAPACK_PAR_LIBRARIES})
+ else()
+-  target_link_libraries(packcg ${BLAS_LIBRARIES})
++  target_link_libraries(packcg ${BLAS_LIBRARIES} ${LAPACK_LIBRARIES})
+ endif()
+ 
+ # installation
