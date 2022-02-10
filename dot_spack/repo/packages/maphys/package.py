@@ -98,9 +98,9 @@ class Maphys(CMakePackage):
     depends_on('paddle', when='+paddle')
 
     patch('mumps_openmp.patch')
-    patch('pack_gmres.patch')
+    patch('packgmres.patch')
     patch('slatec.patch')
-    patch('pack_cg.patch')
+    patch('packcg.patch')
 
     def cmake_args(self):
         spec = self.spec
@@ -127,7 +127,6 @@ class Maphys(CMakePackage):
 
         if '^atlas' in spec:
             raise InstallError('MaPHyS with ATLAS has never been tested.')
-        #args.extend(["-DBLA_VENDOR=ATLAS"])
         elif '^intel-mkl' in spec or '^intel-parallel-studio+mkl' in spec:
             if '^intel-mkl threads=none' in spec or '^intel-parallel-studio threads=none' in spec:
                 args.extend(["-DBLA_VENDOR=Intel10_64lp_seq"])
@@ -137,6 +136,9 @@ class Maphys(CMakePackage):
             args.extend(["-DBLA_VENDOR=Generic"])
         elif '^veclibfort' in spec:
             raise InstallError('MaPHyS with veclibfort has never been tested.')
+        
+        if spec.satisfies('%gcc@10:'):
+            args.extend(["-DCMAKE_Fortran_FLAGS=-fallow-argument-mismatch"])
 
         ### Exeperimental MaPHyS features
 
