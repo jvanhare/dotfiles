@@ -27,6 +27,13 @@ export no_proxy=.onera.net,.onera.fr,.onecert.fr
 brew install zsh git wget vim font-fira-code gcc lmod git-flow-avh
 brew install python python@3.10 python@3.9 python@3.8 python@3.7
 brew install imagemagick ffmpeg pandoc pandoc-crossref
+# Install ViZiR4 on MacOs freyja. ##############################################
+cd $HOME/Downloads
+wget --no-check-certificate  https://pyamg.saclay.inria.fr/download/vizir/exes/Mac/vizir4.2022.03.01.dmg
+hdiutil mount vizir4.2022.03.01.dmg
+sudo cp -r /Volumes/vizir4/vizir4.app /Applications
+hdiutil unmount "/Volumes/vizir4"
+rm vizir4.2022.03.01.dmg
 {{- end }}
 
 {{- if contains "ldmpe055z" .chezmoi.hostname }}
