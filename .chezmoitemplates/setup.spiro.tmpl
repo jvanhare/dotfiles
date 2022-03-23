@@ -1,0 +1,22 @@
+# Export the proxy configuration. ##############################################
+module purge
+export http_proxy=http://proxy.onera:80
+export https_proxy=http://proxy.onera:80
+export no_proxy=.onera.net,.onera.fr,.onecert.fr
+
+# Setup ZSH on CentOS 7 spiro. #################################################
+cd /stck/$USER/wkdir/src
+if [[ -d "zsh" ]]
+then
+    rm -fr zsh
+fi
+git clone https://github.com/zsh-users/zsh.git
+cd zsh
+git checkout zsh-5.8
+./Util/preconfig
+./configure --prefix=/stck/$USER/wkdir/spiro
+make -j48 install
+cd ..
+rm -fr zsh
+
+# EOF. #########################################################################

@@ -4,7 +4,7 @@ module purge
 # Working directory and path. ##################################################
 export WKDIR=/stck/$USER/wkdir
 export SRC=$WKDIR/src
-export SCRATH=/scratchm/$USER
+export SCRATCH=/scratchm/$USER
 export VISU=/visu/$USER
 # Aliases. #####################################################################
 alias ls="ls -ltrGh --color=auto"

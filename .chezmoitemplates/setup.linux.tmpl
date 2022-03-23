@@ -1,0 +1,9 @@
+# Setup function for gitflow. ##################################################
+gitflow_setup() {
+    cd $1
+    wget -q https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh
+    PREFIX=$1 bash gitflow-installer.sh install stable
+    rm -fr gitflow-installer.sh gitflow
+}
+
+# EOF. #########################################################################

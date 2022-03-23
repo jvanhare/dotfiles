@@ -1,0 +1,19 @@
+# Setup brew on darwin. ########################################################
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Setup brew packages on darwin. ###############################################
+brew install zsh git wget vim font-fira-code gcc rust lmod git-flow-avh
+brew install imagemagick ffmpeg pandoc pandoc-crossref
+brew install --cask google-chrome
+brew install --cask vscodium
+brew install --cask iterm2
+
+# Setup ViZiR4 on darwin. ######################################################
+cd $HOME/Downloads
+wget --no-check-certificate  https://pyamg.saclay.inria.fr/download/vizir/exes/Mac/vizir4.2022.03.01.dmg
+hdiutil mount vizir4.2022.03.01.dmg
+sudo cp -r /Volumes/vizir4/vizir4.app /Applications
+hdiutil unmount "/Volumes/vizir4"
+rm vizir4.2022.03.01.dmg
+
+# EOF. #########################################################################
