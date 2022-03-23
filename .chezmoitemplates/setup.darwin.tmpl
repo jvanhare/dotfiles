@@ -9,6 +9,14 @@ brew install --cask google-chrome
 brew install --cask alacritty
 brew install --cask vscodium
 
+# Setup VSCodium configuration. ################################################
+ln -s $HOME/.code/settings.json $HOME/Library/Application\ Support/VSCodium/User/settings.json
+
+# Setup VSCodium extensions. ###################################################
+alias codium="/Applications/VSCodium.app/Contents/Resources/app/bin/codium"
+codium --install-extension ms-ceintl.vscode-language-pack-fr
+codium --install-extension dracula-theme.theme-dracula
+
 # Setup ViZiR4 on darwin. ######################################################
 cd $HOME/Downloads
 wget --no-check-certificate  https://pyamg.saclay.inria.fr/download/vizir/exes/Mac/vizir4.2022.03.01.dmg
