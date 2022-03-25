@@ -18,4 +18,6 @@ export ASAN_OPTIONS="detect_leaks=1"
 export LSAN_OPTIONS="suppressions=$HOME/.lsan:print_suppressions=false"
 # Add llvm to path. ############################################################
 export PATH="/usr/local/opt/llvm/bin:$PATH"
+# Add Rust to path. ############################################################
+export PATH="$HOME/.cargo/bin:$PATH"
 # EOF. #########################################################################
