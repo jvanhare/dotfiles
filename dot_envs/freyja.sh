@@ -18,4 +18,8 @@ export ASAN_OPTIONS="detect_leaks=1"
 export LSAN_OPTIONS="suppressions=$HOME/.lsan:print_suppressions=false"
 # Add llvm to path. ############################################################
 export PATH="/usr/local/opt/llvm/bin:$PATH"
+# Configure ruby. ##############################################################
+source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh
+source $(brew --prefix)/opt/chruby/share/chruby/auto.sh
+chruby ruby-3.1.2
 # EOF. #########################################################################
