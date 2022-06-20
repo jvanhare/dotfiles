@@ -6,4 +6,12 @@ gitflow_setup() {
     rm -fr gitflow-installer.sh gitflow
 }
 
+# Setup ViZiR4 on Linux. #######################################################
+cd /stck/$USER/wkdir/ldmpe055z/bin
+wget --no-check-certificate https://pyamg.saclay.inria.fr/download/vizir/exes/Linux/vizir4_centos.2021.07.06.tar.gz
+tar xzvf vizir4_centos.2021.07.06.tar.gz
+cp vizir4_centos.2021.07.06/vizir4 .
+rm vizir4_centos.2021.07.06.tar.gz
+rm -fr vizir4_centos.2021.07.06
+
 # EOF. #########################################################################

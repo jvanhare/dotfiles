@@ -7,18 +7,19 @@
 
 # ldmpe055z setup. #############################################################
 {{ if contains "ldmpe055z" .chezmoi.hostname }}
-{{ template "setup.ldmpe055z.tmpl" . }}
+{{ template "setup.linux.tmpl" . }}
 gitflow_setup /stck/$USER/wkdir/ldmpe055z
 {{ end }}
 
 # sipro setup. #################################################################
 {{ if contains "spiro" .chezmoi.hostname }}
-{{ template "setup.spiro.tmpl" . }}
+{{ template "setup.linux.tmpl" . }}
 gitflow_setup /stck/$USER/wkdir/spiro
 {{ end }}
 
 # Setup antigen: the zsh package manager. ######################################
 curl -L git.io/antigen > ~/.antigen.zsh
+
 # Setup the spacevim distribution. #############################################
 curl -sLf https://spacevim.org/install.sh | bash
 

@@ -1,5 +1,0 @@
-[".tmux/plugins/tpm"]
-exact = true
-stripComponents = 1
-type = "archive"
-url = "https://github.com/tmux-plugins/tpm/archive/master.tar.gz"

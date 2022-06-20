@@ -1,0 +1,15 @@
+# Working directory and path. ##################################################
+export WKDIR=$HOME/Desktop/wkdir
+export PATH=$WKDIR/bin:$PATH
+export SRC=$WKDIR/src
+export PATH=/Applications/vizir.app/Contents/MacOS:$PATH
+export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
+# MPI configuration. ###########################################################
+export PMIX_MCA_gds=hash
+export OMPI_MCA_btl=vader,self
+# Address sanitizer and memory leaks detection. ################################
+export ASAN_OPTIONS="detect_leaks=1"
+export LSAN_OPTIONS="suppressions=$HOME/.lsan:print_suppressions=false"
+# Add llvm to path. ############################################################
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+# EOF. #########################################################################
