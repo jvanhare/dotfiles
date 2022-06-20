@@ -1,6 +1,8 @@
 # Common configuration. ########################################################
 # Set the language environment. ################################################
 export LANG=en_US.UTF-8
+# Set the oh-my-zsh theme. #####################################################
+THEME=romkatv/powerlevel10k
 # Antigen setup. ###############################################################
 source $HOME/.antigen.zsh
 antigen use oh-my-zsh
@@ -17,7 +19,7 @@ antigen bundle zsh-users/zsh-completions
 antigen bundle ael-code/zsh-colored-man-pages
 antigen bundle supercrabtree/k
 antigen bundle bobthecow/git-flow-completion
-antigen theme romkatv/powerlevel10k
+[[ `antigen list | grep $THEME | wc -l` -gt 0 ]] || antigen theme $THEME
 antigen apply
 # Enable Powerlevel10k instant prompt. #########################################
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
