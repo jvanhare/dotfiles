@@ -12,6 +12,7 @@ class Libmeshb(CMakePackage):
     homepage = "https://github.com/LoicMarechal/libMeshb"
     url      = "https://github.com/jvanhare/libMeshb/archive/refs/tags/v7.62.0.tar.gz"
 
+    version('7.62.2', sha256='462a6bd81765629162a9620ac5e0bb2b88a0a355ba365da23e06433db5f1f959')
     version('7.62.1', sha256='dbaa2915e12fb3d413531557ed0967bf4b144c5ab0a6e81afec6337d8b49c39a')
     version('7.62.0', sha256='3f71afe0166a1cb936a0e8951f437643d2a2075744be580e5bdf40b24807ba84')
 
