@@ -10,10 +10,9 @@ class Libmeshb(CMakePackage):
     """LibMeshb is a library to handle the *.meshb file format."""
 
     homepage = "https://github.com/LoicMarechal/libMeshb"
-    git      = "https://github.com/LoicMarechal/libMeshb.git"
-    url      = "https://github.com/LoicMarechal/libMeshb/archive/refs/tags/v7.60.tar.gz"
+    url      = "https://github.com/jvanhare/libMeshb/archive/refs/tags/v7.62.0.tar.gz"
 
-    version("7.60", sha256="f55ff92453a91be7124c745f317d8967af0e5b9b9442492b8f3ef1878af46cbf")
+    version('7.62.0', sha256='3f71afe0166a1cb936a0e8951f437643d2a2075744be580e5bdf40b24807ba84')
 
     variant('shared',     default=True,      description='Build a shared version of the library')
     variant('aio',        default=False,     description='Use Unix low-level and asynchronous I/O for higher speed')
