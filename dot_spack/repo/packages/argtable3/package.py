@@ -10,10 +10,9 @@ class Argtable3(CMakePackage):
     """A single-file, ANSI C, command-line parsing library that parses GNU-style command-line options."""
 
     homepage = "https://www.argtable.org"
-    git      = "https://github.com/argtable/argtable3.git"
-    url      = "https://github.com/argtable/argtable3/releases/download/v3.2.1.52f24e5/argtable-v3.2.1.52f24e5.tar.gz"
+    url      = "https://github.com/jvanhare/argtable3/archive/refs/tags/v3.2.2.tar.gz"
 
-    version('3.2.1.52f24e5', sha256='bf02394a21378fdca95937fc4e3aeff8af63a2bfed7e3f87b1c1eda8bf9227dc')
+    version('3.2.2', sha256='936abec19e04cb76769bfe9688f83af3a30fb99472bbdc6b177f282c826b738c')
 
     variant('shared',     default=True,      description='Build a shared version of the library')
     variant('build_type', default='Release', description='The build type to build', values=('Debug', 'Release', 'RelWithDebInfo', 'MinSizeRel'))
