@@ -12,6 +12,7 @@ class Tomlc99(MakefilePackage):
     homepage = "https://github.com/jvanhare/tomlc99"
     url      = "https://github.com/jvanhare/tomlc99/archive/refs/tags/v1.0.0.tar.gz"
 
+    version('1.0.1', sha256='fdd3c0497809c158c2f775007e01844f6be742d51c09d03e5c0898e7b0d458ff')
     version('1.0.0', sha256='cc2d7525592d4ed2dea7d9f9afddb79d11f0042d7f8b93700b0ad1322001c198')
 
     variant('debug', default=False, description="Build with debug enabled.")
