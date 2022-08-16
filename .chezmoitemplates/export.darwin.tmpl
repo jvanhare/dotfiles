@@ -1,8 +1,7 @@
-# Working directory and path. ##################################################
+# Defining directories. ########################################################
 export WKDIR=$HOME/Desktop/wkdir
-export PATH=$WKDIR/bin:$PATH
-export SRC=$WKDIR/src
-export PATH=/Applications/vizir.app/Contents/MacOS:$PATH
+{{ template "export.tmpl" . }}
+# Exporting ViZiR4. ############################################################
 export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
 # MPI configuration. ###########################################################
 export PMIX_MCA_gds=hash

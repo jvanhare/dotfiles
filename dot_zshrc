@@ -29,17 +29,10 @@ fi
 DISABLE_AUTO_UPDATE="true"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh. ###############
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 # Machine specific environments. ###############################################
 case $(hostname -s) in
-  # MacOS freyja. ##############################################################
+  # Darwin freyja. #############################################################
   freyja) source $HOME/.envs/freyja.sh ;;
-  # CentOS 8 ldmpe055z. ########################################################
-  ldmpe055z) source $HOME/.envs/ldmpe055z.sh ;;
-  # CentOS 7 spiro. ############################################################
-  spiro*) source $HOME/.envs/spiro.sh ;;
-  # IBM PowerPC tanit. #########################################################
-  tanit) source $HOME/.envs/tanit.sh ;;
   # Default. ###################################################################
   *) echo -n "Unknown host. Default environment settings..." ;;
 esac

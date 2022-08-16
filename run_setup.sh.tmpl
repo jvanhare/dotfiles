@@ -1,20 +1,8 @@
 #!/bin/sh
 
-# Darwin freyja setup. #########################################################
-{{ if contains "freyja" .chezmoi.hostname }}
+# Darwin setup. #########################################################
+{{ if eq .chezmoi.os "darwin" }}
 {{ template "setup.darwin.tmpl" . }}
-{{ end }}
-
-# ldmpe055z setup. #############################################################
-{{ if contains "ldmpe055z" .chezmoi.hostname }}
-{{ template "setup.linux.tmpl" . }}
-gitflow_setup /stck/$USER/wkdir/ldmpe055z
-{{ end }}
-
-# sipro setup. #################################################################
-{{ if contains "spiro" .chezmoi.hostname }}
-{{ template "setup.linux.tmpl" . }}
-gitflow_setup /stck/$USER/wkdir/spiro
 {{ end }}
 
 # Setup antigen: the zsh package manager. ######################################
@@ -24,4 +12,3 @@ curl -L git.io/antigen > ~/.antigen.zsh
 curl -sLf https://spacevim.org/install.sh | bash
 
 # EOF. #########################################################################
-
