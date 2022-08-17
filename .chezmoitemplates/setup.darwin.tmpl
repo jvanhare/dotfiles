@@ -6,7 +6,7 @@ brew tap homebrew/cask-fonts
 brew install zsh git curl vim gcc lmod findutils cmake flex llvm node@16 tokei
 brew install vlc skim texlive latexindent imagemagick ffmpeg gh yarn ninja go
 brew install doxygen git-flow-avh font-fira-code pandoc pandoc-crossref rust
-brew install python mesa
+brew install python mesa libx11 tcl-tk
 brew install --cask iterm2
 brew install --cask visual-studio-code
 
@@ -32,6 +32,6 @@ test -d $SRC/spack && echo "Spack is already installed." || git clone -c feature
 test -d $SRC/spack && source $SRC/spack/share/spack/setup-env.sh
 test -d $SRC/spack && spack compiler find
 test -d $SRC/spack && spack compilers
-test -d $SRC/spack && spack external find --not-buildable git vim python findutils cmake libevent flex doxygen llvm pkg-config glx
+test -d $SRC/spack && spack external find --not-buildable git vim python findutils cmake libevent flex doxygen llvm pkg-config 
 
 # EOF. #########################################################################
