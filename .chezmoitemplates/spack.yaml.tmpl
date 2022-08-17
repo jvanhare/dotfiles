@@ -1,0 +1,23 @@
+spack:
+  packages:
+    all:
+      providers:
+        mpi: [{{ .mpi }}]
+        lapack: [netlib-lapack]
+      variants: +shared {{ if eq .int "32" }} -int64 {{ else }} +int64 {{ end }}
+      compiler: [{{ .compiler }}]
+  specs:
+  - argtable3 @3.2.2
+  - doxygen @1.9.2:2
+  - hdf5 @1.10.7
+  - libmeshb @7.62.2
+  - netlib-lapack @3.9.1
+  - parmetis @4.0.3
+  - scotch @6.1.1
+  - tetgen @1.5.0
+  - tomlc99 @1.0.1
+{{ if eq .version "dev"}}
+  - lcov @1.15
+{{ end }}
+  view: true
+  concretization: together

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Darwin setup. #########################################################
+# Darwin setup. ################################################################
 {{ if eq .chezmoi.os "darwin" }}
 {{ template "setup.darwin.tmpl" . }}
 {{ end }}
