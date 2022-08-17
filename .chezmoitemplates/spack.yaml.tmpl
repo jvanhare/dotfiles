@@ -4,7 +4,7 @@ spack:
       providers:
         mpi: [{{ .mpi }}]
         lapack: [netlib-lapack]
-      variants: +shared {{ if eq .int "32" }}-int64{{ else }}+int64{{ end }}
+      variants: +shared {{ if eq .int "32" }}~int64{{ else }}+int64{{ end }}
       compiler: [{{ .compiler }}]
   specs:
   - argtable3@3.2.2
