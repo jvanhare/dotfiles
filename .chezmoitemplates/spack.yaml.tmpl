@@ -4,7 +4,7 @@ spack:
       providers:
         mpi: [{{ .mpi }}]
         lapack: [netlib-lapack]
-      variants: +shared {{ if eq .int "32" }} -int64 {{ else }} +int64 {{ end }}
+      variants: +shared {{ if eq .int "32" }}-int64{{ else }}+int64{{ end }}
       compiler: [{{ .compiler }}]
   specs:
   - argtable3 @3.2.2
@@ -16,8 +16,6 @@ spack:
   - scotch @6.1.1
   - tetgen @1.5.0
   - tomlc99 @1.0.1
-{{ if eq .version "dev"}}
-  - lcov @1.15
-{{ end }}
+  {{ if eq .version "dev"}}- lcov @1.15{{ end }}
   view: true
   concretization: together
