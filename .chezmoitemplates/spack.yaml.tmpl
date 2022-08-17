@@ -18,4 +18,5 @@ spack:
   - tomlc99 @1.0.1
   {{ if eq .version "dev"}}- lcov @1.15{{ end }}
   view: true
-  concretization: together
+  concretizer:
+    unify: true
