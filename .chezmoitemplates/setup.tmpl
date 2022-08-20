@@ -7,7 +7,7 @@ mkdir -p $WKDIR $BIN $INCLUDE $LIB $SHARE $SRC
 {{ if eq .chezmoi.os "darwin" }}
 # DARWIN CONFIGURATION. ########################################################
 # Install brew on Darwin. ######################################################
-if [[ $(which brew &>/dev/null && $?) != 0 ]]; then
+if ! command -v brew &>/dev/null; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 # Install brew packages on Darwin. #############################################
