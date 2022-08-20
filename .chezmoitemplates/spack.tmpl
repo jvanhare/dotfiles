@@ -8,5 +8,5 @@ spack external find --not-buildable --all
 # test -d $SRC/spack && spack external find --not-buildable git vim python findutils cmake libevent flex doxygen llvm pkg-config
 
 {{ if eq .chezmoi.os "darwin" }}
-spack external find --not-buildable --all -p /usr/local/opt/llvm*
+spack external find --not-buildable -p /usr/local/opt/llvm*
 {{ end }}
