@@ -1,4 +1,6 @@
-
+if [[ -d "$SRC/spack" ]]; then
+    git clone -c feature.manyFiles=true https://github.com/spack/spack.git $SRC/spack
+fi
 
 # Setup Spack on Darwin. #######################################################
 # test -d $SRC/spack && echo "Spack is already installed." || git clone -c feature.manyFiles=true https://github.com/spack/spack.git $SRC/spack
