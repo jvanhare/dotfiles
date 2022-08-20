@@ -6,9 +6,11 @@ mkdir -p $WKDIR $BIN $INCLUDE $LIB $SHARE $SRC
 
 {{ if eq .chezmoi.os "darwin" }}
 # DARWIN CONFIGURATION. ########################################################
-# Setup brew on Darwin. ########################################################
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-# Setup brew packages on Darwin. ###############################################
+# Install brew on Darwin. ######################################################
+if [[ $(which brew &>/dev/null && $?) != 0 ]]; then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+# Install brew packages on Darwin. #############################################
 brew tap homebrew/cask-fonts
 brew install --quiet findutils flex mesa libx11 imagemagick ffmpeg
 brew install --quiet zsh git curl vim cmake ninja doxygen git-flow-avh lmod
