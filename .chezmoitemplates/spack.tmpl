@@ -5,6 +5,6 @@ spack compiler find /usr/local/opt/*
 spack external find --not-buildable --all
 
 {{ if eq .chezmoi.os "darwin" }}
-spack external find --not-buildable --all /usr/local/opt/gcc*(P:-p:)
-spack external find --not-buildable --all /usr/local/opt/llvm*(P:-p:)
+zsh -c 'spack external find --not-buildable --all /usr/local/opt/gcc*(P:-p:)'
+zsh -c 'spack external find --not-buildable --all /usr/local/opt/llvm*(P:-p:)'
 {{ end }}
