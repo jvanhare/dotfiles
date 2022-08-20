@@ -1,0 +1,25 @@
+# Get my environment variables. ################################################
+{{ template "export.tmpl" . }}
+
+# Making directories. ##########################################################
+mkdir -p $WKDIR $BIN $INCLUDE $LIB $SHARE $SRC
+
+{{ if eq .chezmoi.os "darwin" }}
+# DARWIN CONFIGURATION. ########################################################
+# Setup brew on Darwin. ########################################################
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# Setup brew packages on Darwin. ###############################################
+brew tap homebrew/cask-fonts
+brew install --quiet findutils flex mesa libx11 imagemagick ffmpeg
+brew install --quiet zsh git curl vim cmake ninja doxygen git-flow-avh lmod
+brew install --quiet tokei gh gatsby-cli
+brew install --quiet gcc@12 gcc@11 gcc@10 gcc@9 gcc@8
+brew install --quiet llvm python go rust node@16 yarn tcl-tk
+brew install --quiet font-fira-code
+brew install --quiet vlc skim texlive latexindent pandoc pandoc-crossref
+brew install --quiet --cask iterm2 visual-studio-code
+# ##############################################################################
+{{ end }}
+
+# Installing spack. ############################################################
+{{ template "spack.tmpl" . }}

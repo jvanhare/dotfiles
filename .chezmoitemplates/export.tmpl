@@ -1,11 +1,36 @@
-# Standard directories. ########################################################
+# Source if and only if the file exists. #######################################
+smart_source() {
+    if [[ -f "$1" ]]; then
+        source "$1"
+        echo "Sourcing $1..."
+    fi
+}
+
+{{ if eq .chezmoi.os "darwin" }}
+# DARWIN CONFIGURATION. ########################################################
+export WKDIR=$HOME/Desktop/wkdir
+smart_source /usr/local/opt/lmod/init/profile
+# Specific MPI configuration on darwin. ########################################
+export PMIX_MCA_gds=hash
+export OMPI_MCA_btl=vader,self
+# ##############################################################################
+{{ end }}
+
+# Define my own standard directories. ##########################################
 export BIN=$WKDIR/bin
 export INCLUDE=$WKDIR/include
 export LIB=$WKDIR/lib
 export SHARE=$WKDIR/share
 export SRC=$WKDIR/src
-
 export PATH=$BIN:$PATH
+
+# Golang environment. ##########################################################
 export GOPATH=$WKDIR
 export GOBIN=$BIN
-# EOF. #########################################################################
+
+# Address sanitizer and memory leaks detection. ################################
+export ASAN_OPTIONS="detect_leaks=1"
+export LSAN_OPTIONS="suppressions=$HOME/.lsan:print_suppressions=false"
+
+# Spack environment settings. ##################################################
+smart_source $SRC/spack/share/spack/setup-env.sh

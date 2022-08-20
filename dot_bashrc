@@ -1,8 +1,0 @@
-# Machine specific environments. ###############################################
-case $(hostname -s) in
-    # Darwin freyja. ###########################################################
-    freyja) source $HOME/.envs/freyja.sh ;;
-    # Default. #################################################################
-    *) echo -n "Unknown host. Default environment settings..." ;;
-esac
-# EOF. #########################################################################
