@@ -1,7 +1,7 @@
 if [[ ! -d "$SRC/spack" ]]; then
     git clone -c feature.manyFiles=true https://github.com/spack/spack.git $SRC/spack
 fi
-spack compiler find
+spack compiler find /usr/local/opt/*
 spack external find --not-buildable --all  
 #-p /usr/local/Cellar/** 
 # test -d $SRC/spack && spack compilers
