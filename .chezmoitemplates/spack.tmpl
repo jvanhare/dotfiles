@@ -1,4 +1,4 @@
-if [[ -d "$SRC/spack" ]]; then
+if [[ ! -d "$SRC/spack" ]]; then
     git clone -c feature.manyFiles=true https://github.com/spack/spack.git $SRC/spack
 fi
 
