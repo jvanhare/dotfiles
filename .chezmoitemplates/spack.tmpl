@@ -2,9 +2,11 @@ if [[ ! -d "$SRC/spack" ]]; then
     git clone -c feature.manyFiles=true https://github.com/spack/spack.git $SRC/spack
 fi
 spack compiler find /usr/local/opt/*
-spack external find --not-buildable --all  
-#-p /usr/local/Cellar/** 
+spack external find --not-buildable --all
+#-p /usr/local/Cellar/**
 # test -d $SRC/spack && spack compilers
 # test -d $SRC/spack && spack external find --not-buildable git vim python findutils cmake libevent flex doxygen llvm pkg-config
 
-# EOF. #########################################################################
+{{ if eq .chezmoi.os "darwin" }}
+spack external find --not-buildable --all -p /usr/local/opt/llvm*
+{{ end }}
