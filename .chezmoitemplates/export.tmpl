@@ -9,6 +9,9 @@ smart_source() {
 {{ if eq .chezmoi.os "darwin" }}
 # DARWIN CONFIGURATION. ########################################################
 export WKDIR=$HOME/Desktop/wkdir
+# Intel environment settings. ##################################################
+smart_source /opt/intel/oneapi/setvars.sh
+# Modules environment settings. ################################################
 smart_source /usr/local/opt/lmod/init/profile
 # Specific MPI configuration on darwin. ########################################
 export PMIX_MCA_gds=hash
@@ -34,9 +37,6 @@ export LSAN_OPTIONS="suppressions=$HOME/.lsan:print_suppressions=false"
 
 # Spack environment settings. ##################################################
 smart_source $SRC/spack/share/spack/setup-env.sh
-
-# Intel environment settings. ##################################################
-smart_source /opt/intel/oneapi/setvars.sh
 
 # Add ViZiR4 to the path. ######################################################
 export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
