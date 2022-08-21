@@ -1,7 +1,7 @@
 # Source if and only if the file exists. #######################################
 smart_source() {
     if [[ -f "$1" ]]; then
-        source "$1"
+        source "$1" > /dev/null 2>&1 
         echo "Sourcing $1."
     fi
 }
