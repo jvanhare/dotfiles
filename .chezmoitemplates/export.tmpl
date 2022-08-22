@@ -9,8 +9,6 @@ smart_source() {
 {{ if eq .chezmoi.os "darwin" }}
 # DARWIN CONFIGURATION. ########################################################
 export WKDIR=$HOME/Desktop/wkdir
-# Intel environment settings. ##################################################
-smart_source /opt/intel/oneapi/setvars.sh
 # Modules environment settings. ################################################
 smart_source /usr/local/opt/lmod/init/profile
 # Specific MPI configuration on darwin. ########################################
