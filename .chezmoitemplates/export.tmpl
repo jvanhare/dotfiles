@@ -18,12 +18,12 @@ export OMPI_MCA_btl=vader,self
 {{ end }}
 
 # Define my own standard directories. ##########################################
-export BIN=$WKDIR/bin
-export INCLUDE=$WKDIR/include
-export LIB=$WKDIR/lib
-export SHARE=$WKDIR/share
-export SRC=$WKDIR/src
-export PATH=$BIN:$PATH
+export BINDIR=$WKDIR/bin
+export INCLUDEDIR=$WKDIR/include
+export LIBDIR=$WKDIR/lib
+export SHAREDIR=$WKDIR/share
+export SRCDIR=$WKDIR/src
+export PATH=$BINDIR:$PATH
 
 # Golang environment. ##########################################################
 export GOPATH=$WKDIR
@@ -34,7 +34,7 @@ export ASAN_OPTIONS="detect_leaks=1"
 export LSAN_OPTIONS="suppressions=$HOME/.lsan:print_suppressions=false"
 
 # Spack environment settings. ##################################################
-smart_source $SRC/spack/share/spack/setup-env.sh
+smart_source $SRCDIR/spack/share/spack/setup-env.sh
 
 # Add ViZiR4 to the path. ######################################################
 export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH

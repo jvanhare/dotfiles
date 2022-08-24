@@ -2,7 +2,7 @@
 {{ template "export.tmpl" . }}
 
 # Making directories. ##########################################################
-mkdir -p $WKDIR $BIN $INCLUDE $LIB $SHARE $SRC
+mkdir -p $WKDIR $BINDIR $INCLUDEDIR $LIBDIR $SHAREDIR $SRCDIR
 
 {{ if eq .chezmoi.os "darwin" }}
 # DARWIN CONFIGURATION. ########################################################
