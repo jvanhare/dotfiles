@@ -5,3 +5,4 @@ leak:hwloc
 leak:getifaddrs
 leak:avx_component_op_query
 leak:wrap_asprintf
+leak:realizeClassWithoutSwift
