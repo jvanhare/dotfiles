@@ -6,6 +6,8 @@ mkdir -p $WKDIR $BINDIR $INCLUDEDIR $LIBDIR $SHAREDIR $SRCDIR
 
 {{ if eq .chezmoi.os "darwin" }}
 # DARWIN CONFIGURATION. ########################################################
+# Install the XCode Command Line Tools
+xcode-select --install
 # Install brew on Darwin. ######################################################
 if ! command -v brew &>/dev/null; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -15,15 +17,16 @@ brew tap homebrew/cask-fonts
 brew install --quiet findutils flex mesa libx11 imagemagick ffmpeg libiconv
 brew install --quiet zsh git curl vim cmake ninja doxygen git-flow-avh lmod
 brew install --quiet tokei gh gatsby-cli
-brew install --quiet gcc@12 gcc@11 gcc@10 gcc@9 gcc@8
-brew install --quiet octave
+brew install --quiet gcc@12 gcc@11 gcc@10 gcc@9 gcc@8 gdb docker
 brew install --quiet llvm llvm@14 llvm@13 llvm@12 llvm@11
 brew install --quiet carlocab/personal/flang
-brew install --quiet python go rust node@16 yarn tcl-tk
+brew install --quiet python go rust node@16 yarn tcl-tk octave gmsh gnuplot
 brew install --quiet font-fira-code
 brew install --quiet vlc skim texlive latexindent pandoc pandoc-crossref
 brew install --quiet jvanhare/gamma/vizir4
-brew install --quiet --cask iterm2 visual-studio-code
+brew install --quiet --cask iterm2 visual-studio-code omnigraffle textmate
+brew install --quiet --cask transmit adobe-acrobat-reader aquaterm firefox
+brew install --quiet --cask google-chrome latexit skype texshop
 # ##############################################################################
 {{ end }}
 
