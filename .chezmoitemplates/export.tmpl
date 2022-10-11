@@ -37,6 +37,9 @@ export MallocNanoZone=0
 # Spack environment settings. ##################################################
 smart_source $SRCDIR/spack/share/spack/setup-env.sh
 
+# Add homebrew cURL to the path. ###############################################
+export PATH=/opt/homebrew/opt/curl/bin:$PATH
+
 # Add ViZiR4 to the path. ######################################################
 export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
 
