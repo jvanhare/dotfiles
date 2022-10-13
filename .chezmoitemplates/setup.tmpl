@@ -12,18 +12,57 @@ if ! command -v brew &>/dev/null; then
 fi
 # Install brew packages on Darwin. #############################################
 brew tap homebrew/cask-fonts
-brew install --quiet findutils flex mesa libx11 imagemagick ffmpeg libiconv
-brew install --quiet zsh git curl vim cmake ninja doxygen git-flow-avh lmod
-brew install --quiet tokei gh gatsby-cli
-brew install --quiet gcc@12 docker patchelf clingo libsigsegv ncurses
-brew install --quiet llvm@14
-brew install --quiet python go rust node yarn tcl-tk octave gmsh gnuplot
+
+brew install --quiet curl
+brew install --quiet ffmpeg
 brew install --quiet font-fira-code
-brew install --quiet vlc skim texlive latexindent pandoc pandoc-crossref
+brew install --quiet gatsby-cli
+brew install --quiet gcc@12
+brew install --quiet gh
+brew install --quiet git
+brew install --quiet git-flow-avh
+brew install --quiet gmsh
+brew install --quiet gnuplot
+brew install --quiet go
+brew install --quiet homebrew/cask/cmake
+brew install --quiet homebrew/cask/docker
+brew install --quiet homebrew/cask/doxygen
+brew install --quiet imagemagick
 brew install --quiet jvanhare/gamma/vizir4
-brew install --quiet --cask iterm2 visual-studio-code omnigraffle textmate
-brew install --quiet --cask transmit adobe-acrobat-reader aquaterm firefox
-brew install --quiet --cask google-chrome latexit skype texshop
+brew install --quiet latexindent
+brew install --quiet llvm@14
+brew install --quiet lmod
+brew install --quiet mesa
+brew install --quiet ninja
+brew install --quiet node
+brew install --quiet octave
+brew install --quiet pandoc
+brew install --quiet pandoc-crossref
+brew install --quiet patchelf
+brew install --quiet python
+brew install --quiet rust
+brew install --quiet skim
+brew install --quiet tcl-tk
+brew install --quiet texlive
+brew install --quiet tokei
+brew install --quiet vim
+brew install --quiet vlc
+brew install --quiet yarn
+brew install --quiet zsh
+
+brew install --quiet --cask adobe-acrobat-reader
+brew install --quiet --cask aquaterm
+brew install --quiet --cask firefox
+brew install --quiet --cask google-chrome
+brew install --quiet --cask iterm2
+brew install --quiet --cask latexit
+brew install --quiet --cask omnigraffle
+brew install --quiet --cask skype
+brew install --quiet --cask texshop
+brew install --quiet --cask textmate
+brew install --quiet --cask transmit
+brew install --quiet --cask visual-studio-code
+
 # ##############################################################################
 {{ end }}
 
