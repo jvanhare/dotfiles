@@ -1,7 +1,7 @@
 # Source if and only if the file exists. #######################################
 smart_source() {
     if [[ -f "$1" ]]; then
-        source "$1" > /dev/null 2>&1 
+        source "$1" >/dev/null 2>&1
         echo "Sourcing $1."
     fi
 }
@@ -39,6 +39,9 @@ smart_source $SRCDIR/spack/share/spack/setup-env.sh
 
 # Add homebrew cURL to the path. ###############################################
 export PATH=/opt/homebrew/opt/curl/bin:$PATH
+
+# Add LLVM binaries to the path. ###############################################
+export PATH=/opt/homebrew/opt/llvm/bin:$PATH
 
 # Add ViZiR4 to the path. ######################################################
 export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
