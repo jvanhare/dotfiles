@@ -6,9 +6,6 @@ mkdir -p $WKDIR $BINDIR $INCLUDEDIR $LIBDIR $SHAREDIR $SRCDIR
 
 {{ if eq .chezmoi.os "darwin" }}
 # DARWIN CONFIGURATION. ########################################################
-# Install the XCode Command Line Tools
-xcode-select --install
-sudo softwareupdate --install-rosetta
 # Install brew on Darwin. ######################################################
 if ! command -v brew &>/dev/null; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
