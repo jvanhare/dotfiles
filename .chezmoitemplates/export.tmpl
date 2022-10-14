@@ -15,6 +15,8 @@ smart_source /opt/homebrew/opt/lmod/init/zsh
 # Specific MPI configuration on darwin. ########################################
 export PMIX_MCA_gds=hash
 export OMPI_MCA_btl=vader,self
+# Set the temporary directory. #################################################
+export TMPDIR=/tmp
 # ##############################################################################
 {{ end }}
 
