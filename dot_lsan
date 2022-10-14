@@ -2,3 +2,5 @@ leak:pmix
 leak:ompi
 leak:opal
 leak:hwloc
+leak:realizeClassWithoutSwift
+leak:cache_t::insert
