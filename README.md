@@ -5,9 +5,9 @@
 ```sh
 sh -c "$(curl -fsLS https://chezmoi.io/get)" -- init --apply --ssh jvanhare
 ```
-# INRIA configuration
+## INRIA configuration
 
-## Mounting the NAS
+### Mounting the NAS
 
 1. Create the gamma group with GID: 21135
 2. Replace the UID
