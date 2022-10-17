@@ -4,13 +4,12 @@
 # Making directories. ##########################################################
 mkdir -p $WKDIR $BINDIR $INCLUDEDIR $LIBDIR $SHAREDIR $SRCDIR
 
-{{ if eq .chezmoi.os "darwin" }}
-# DARWIN CONFIGURATION. ########################################################
-# Install brew on Darwin. ######################################################
+{{ if eq .chezmoi.hostname "heimdall" }}
+# Install brew on heimdall. ####################################################
 if ! command -v brew &>/dev/null; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
-# Install brew packages on Darwin. #############################################
+# Install brew packages on heimdall. ###########################################
 brew tap homebrew/cask-fonts
 
 brew install --quiet bison

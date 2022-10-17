@@ -6,9 +6,13 @@ smart_source() {
     fi
 }
 
-{{ if eq .chezmoi.os "darwin" }}
-# DARWIN CONFIGURATION. ########################################################
+{{ if eq .chezmoi.hostname "heimdall" }}
 export WKDIR=$HOME/Desktop/wkdir
+{{ else }}
+export WKDIR=$HOME/wkdir
+{{ end }}
+
+{{ if eq .chezmoi.hostname "heimdall" }}
 eval "$(/opt/homebrew/bin/brew shellenv)"
 # Modules environment settings. ################################################
 smart_source /opt/homebrew/opt/lmod/init/zsh
@@ -17,6 +21,12 @@ export PMIX_MCA_gds=hash
 export OMPI_MCA_btl=vader,self
 # Set the temporary directory. #################################################
 export TMPDIR=/tmp
+# Add homebrew cURL to the path. ###############################################
+export PATH=$HOMEBREW_PREFIX/opt/curl/bin:$PATH
+# Add LLVM binaries to the path. ###############################################
+export PATH=$HOMEBREW_PREFIX/opt/llvm/bin:$PATH
+# Add ViZiR4 to the path. ######################################################
+export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
 # ##############################################################################
 {{ end }}
 
@@ -28,10 +38,6 @@ export SHAREDIR=$WKDIR/share
 export SRCDIR=$WKDIR/src
 export PATH=$BINDIR:$PATH
 
-# Golang environment. ##########################################################
-export GOPATH=$WKDIR
-export GOBIN=$BIN
-
 # Address sanitizer and memory leaks detection. ################################
 export ASAN_OPTIONS="detect_leaks=1"
 export LSAN_OPTIONS="suppressions=$HOME/.lsan:print_suppressions=false"
@@ -39,12 +45,3 @@ export MallocNanoZone=0
 
 # Spack environment settings. ##################################################
 smart_source $SRCDIR/spack/share/spack/setup-env.sh
-
-# Add homebrew cURL to the path. ###############################################
-export PATH=/opt/homebrew/opt/curl/bin:$PATH
-
-# Add LLVM binaries to the path. ###############################################
-export PATH=/opt/homebrew/opt/llvm/bin:$PATH
-
-# Add ViZiR4 to the path. ######################################################
-export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
