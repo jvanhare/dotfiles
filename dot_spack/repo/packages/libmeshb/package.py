@@ -12,10 +12,7 @@ class Libmeshb(CMakePackage):
     homepage = "https://github.com/jvanhare/libMeshb"
     git      = "https://github.com/jvanhare/libMeshb.git"
 
-    version('7.62.0', tag='v7.62.0')
-    version('7.62.1', tag='v7.62.1')
-    version('7.62.2', tag='v7.62.2')
-    version('7.62.3', tag='v7.62.3')
+    version('7.62.4', tag='v7.62.4')
 
     variant('shared',     default=True,      description='Build a shared version of the library')
     variant('aio',        default=False,     description='Use Unix low-level and asynchronous I/O for higher speed')
