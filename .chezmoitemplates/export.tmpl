@@ -27,6 +27,8 @@ export PATH=$HOMEBREW_PREFIX/opt/curl/bin:$PATH
 export PATH=$HOMEBREW_PREFIX/opt/llvm/bin:$PATH
 # Add ViZiR4 to the path. ######################################################
 export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
+# Run CTEST in parallel. #######################################################
+export CTEST_PARALLEL_LEVEL=8
 # ##############################################################################
 {{ end }}
 
