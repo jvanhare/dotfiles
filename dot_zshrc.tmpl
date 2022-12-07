@@ -1,33 +1,33 @@
 # Set the language environment. ################################################
 export LANG=en_US.UTF-8
 # Set the oh-my-zsh theme. #####################################################
-THEME=romkatv/powerlevel10k
-# Antigen setup. ###############################################################
-source $HOME/.antigen.zsh
-antigen use oh-my-zsh
-antigen bundle git
-antigen bundle pip
-antigen bundle command-not-found
-antigen bundle docker
-antigen bundle colorize
-antigen bundle magic-enter
-antigen bundle safe-paste
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-completions
-antigen bundle ael-code/zsh-colored-man-pages
-antigen bundle supercrabtree/k
-antigen bundle bobthecow/git-flow-completion
-[[ `antigen list | grep $THEME | wc -l` -gt 0 ]] || antigen theme $THEME
-antigen apply
-# Enable Powerlevel10k instant prompt. #########################################
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-# Uncomment the following line to disable bi-weekly auto-update checks. ########
-DISABLE_AUTO_UPDATE="true"
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh. ###############
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# THEME=romkatv/powerlevel10k
+# # Antigen setup. ###############################################################
+# source $HOME/.antigen.zsh
+# antigen use oh-my-zsh
+# antigen bundle git
+# antigen bundle pip
+# antigen bundle command-not-found
+# antigen bundle docker
+# antigen bundle colorize
+# antigen bundle magic-enter
+# antigen bundle safe-paste
+# antigen bundle zsh-users/zsh-syntax-highlighting
+# antigen bundle zsh-users/zsh-autosuggestions
+# antigen bundle zsh-users/zsh-completions
+# antigen bundle ael-code/zsh-colored-man-pages
+# antigen bundle supercrabtree/k
+# antigen bundle bobthecow/git-flow-completion
+# [[ `antigen list | grep $THEME | wc -l` -gt 0 ]] || antigen theme $THEME
+# antigen apply
+# # Enable Powerlevel10k instant prompt. #########################################
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#     source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
+# # Uncomment the following line to disable bi-weekly auto-update checks. ########
+# DISABLE_AUTO_UPDATE="true"
+# # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh. ###############
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 {{ template "alias.tmpl" . }}
 {{ template "export.tmpl" . }}
