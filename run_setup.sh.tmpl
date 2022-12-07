@@ -1,6 +1,5 @@
 #!/bin/sh
 
-# setup.tmpl hash: {{ include "setup.tmpl" | sha256sum }}
 {{ template "setup.tmpl" . }}
 
 # Setup antigen: the zsh package manager. ######################################
