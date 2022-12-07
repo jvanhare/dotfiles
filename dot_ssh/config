@@ -1,15 +1,17 @@
-# INRIA SIF Bastion
+# INRIA SIF Bastion. ###########################################################
 Host bastion
 HostName ssh.saclay.inria.fr
 
-# INRIA SIF HPC cluster margaret
+# INRIA SIF HPC cluster margaret. ##############################################
 Host margaret
 ProxyCommand ssh -q bastion /usr/bin/nc %h.saclay.inria.fr 22
 
-# INRIA SIF GAMMA brochet
+# INRIA SIF GAMMA brochet. #####################################################
 Host brochet
 ProxyCommand ssh -q bastion /usr/bin/nc %h.saclay.inria.fr 22
 
-# INRIA SIF GAMMA exocet
+# INRIA SIF GAMMA exocet. ######################################################
 Host exocet
 ProxyCommand ssh -q bastion /usr/bin/nc %h.saclay.inria.fr 22
+
+# EOF. #########################################################################

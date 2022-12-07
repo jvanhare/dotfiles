@@ -29,7 +29,10 @@ DISABLE_AUTO_UPDATE="true"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh. ###############
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-{{ template "alias.tmpl" . }}
+# Aliases configuration. #######################################################
+alias ls="ls -ltrGh"
+
+# Export configuration. ########################################################
 {{ template "export.tmpl" . }}
 
 # EOF. #########################################################################

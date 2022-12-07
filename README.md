@@ -5,6 +5,7 @@
 ```sh
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply --ssh jvanhare
 ```
+
 ## INRIA configuration
 
 ### Mounting the NAS
@@ -18,7 +19,7 @@ find / -user OLD_UID -exec chown NEW_UID {} \;
 find / -group OLD_GID -exec chgrp NEW_GID {} \;
 ```
 
-4. Uncomment ```/net``` in ```/etc/auto_master``` and:
+4. Uncomment `/net` in `/etc/auto_master` and:
 
 ```sh
 automount -cv

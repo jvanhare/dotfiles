@@ -1,28 +1,28 @@
 [options]
-colorscheme = "dracula"
-colorscheme_bg = "dark"
-enable_guicolors = true
-buffer_index_type = 4
-enable_statusline_mode = false
-enable_tabline_filetype_icon = true
-statusline_iseparator = "arrow"
-statusline_separator = "arrow"
+    colorscheme = "dracula"
+    colorscheme_bg = "dark"
+    enable_guicolors = true
+    buffer_index_type = 4
+    enable_statusline_mode = false
+    enable_tabline_filetype_icon = true
+    statusline_iseparator = "arrow"
+    statusline_separator = "arrow"
 
 [[custom_plugins]]
-merged = false
-name = "dracula"
-repo = "dracula/vim"
+    merged = false
+    name = "dracula"
+    repo = "dracula/vim"
 
 [[layers]]
-auto_completion_return_key_behavior = "complete"
-auto_completion_tab_key_behavior = "smart"
-name = 'autocomplete'
+    auto_completion_return_key_behavior = "complete"
+    auto_completion_tab_key_behavior = "smart"
+    name = 'autocomplete'
 
 [[layers]]
-default_height = 30
-default_position = 'top'
-name = 'shell'
+    default_height = 30
+    default_position = 'top'
+    name = 'shell'
 
 [[layers]]
-enable_clang_syntax_highlight = true
-name = 'lang#c'
+    enable_clang_syntax_highlight = true
+    name = 'lang#c'
