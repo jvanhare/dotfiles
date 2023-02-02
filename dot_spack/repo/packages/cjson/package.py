@@ -24,5 +24,6 @@ class Cjson(CMakePackage):
             args.append("-DBUILD_SHARED_LIBS=ON")
         args.append("-DENABLE_CJSON_TEST=OFF")
         args.append("-DENABLE_CJSON_UTILS=OFF")
-        args.append("-DCMAKE_MACOSX_RPATH=ON")
+        if self.spec.satisfies('platform=darwin'):
+            args.append("-DCMAKE_MACOSX_RPATH=ON")
         return args
