@@ -64,6 +64,7 @@ brew install --quiet --cask visual-studio-code
 {{ else if eq .chezmoi.os "linux" }}
 {{ if eq .chezmoi.osRelease.id "centos" }}
 yum -y install gcc git zsh which
+yum -y update
 {{ end }}
 {{ end }}
 
