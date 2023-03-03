@@ -14,4 +14,8 @@ ProxyCommand ssh -q bastion /usr/bin/nc %h.saclay.inria.fr 22
 Host exocet
 ProxyCommand ssh -q bastion /usr/bin/nc %h.saclay.inria.fr 22
 
+# INRIA SIF GAMMA vairon. ######################################################
+Host vairon
+ProxyCommand ssh -q bastion /usr/bin/nc %h.saclay.inria.fr 22
+
 # EOF. #########################################################################

@@ -1,4 +1,5 @@
 # Set the language environment. ################################################
+export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 # Set the oh-my-zsh theme. #####################################################
 THEME=romkatv/powerlevel10k
@@ -42,33 +43,35 @@ smart_source() {
 
 # Set useful environment variables. ############################################
 {{ if eq .chezmoi.os "darwin" }}
-# Define standard directories. #################################################
-export TMPDIR=/tmp
+# Set the working directory. ###################################################
 export WKDIR=$HOME/Desktop/wkdir
-export BINDIR=$WKDIR/bin
-export INCLUDEDIR=$WKDIR/include
-export LIBDIR=$WKDIR/lib
-export SHAREDIR=$WKDIR/share
-export SRCDIR=$WKDIR/src
-export PATH=$BINDIR:$PATH
 # Specific MPI configuration on darwin. ########################################
 export PMIX_MCA_gds=hash
 export OMPI_MCA_btl=vader,self
-# Run CTEST in parallel. #######################################################
-export CTEST_PARALLEL_LEVEL=8
-# Golang PATH. #################################################################
-export GOPATH=$WKDIR
 # Add brew to the PATH. ########################################################
 eval "$(/opt/homebrew/bin/brew shellenv)"
-# Add LLVM binaries to the path. ###############################################
-export PATH=$HOMEBREW_PREFIX/opt/llvm/bin:$PATH
 # Add ViZiR4 to the path. ######################################################
 export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
 # Add homebrew cURL to the path. ###############################################
 export PATH=$HOMEBREW_PREFIX/opt/curl/bin:$PATH
 # Modules environment settings. ################################################
 smart_source /opt/homebrew/opt/lmod/init/zsh
+{{ else if eq .chezmoi.os "linux" }}
+# Set the working directory. ###################################################
+export WKDIR=$HOME
 {{ end }}
+
+# Define standard directories. #################################################
+export TMPDIR=/tmp
+export BINDIR=$WKDIR/bin
+export INCLUDEDIR=$WKDIR/include
+export LIBDIR=$WKDIR/lib
+export SHAREDIR=$WKDIR/share
+export SRCDIR=$WKDIR/src
+export PATH=$BINDIR:$PATH
+
+# Run CTEST in parallel. #######################################################
+export CTEST_PARALLEL_LEVEL=8
 
 # Address sanitizer and memory leaks detection. ################################
 export ASAN_OPTIONS="detect_leaks=1"
