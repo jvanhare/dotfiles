@@ -61,11 +61,6 @@ brew install --quiet --cask texshop
 brew install --quiet --cask textmate
 brew install --quiet --cask transmit
 brew install --quiet --cask visual-studio-code
-{{ else if eq .chezmoi.os "linux" }}
-{{ if eq .chezmoi.osRelease.id "centos" }}
-yum -y install wget git gcc gcc-gfortran zsh which make
-yum -y update
-{{ end }}
 {{ end }}
 
 # Setup antigen: the zsh package manager. ######################################
