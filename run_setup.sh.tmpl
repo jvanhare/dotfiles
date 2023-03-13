@@ -71,7 +71,7 @@ sudo apt install bison cmake curl gcc git ninja node vim yarn zsh
 
 # Setup CI fedora machine. #####################################################
 {{ if eq .machine "linux-fedora" }}
-sudo apt update
+sudo yum update
 sudo yum install bison cmake curl gcc git ninja node vim yarn zsh
 {{ end }}
 
