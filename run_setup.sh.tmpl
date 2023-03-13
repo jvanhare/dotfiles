@@ -69,6 +69,12 @@ sudo apt update
 sudo apt install bison cmake curl gcc git ninja node vim yarn zsh
 {{ end }}
 
+# Setup CI fedora machine. #####################################################
+{{ if eq .machine "ci-linux-fedora" }}
+sudo apt update
+sudo yum install bison cmake curl gcc git ninja node vim yarn zsh
+{{ end }}
+
 # Setup antigen: the zsh package manager. ######################################
 curl -L git.io/antigen >~/.antigen.zsh
 
