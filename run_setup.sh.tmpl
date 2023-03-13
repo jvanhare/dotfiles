@@ -63,6 +63,12 @@ brew install --quiet --cask transmit
 brew install --quiet --cask visual-studio-code
 {{ end }}
 
+# Setup CI ubuntu machine. #####################################################
+{{ if eq .chezmoi.machine "ci-linux-ubuntu" }}
+sudo apt-get update
+sudo apt-get install bison cmake curl gcc git ninja node vim yarn zsh
+{{ end }}
+
 # Setup antigen: the zsh package manager. ######################################
 curl -L git.io/antigen >~/.antigen.zsh
 
