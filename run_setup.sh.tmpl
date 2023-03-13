@@ -63,16 +63,11 @@ brew install --quiet --cask transmit
 brew install --quiet --cask visual-studio-code
 {{ end }}
 
-# Setup CI ubuntu machine. #####################################################
-{{ if eq .machine "linux-ubuntu" }}
-sudo apt update
-sudo apt install bison cmake curl gcc git ninja node vim yarn zsh
-{{ end }}
-
 # Setup CI fedora machine. #####################################################
 {{ if eq .machine "linux-fedora" }}
+curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh" | bash
 sudo yum update
-sudo yum install bison cmake curl gcc git ninja-build node vim zsh
+sudo yum install bison cmake curl gcc git ninja-build node vim zsh gitlab-runner
 {{ end }}
 
 # Setup antigen: the zsh package manager. ######################################
