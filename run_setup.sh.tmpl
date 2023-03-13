@@ -64,13 +64,13 @@ brew install --quiet --cask visual-studio-code
 {{ end }}
 
 # Setup CI ubuntu machine. #####################################################
-{{ if eq .machine "ci-linux-ubuntu" }}
+{{ if eq .machine "linux-ubuntu" }}
 sudo apt update
 sudo apt install bison cmake curl gcc git ninja node vim yarn zsh
 {{ end }}
 
 # Setup CI fedora machine. #####################################################
-{{ if eq .machine "ci-linux-fedora" }}
+{{ if eq .machine "linux-fedora" }}
 sudo apt update
 sudo yum install bison cmake curl gcc git ninja node vim yarn zsh
 {{ end }}
