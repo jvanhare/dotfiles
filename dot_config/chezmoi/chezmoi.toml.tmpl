@@ -7,5 +7,6 @@
 {{-   $machine = printf "%s-%s-%s" .chezmoi.username .chezmoi.os .chezmoi.osRelease.id -}}
 {{- end -}}
 
+
 [data]
     machine = {{ $machine | quote }}
