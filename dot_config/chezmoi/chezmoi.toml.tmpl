@@ -1,0 +1,11 @@
+[git]
+    autoCommit = true
+    autoPush = true
+
+{{- $machine := .chezmoi.os -}}
+{{- if hasKey .chezmoi.osRelease "id" -}}
+{{-   $machine = printf "%s-%s-%s" .chezmoi.username .chezmoi.os .chezmoi.osRelease.id -}}
+{{- end -}}
+
+[data]
+    machine = {{ $machine | quote }}
