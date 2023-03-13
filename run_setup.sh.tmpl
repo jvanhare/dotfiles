@@ -64,7 +64,7 @@ brew install --quiet --cask visual-studio-code
 {{ end }}
 
 # Setup CI ubuntu machine. #####################################################
-{{ if eq .chezmoi.machine "ci-linux-ubuntu" }}
+{{ if eq .machine "ci-linux-ubuntu" }}
 sudo apt-get update
 sudo apt-get install bison cmake curl gcc git ninja node vim yarn zsh
 {{ end }}
