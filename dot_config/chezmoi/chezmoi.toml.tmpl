@@ -4,7 +4,7 @@
 {{- end -}}
 
 [data]
-    machine = {{ $machine | quote }}
+    machine = {{ $machine | lower | quote }}
 
 [git]
     autoCommit = true
