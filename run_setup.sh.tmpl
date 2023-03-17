@@ -63,16 +63,6 @@ brew install --quiet --cask transmit
 brew install --quiet --cask visual-studio-code
 {{ end }}
 
-# Setup CI fedora machine. #####################################################
-{{ if eq .machine "linux-fedora" }}
-curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh" | bash
-sudo yum update
-sudo yum install bison cmake curl gcc git ninja-build node vim zsh gitlab-runner
-sudo dnf -y install dnf-plugins-core
-sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
-sudo dnf install docker-ce docker-ce-cli containerd.io
-{{ end }}
-
 # Setup antigen: the zsh package manager. ######################################
 curl -L git.io/antigen >~/.antigen.zsh
 
