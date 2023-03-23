@@ -60,6 +60,10 @@ smart_source /opt/homebrew/opt/lmod/init/zsh
 export WKDIR=$HOME
 {{ end }}
 
+{{ if eq .chezmoi.hostname "vairon" }}
+export PATH=/opt/homebrew/bin:$PATH
+{{ end }}
+
 # Define standard directories. #################################################
 export TMPDIR=/tmp
 export BINDIR=$WKDIR/bin
