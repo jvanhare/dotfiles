@@ -5,3 +5,4 @@ leak:hwloc
 leak:realizeClassWithoutSwift
 leak:cache_t::insert
 leak:event_base_loop
+leak:dispatch_call_block_and_release
