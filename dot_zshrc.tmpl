@@ -41,7 +41,7 @@ smart_source() {
 }
 
 # Set useful environment variables. ############################################
-{{ if eq .chezmoi.os "darwin" }}
+{{ if eq .chezmoi.hostname "heimdall" }}
 # Set the working directory. ###################################################
 export WKDIR=$HOME/Desktop/wkdir
 # Specific MPI configuration on darwin. ########################################
@@ -55,7 +55,7 @@ export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
 export PATH=$HOMEBREW_PREFIX/opt/curl/bin:$PATH
 # Modules environment settings. ################################################
 smart_source /opt/homebrew/opt/lmod/init/zsh
-{{ else if eq .chezmoi.os "linux" }}
+{{ else }}
 # Set the working directory. ###################################################
 export WKDIR=$HOME
 {{ end }}
