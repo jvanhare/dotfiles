@@ -62,6 +62,7 @@ export WKDIR=$HOME
 
 {{ if eq .chezmoi.hostname "vairon" }}
 export PATH=/opt/homebrew/bin:$PATH
+export PATH=/opt/homebrew/Cellar/llvm/15.0.7_1/bin:$PATH
 {{ end }}
 
 # Define standard directories. #################################################
