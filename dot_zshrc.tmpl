@@ -51,6 +51,8 @@ export OMPI_MCA_btl=vader,self
 eval "$(/opt/homebrew/bin/brew shellenv)"
 # Add ViZiR4 to the path. ######################################################
 export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
+# Add LLVM to the path. ########################################################
+export PATH=/opt/homebrew/Cellar/llvm/16.0.0/bin:$PATH
 # Add homebrew cURL to the path. ###############################################
 export PATH=$HOMEBREW_PREFIX/opt/curl/bin:$PATH
 # Modules environment settings. ################################################
