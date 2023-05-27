@@ -52,19 +52,14 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Add ViZiR4 to the path. ######################################################
 export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
 # Add LLVM to the path. ########################################################
-export PATH=/opt/homebrew/Cellar/llvm/16.0.0/bin:$PATH
+export PATH=$(brew --prefix llvm)/bin:$PATH
 # Add homebrew cURL to the path. ###############################################
-export PATH=$HOMEBREW_PREFIX/opt/curl/bin:$PATH
+export PATH=$(brew --prefix curl)/bin:$PATH
 # Modules environment settings. ################################################
 smart_source /opt/homebrew/opt/lmod/init/zsh
 {{ else }}
 # Set the working directory. ###################################################
 export WKDIR=$HOME
-{{ end }}
-
-{{ if eq .chezmoi.hostname "vairon" }}
-export PATH=/opt/homebrew/bin:$PATH
-export PATH=/opt/homebrew/Cellar/llvm/16.0.0/bin:$PATH
 {{ end }}
 
 # Define standard directories. #################################################
