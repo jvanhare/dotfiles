@@ -3,3 +3,5 @@
   email = julien.vanharen@inria.fr
 [pull]
   rebase = false
+[init]
+	defaultBranch = master
