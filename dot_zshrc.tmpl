@@ -62,15 +62,6 @@ smart_source /opt/homebrew/opt/lmod/init/zsh
 export WKDIR=$HOME
 {{ end }}
 
-# Define standard directories. #################################################
-export TMPDIR=/tmp
-export BINDIR=$WKDIR/bin
-export INCLUDEDIR=$WKDIR/include
-export LIBDIR=$WKDIR/lib
-export SHAREDIR=$WKDIR/share
-export SRCDIR=$WKDIR/src
-export PATH=$BINDIR:$PATH
-
 # Run CTEST in parallel. #######################################################
 export CTEST_PARALLEL_LEVEL=8
 
