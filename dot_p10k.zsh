@@ -61,7 +61,7 @@
     
     function prompt_horus_environment() {
         if [[ -n $HORUS_ENVIRONMENT ]]; then
-            p10k segment -f 'yellow' -t "${$HORUS_ENVIRONMENT}"
+            p10k segment -f 'yellow' -t "[${$(basename $HORUS_ENVIRONMENT)}]"
         fi
     }
     
