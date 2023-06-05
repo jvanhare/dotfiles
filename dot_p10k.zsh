@@ -59,9 +59,9 @@
     # Bold directory.
     typeset -g POWERLEVEL9K_DIR_CONTENT_EXPANSION='%B$P9K_CONTENT'
     
-    function prompt_spack_env() {
-        if [[ -n $SPACK_ENV ]]; then
-            p10k segment -f 'yellow' -t "[${$(basename $SPACK_ENV)}]"
+    function prompt_horus_environment() {
+        if [[ -n $HORUS_ENVIRONMENT ]]; then
+            p10k segment -f 'yellow' -t "[${$HORUS_ENVIRONMENT}]"
         fi
     }
     

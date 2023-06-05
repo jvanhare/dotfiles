@@ -44,6 +44,7 @@ smart_source() {
 {{ if eq .chezmoi.hostname "heimdall" }}
 # Set the working directory. ###################################################
 export WKDIR=$HOME/Desktop/wkdir
+export PATH=$WKDIR/bin:$PATH
 # Specific MPI configuration on darwin. ########################################
 export PMIX_MCA_gds=hash
 export OMPI_MCA_btl=vader,self
