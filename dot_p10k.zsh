@@ -22,7 +22,7 @@
     # Left prompt segments.
     typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(prompt_char time context dir vcs)
     # Right prompt segments.
-    typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(horus_environment)
+    typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(ouranos_environment)
     
     # Basic style options that define the overall prompt look.
     typeset -g POWERLEVEL9K_BACKGROUND=                            # transparent background
@@ -59,9 +59,9 @@
     # Bold directory.
     typeset -g POWERLEVEL9K_DIR_CONTENT_EXPANSION='%B$P9K_CONTENT'
     
-    function prompt_horus_environment() {
-        if [[ -n $HORUS_ENVIRONMENT ]]; then
-            p10k segment -f 'yellow' -t "[${$(basename $HORUS_ENVIRONMENT)}]"
+    function prompt_ouranos_environment() {
+        if [[ -n $OURANOS_ENVIRONMENT ]]; then
+            p10k segment -f 'yellow' -t "[${$(basename $OURANOS_ENVIRONMENT)}]"
         fi
     }
     
