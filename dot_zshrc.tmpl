@@ -45,6 +45,8 @@ smart_source() {
 # Set the working directory. ###################################################
 export WKDIR=$HOME/Desktop/wkdir
 export PATH=$WKDIR/bin:$PATH
+# Set the Golang path. #########################################################
+export GOPATH=$WKDIR
 # Specific MPI configuration on darwin. ########################################
 export PMIX_MCA_gds=hash
 export OMPI_MCA_btl=vader,self
