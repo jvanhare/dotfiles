@@ -1,8 +1,4 @@
 # INRIA SIF Bastion. ###########################################################
-Host ouranos-ubuntu-20-04-lts.ci
-  HostName ouranos-ubuntu-20-04-lts.ci
-  User ci
-
 Host bastion
 HostName ssh.saclay.inria.fr
 
@@ -26,8 +22,11 @@ ProxyCommand ssh -q bastion /usr/bin/nc %h.saclay.inria.fr 22
 Host vairon
 ProxyCommand ssh -q bastion /usr/bin/nc %h.saclay.inria.fr 22
 
-# INRIA CI. ####################################################################
-Host *.ci
-ProxyCommand ssh jvan003@ci-ssh.inria.fr "/usr/bin/nc `basename %h .ci` %p"
+# INRIA PlaFRIM. ###############################################################
+Host plafrim
+ForwardAgent yes
+ForwardX11 yes
+User jvanhare
+ProxyCommand ssh -A -l jvanhare ssh.plafrim.fr -W plafrim:22
 
 # EOF. #########################################################################
