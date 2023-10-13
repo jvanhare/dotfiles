@@ -23,6 +23,10 @@ Host vairon
 ProxyCommand ssh -q bastion /usr/bin/nc %h.saclay.inria.fr 22
 
 # INRIA PlaFRIM. ###############################################################
+Host ssh.plafrim.fr
+IdentityFile ~/.ssh/id_rsa
+IdentitiesOnly yes
+
 Host plafrim
 ForwardAgent yes
 ForwardX11 yes
