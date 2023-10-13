@@ -35,18 +35,21 @@ alias ls="ls -ltrGh --color=auto"
 # Source if and only if the file exists. #######################################
 smart_source() {
     if [[ -f "$1" ]]; then
-        source "$1" >/dev/null 2>&1
-        echo "Sourcing $1."
+        source "$1" > /dev/null 2>&1
+        echo "Sourcing $1"
     fi
 }
 
-# Set useful environment variables. ############################################
+# Set the working directory. ###################################################
+export WKDIR=$HOME
+
+# Set the path directory. ######################################################
+export PATH=$WKDIR/bin:$PATH
+
+# Specify environment for heimdall. ############################################
 {{ if eq .chezmoi.hostname "heimdall" }}
 # Set the working directory. ###################################################
 export WKDIR=$HOME/Desktop/wkdir
-export PATH=$WKDIR/bin:$PATH
-# Set the Golang path. #########################################################
-export GOPATH=$WKDIR
 # Specific MPI configuration on darwin. ########################################
 export PMIX_MCA_gds=hash
 export OMPI_MCA_btl=vader,self
@@ -60,9 +63,6 @@ export PATH=$(brew --prefix llvm)/bin:$PATH
 export PATH=$(brew --prefix curl)/bin:$PATH
 # Modules environment settings. ################################################
 smart_source /opt/homebrew/opt/lmod/init/zsh
-{{ else }}
-# Set the working directory. ###################################################
-export WKDIR=$HOME
 {{ end }}
 
 # Run CTEST in parallel. #######################################################
