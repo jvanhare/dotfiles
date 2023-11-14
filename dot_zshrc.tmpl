@@ -6,18 +6,13 @@ THEME=romkatv/powerlevel10k
 source $HOME/.antigen.zsh
 antigen use oh-my-zsh
 antigen bundle git
-antigen bundle pip
 antigen bundle command-not-found
-antigen bundle docker
-antigen bundle colorize
-antigen bundle magic-enter
 antigen bundle safe-paste
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle ael-code/zsh-colored-man-pages
 antigen bundle supercrabtree/k
-antigen bundle bobthecow/git-flow-completion
 [[ `antigen list | grep $THEME | wc -l` -gt 0 ]] || antigen theme $THEME
 antigen apply
 # Enable Powerlevel10k instant prompt. #########################################
@@ -40,16 +35,12 @@ smart_source() {
     fi
 }
 
-# Set the working directory. ###################################################
-export WKDIR=$HOME
-
-# Set the path directory. ######################################################
-export PATH=$WKDIR/bin:$PATH
-
 # Specify environment for heimdall. ############################################
 {{ if eq .chezmoi.hostname "heimdall" }}
 # Set the working directory. ###################################################
 export WKDIR=$HOME/Desktop/wkdir
+# Set the path directory. ######################################################
+export PATH=$WKDIR/bin:$PATH
 # Specific MPI configuration on darwin. ########################################
 export PMIX_MCA_gds=hash
 export OMPI_MCA_btl=vader,self
