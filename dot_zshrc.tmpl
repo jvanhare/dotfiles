@@ -56,6 +56,9 @@ export PATH=$(brew --prefix curl)/bin:$PATH
 smart_source /opt/homebrew/opt/lmod/init/zsh
 {{ end }}
 
+# Set the temporary directory. #################################################
+export TMPDIR=/tmp
+
 # Run CTEST in parallel. #######################################################
 export CTEST_PARALLEL_LEVEL=8
 
