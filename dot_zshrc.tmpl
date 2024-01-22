@@ -55,7 +55,7 @@ export PATH=$(brew --prefix curl)/bin:$PATH
 # Modules environment settings. ################################################
 smart_source /opt/homebrew/opt/lmod/init/zsh
 # Spack environment settings. ##################################################
-smart_source spack/share/spack/setup-env.sh
+smart_source $WKDIR/src/spack/share/spack/setup-env.sh
 {{ end }}
 
 # Set the temporary directory. #################################################
