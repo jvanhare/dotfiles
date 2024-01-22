@@ -52,10 +52,9 @@ export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
 export PATH=$(brew --prefix llvm)/bin:$PATH
 # Add homebrew cURL to the path. ###############################################
 export PATH=$(brew --prefix curl)/bin:$PATH
-# Modules environment settings. ################################################
-smart_source /opt/homebrew/opt/lmod/init/zsh
 # Spack environment settings. ##################################################
 smart_source $WKDIR/src/spack/share/spack/setup-env.sh
+. $(spack location -i lmod)/lmod/lmod/init/zsh
 {{ end }}
 
 # Set the temporary directory. #################################################
