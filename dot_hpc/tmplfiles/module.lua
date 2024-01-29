@@ -13,7 +13,7 @@ setenv("CTEST_PARALLEL_LEVEL", "8")
 
 setenv("MallocNanoZone", "0")
 setenv("ASAN_OPTIONS", '"detect_leaks=1"')
-setenv("LSAN_OPTIONS", '"suppressions=$HOME/.lsan:print_suppressions=false"')
+setenv("LSAN_OPTIONS", '"suppressions={{ .Env.PWD }}/lsan:print_suppressions=false"')
 
 prepend_path("CMAKE_PREFIX_PATH", "{{ .Env.PWD }}")
 prepend_path("LD_LIBRARY_PATH", "{{ .Env.PWD }}/lib")
