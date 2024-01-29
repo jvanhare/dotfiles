@@ -45,8 +45,7 @@ export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
 # Add homebrew cURL to the path. ###############################################
 export PATH=$(brew --prefix curl)/bin:$PATH
 # Add LLVM tools. ##############################################################
-alias clang-tidy="$(brew --prefix llvm)/bin/clang-tidy"
-alias clang-format="$(brew --prefix llvm)/bin/clang-format"
+export PATH=$(brew --prefix llvm)/bin:$PATH
 # Lmod environment settings. ###################################################
 smart_source $(brew --prefix lmod)/init/zsh
 module use $HOME/.hpc/modulefiles
