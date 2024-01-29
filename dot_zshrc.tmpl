@@ -48,14 +48,10 @@ export OMPI_MCA_btl=vader,self
 eval "$(/opt/homebrew/bin/brew shellenv)"
 # Add ViZiR4 to the path. ######################################################
 export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
-# Add LLVM to the path. ########################################################
-export PATH=$(brew --prefix llvm)/bin:$PATH
 # Add homebrew cURL to the path. ###############################################
 export PATH=$(brew --prefix curl)/bin:$PATH
 # Lmod environment settings. ###################################################
 smart_source $(brew --prefix lmod)/init/zsh
-# Spack environment settings. ##################################################
-smart_source $WKDIR/src/spack/share/spack/setup-env.sh
 {{ end }}
 
 # Set the temporary directory. #################################################
