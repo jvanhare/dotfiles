@@ -26,6 +26,8 @@ DISABLE_AUTO_UPDATE="true"
 
 # Aliases configuration. #######################################################
 alias ls="ls -ltrGh --color=auto"
+alias clang-tidy="$(brew --prefix llvm)/bin/clang-tidy"
+alias clang-format="$(brew --prefix llvm)/bin/clang-format"
 
 # Source if and only if the file exists. #######################################
 smart_source() {
