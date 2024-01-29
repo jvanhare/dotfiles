@@ -51,6 +51,9 @@ smart_source $(brew --prefix lmod)/init/zsh
 module use $HOME/.hpc/modulefiles
 {{ end }}
 
+# Export the temporary directory. ##############################################
+export TMPDIR=/tmp
+
 # Aliases configuration. #######################################################
 alias ls="ls -ltrGh --color=auto"
 
