@@ -60,8 +60,8 @@
     typeset -g POWERLEVEL9K_DIR_CONTENT_EXPANSION='%B$P9K_CONTENT'
     
     function prompt_ouranos_environment() {
-        if [[ -n $OURANOS_ENVIRONMENT ]]; then
-            p10k segment -f 'yellow' -t "[${$(basename $HPC_ENVIRONMENT)}]"
+        if [[ -n $HPC_ENVIRONMENT ]]; then
+            p10k segment -f 'yellow' -t "[$HPC_ENVIRONMENT]"
         fi
     }
     
