@@ -41,9 +41,6 @@ smart_source() {
 export WKDIR=$HOME/Desktop/wkdir
 # Set the path directory. ######################################################
 export PATH=$WKDIR/bin:$PATH
-# Specific MPI configuration on darwin. ########################################
-export PMIX_MCA_gds=hash
-export OMPI_MCA_btl=vader,self
 # Add brew to the PATH. ########################################################
 eval "$(/opt/homebrew/bin/brew shellenv)"
 # Add ViZiR4 to the path. ######################################################
@@ -52,17 +49,7 @@ export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
 export PATH=$(brew --prefix curl)/bin:$PATH
 # Lmod environment settings. ###################################################
 smart_source $(brew --prefix lmod)/init/zsh
+module use $HOME/.hpc/modulefiles
 {{ end }}
-
-# Set the temporary directory. #################################################
-export TMPDIR=/tmp
-
-# Run CTEST in parallel. #######################################################
-export CTEST_PARALLEL_LEVEL=8
-
-# Address sanitizer and memory leaks detection. ################################
-export MallocNanoZone=0
-export ASAN_OPTIONS="detect_leaks=1"
-export LSAN_OPTIONS="suppressions=$HOME/.lsan:print_suppressions=false"
 
 # EOF. #########################################################################
