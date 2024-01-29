@@ -24,11 +24,6 @@ DISABLE_AUTO_UPDATE="true"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh. ###############
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Aliases configuration. #######################################################
-alias ls="ls -ltrGh --color=auto"
-alias clang-tidy="$(brew --prefix llvm)/bin/clang-tidy"
-alias clang-format="$(brew --prefix llvm)/bin/clang-format"
-
 # Source if and only if the file exists. #######################################
 smart_source() {
     if [[ -f "$1" ]]; then
@@ -49,9 +44,15 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
 # Add homebrew cURL to the path. ###############################################
 export PATH=$(brew --prefix curl)/bin:$PATH
+# Add LLVM tools. ##############################################################
+alias clang-tidy="$(brew --prefix llvm)/bin/clang-tidy"
+alias clang-format="$(brew --prefix llvm)/bin/clang-format"
 # Lmod environment settings. ###################################################
 smart_source $(brew --prefix lmod)/init/zsh
 module use $HOME/.hpc/modulefiles
 {{ end }}
+
+# Aliases configuration. #######################################################
+alias ls="ls -ltrGh --color=auto"
 
 # EOF. #########################################################################
