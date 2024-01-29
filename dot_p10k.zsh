@@ -61,7 +61,7 @@
     
     function prompt_ouranos_environment() {
         if [[ -n $OURANOS_ENVIRONMENT ]]; then
-            p10k segment -f 'yellow' -t "[${$(basename $OURANOS_ENVIRONMENT)}]"
+            p10k segment -f 'yellow' -t "[${$(basename $HPC_ENVIRONMENT)}]"
         fi
     }
     
