@@ -49,6 +49,8 @@ export PATH=$(brew --prefix llvm)/bin:$PATH
 # Lmod environment settings. ###################################################
 smart_source $(brew --prefix lmod)/init/zsh
 module use $HOME/.hpc/modulefiles
+# iTerm2 shell integration. ####################################################
+smart_source ${HOME}/.iterm2_shell_integration.zsh
 {{ end }}
 
 # Export the temporary directory. ##############################################
