@@ -1,42 +1,5 @@
 #!/bin/sh
 
-# Setup brew: the missing package manager for MacOS. ###########################
-{{ if eq .chezmoi.hostname "heimdall" }}
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-eval "$(/opt/homebrew/bin/brew shellenv)"
-brew tap homebrew/cask-fonts
-brew install biber
-brew install cmake
-brew install curl
-brew install ffmpeg
-brew install font-fira-code
-brew install gh
-brew install git
-brew install gomplate
-brew install go-task
-brew install glab
-brew install imagemagick
-brew install jvanhare/gamma/vizir4
-brew install latexindent
-brew install llvm
-brew install lmod
-brew install ninja
-brew install node
-brew install python
-brew install skim
-brew install vim
-brew install vlc
-brew install wget
-brew install yarn
-brew install zsh
-brew install --cask freecad
-brew install --cask iterm2
-brew install --cask skim
-brew install --cask tex-live-utility
-brew install --cask vlc
-brew install --cask visual-studio-code
-{{ end }}
-
 # Setup antigen: the zsh package manager. ######################################
 curl -L git.io/antigen >~/.antigen.zsh
 
