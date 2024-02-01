@@ -9,6 +9,7 @@ setenv("HPC_ENVIRONMENT", "{{ .Env.PWD | filepath.Base }}")
 setenv("PMIX_MCA_gds", "hash")
 setenv("OMPI_MCA_btl", "vader,self")
 
+setenv("CMAKE_GENERATOR", "Ninja")
 setenv("CTEST_PARALLEL_LEVEL", "8")
 
 setenv("MallocNanoZone", "0")
