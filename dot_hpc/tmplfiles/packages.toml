@@ -1,6 +1,0 @@
-[env]
-cc = "/opt/homebrew/bin/gcc-13"
-cxx = "/opt/homebrew/bin/g++-13"
-
-[env.mpi]
-url = "https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.6.tar.gz"

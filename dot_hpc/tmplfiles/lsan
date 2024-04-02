@@ -1,8 +1,0 @@
-leak:pmix
-leak:ompi
-leak:opal
-leak:hwloc
-leak:realizeClassWithoutSwift
-leak:cache_t::insert
-leak:avx_component_op_query
-leak:mca_mpool_hugepage_open
