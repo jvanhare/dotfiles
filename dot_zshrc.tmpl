@@ -1,29 +1,5 @@
 # Set the language environment. ################################################
 export LANG=en_US.UTF-8
-# Set the oh-my-zsh theme. #####################################################
-THEME=romkatv/powerlevel10k
-# Antigen setup. ###############################################################
-source /opt/homebrew/share/antigen/antigen.zsh
-antigen use oh-my-zsh
-antigen bundle git
-antigen bundle command-not-found
-antigen bundle safe-paste
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-completions
-antigen bundle ael-code/zsh-colored-man-pages
-antigen bundle supercrabtree/k
-[[ `antigen list | grep $THEME | wc -l` -gt 0 ]] || antigen theme $THEME
-antigen apply
-# Enable Powerlevel10k instant prompt. #########################################
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-# Uncomment the following line to disable bi-weekly auto-update checks. ########
-DISABLE_AUTO_UPDATE="true"
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh. ###############
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 # Source if and only if the file exists. #######################################
 smart_source() {
     if [[ -f "$1" ]]; then
@@ -40,6 +16,8 @@ export WKDIR=$HOME/Desktop/wkdir
 export PATH=$WKDIR/bin:$PATH
 # Add brew to the PATH. ########################################################
 eval "$(/opt/homebrew/bin/brew shellenv)"
+# Oh My Posh configuration. ####################################################
+eval "$(oh-my-posh init zsh --config ~/.jvanhare.omp.json)"
 # Add ViZiR4 to the path. ######################################################
 export PATH=/Applications/vizir4.app/Contents/MacOS:$PATH
 # Add homebrew cURL to the path. ###############################################
@@ -62,8 +40,6 @@ export PATH=$HOME/.venv/default/bin:$PATH
 
 # Export the temporary directory. ##############################################
 export TMPDIR=/tmp
-
 # Aliases configuration. #######################################################
 alias ls="ls -ltrGh --color=auto"
-
 # EOF. #########################################################################
