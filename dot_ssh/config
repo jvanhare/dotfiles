@@ -1,36 +1,11 @@
-## INRIA SIF Bastion. ###########################################################
-#Host bastion
-#HostName ssh.saclay.inria.fr
-#
-## INRIA SIF HPC cluster margaret. ##############################################
-#Host margaret
-#ProxyCommand ssh -q bastion /usr/bin/nc %h.saclay.inria.fr 22
-#
-## INRIA SIF GAMMA dagobah. #####################################################
-#Host dagobah
-#ProxyCommand ssh -q bastion /usr/bin/nc %h.saclay.inria.fr 22
-#
-## INRIA SIF GAMMA brochet. #####################################################
-#Host brochet
-#ProxyCommand ssh -q bastion /usr/bin/nc %h.saclay.inria.fr 22
-#
-## INRIA SIF GAMMA exocet. ######################################################
-#Host exocet
-#ProxyCommand ssh -q bastion /usr/bin/nc %h.saclay.inria.fr 22
-#
-## INRIA SIF GAMMA vairon. ######################################################
-#Host vairon
-#ProxyCommand ssh -q bastion /usr/bin/nc %h.saclay.inria.fr 22
-#
-## INRIA PlaFRIM. ###############################################################
-#Host ssh.plafrim.fr
-#IdentityFile ~/.ssh/id_rsa
-#IdentitiesOnly yes
-#
-#Host plafrim
-#ForwardAgent yes
-#ForwardX11 yes
-#User jvanhare
-#ProxyCommand ssh -A -l jvanhare ssh.plafrim.fr -W plafrim:22
-#
-## EOF. #########################################################################
+# INRIA PlaFRIM. ###############################################################
+Host ssh.plafrim.fr
+IdentityFile ~/.ssh/id_rsa
+IdentitiesOnly yes
+
+Host plafrim
+ForwardAgent yes
+ForwardX11 yes
+User jvanhare
+ProxyCommand ssh -A -l jvanhare ssh.plafrim.fr -W plafrim:22
+# EOF. #########################################################################
