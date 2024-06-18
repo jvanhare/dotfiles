@@ -35,13 +35,13 @@ export PATH=$HOME/.venv/default/bin:$PATH
 {{ else }}
 # Set the working directory. ###################################################
 export WKDIR=$HOME/wkdir
+# Set the path directory. ######################################################
 export PATH=$WKDIR/$HOST/bin:$PATH
 # Oh My Posh configuration. ####################################################
 eval "$(oh-my-posh init zsh --config ~/.jvanhare.omp.json)"
 # Use Ninja for CMake generator. ###############################################
 export CMAKE_GENERATOR="Ninja"
 {{ end }}
-# ##############################################################################
 
 # Export the temporary directory. ##############################################
 export TMPDIR=/tmp
