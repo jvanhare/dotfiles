@@ -3,13 +3,13 @@ export LANG=en_US.UTF-8
 # Source if and only if the file exists. #######################################
 smart_source() {
     if [[ -f "$1" ]]; then
-        source "$1" > /dev/null 2>&1
+        source "$1" >/dev/null 2>&1
         echo "Sourcing $1"
     fi
 }
 
-# Specify environment for heimdall. ############################################
 {{ if eq .chezmoi.hostname "heimdall" }}
+# Specify environment for heimdall. ############################################
 # Set the working directory. ###################################################
 export WKDIR=$HOME/Desktop/wkdir
 # Add brew to the PATH. ########################################################
@@ -32,14 +32,10 @@ export CMAKE_GENERATOR="Ninja"
 # Activate the default Python virtual environment. #############################
 source ~/.venv/default/bin/activate
 export PATH=$HOME/.venv/default/bin:$PATH
-{{ end }}
-# ##############################################################################
-
-# Specify environment for heimdall. ############################################
-{{ if eq .chezmoi.hostname "perche" }}
+{{ else }}
 # Set the working directory. ###################################################
 export WKDIR=$HOME/wkdir
-export PATH=$WKDIR/perche/bin:$PATH
+export PATH=$WKDIR/$HOST/bin:$PATH
 # Oh My Posh configuration. ####################################################
 eval "$(oh-my-posh init zsh --config ~/.jvanhare.omp.json)"
 # Use Ninja for CMake generator. ###############################################
