@@ -1,3 +1,10 @@
+# INRIA bation. ################################################################
+Host ssh-sif
+HostName ssh-sif.inria.fr
+
+Host *.inria.fr
+ProxyJump ssh-sif
+
 # INRIA PlaFRIM. ###############################################################
 Host ssh.plafrim.fr
 IdentityFile ~/.ssh/id_rsa
@@ -8,4 +15,5 @@ ForwardAgent yes
 ForwardX11 yes
 User jvanhare
 ProxyCommand ssh -A -l jvanhare ssh.plafrim.fr -W plafrim:22
+
 # EOF. #########################################################################
