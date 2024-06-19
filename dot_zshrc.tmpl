@@ -39,6 +39,8 @@ export WKDIR=$HOME/wkdir
 export PATH=$WKDIR/$HOST/bin:$PATH
 # Oh My Posh configuration. ####################################################
 eval "$(oh-my-posh init zsh --config ~/.jvanhare.omp.json)"
+# Lmod environment settings. ###################################################
+smart_source /usr/share/lmod/lmod/init/zsh
 # Use Ninja for CMake generator. ###############################################
 export CMAKE_GENERATOR="Ninja"
 {{ end }}
