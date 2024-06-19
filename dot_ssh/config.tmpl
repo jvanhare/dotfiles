@@ -1,9 +1,9 @@
 {{ if eq .chezmoi.hostname "heimdall" }}
-# INRIA bation. ################################################################
+# INRIA bastion. ###############################################################
 Host ssh-sif
 HostName ssh-sif.inria.fr
 
-Host *.inria.fr
+Host *.inria.fr !gitlab.inria.fr
 ProxyJump ssh-sif
 
 # INRIA PlaFRIM. ###############################################################
