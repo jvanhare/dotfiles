@@ -79,6 +79,6 @@
       "type": "prompt"
     }
   ],
-  "final_space": false,
+  "final_space": true,
   "version": 2
 }
