@@ -8,6 +8,9 @@ smart_source() {
     fi
 }
 
+# Set oh-my-zsh environment variables. #########################################
+export ZSH="$HOME/.oh-my-zsh"
+
 {{ if eq .chezmoi.hostname "heimdall" }}
 # Specify environment for heimdall. ############################################
 # Set the working directory. ###################################################
