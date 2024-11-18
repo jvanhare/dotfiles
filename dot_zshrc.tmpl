@@ -7,18 +7,18 @@ smart_source() {
         echo "Sourcing $1"
     fi
 }
-
 # Set oh-my-zsh environment variables. #########################################
 export ZSH="$HOME/.oh-my-zsh"
-
+ZSH_THEME="robbyrussell"
+ENABLE_CORRECTION="true"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
 {{ if eq .chezmoi.hostname "heimdall" }}
 # Specify environment for heimdall. ############################################
 # Set the working directory. ###################################################
 export WKDIR=$HOME/Desktop/wkdir
 # Add brew to the PATH. ########################################################
 eval "$(/opt/homebrew/bin/brew shellenv)"
-# Oh My Posh configuration. ####################################################
-eval "$(oh-my-posh init zsh --config ~/.jvanhare.omp.json)"
 # Add homebrew cURL to the path. ###############################################
 export PATH=$(brew --prefix curl)/bin:$PATH
 # Add LLVM tools. ##############################################################
@@ -28,24 +28,16 @@ smart_source $(brew --prefix lmod)/init/zsh
 # Specific MPI configuration on darwin. ########################################
 export PMIX_MCA_gds=hash
 export OMPI_MCA_btl=vader,self
-# Use Ninja for CMake generator. ###############################################
-export CMAKE_GENERATOR="Ninja"
-# Activate the default Python virtual environment. #############################
-source ~/.venv/default/bin/activate
-export PATH=$HOME/.venv/default/bin:$PATH
 {{ else }}
 # Set the working directory. ###################################################
 export WKDIR=$HOME/wkdir
 # Set the path directory. ######################################################
 export PATH=$WKDIR/$HOST/bin:$PATH
-# Oh My Posh configuration. ####################################################
-eval "$(oh-my-posh init zsh --config ~/.jvanhare.omp.json)"
 # Lmod environment settings. ###################################################
 smart_source /usr/share/lmod/lmod/init/zsh
+{{ end }}
 # Use Ninja for CMake generator. ###############################################
 export CMAKE_GENERATOR="Ninja"
-{{ end }}
-
 # Export the temporary directory. ##############################################
 export TMPDIR=/tmp
 # Aliases configuration. #######################################################
