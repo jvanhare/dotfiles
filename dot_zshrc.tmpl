@@ -42,12 +42,12 @@ smart_source() {
 # Specify environment for heimdall. ############################################
 # Set the working directory. ###################################################
 export WKDIR=$HOME/Desktop/wkdir
-# # Add homebrew cURL to the path. ###############################################
-# export PATH=$(brew --prefix curl)/bin:$PATH
-# # Add LLVM tools. ##############################################################
-# export PATH=$(brew --prefix llvm)/bin:$PATH
-# # Lmod environment settings. ###################################################
-# smart_source $(brew --prefix lmod)/init/zsh
+# Add homebrew cURL to the path. ###############################################
+export PATH=$(brew --prefix curl)/bin:$PATH
+# Add LLVM tools. ##############################################################
+export PATH=$(brew --prefix llvm)/bin:$PATH
+# Lmod environment settings. ###################################################
+smart_source $(brew --prefix lmod)/init/zsh
 # Specific MPI configuration on darwin. ########################################
 export PMIX_MCA_gds=hash
 export OMPI_MCA_btl=vader,self
