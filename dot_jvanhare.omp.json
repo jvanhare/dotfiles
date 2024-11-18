@@ -70,7 +70,7 @@
           "type": "status",
           "style": "plain",
           "foreground": "lightRed",
-          "template": "\udb80\ude06 {{ .String }} ",
+          "template": "\udb80\ude06 {{ .String }}  ",
           "properties": {
             "always_enabled": true
           }
