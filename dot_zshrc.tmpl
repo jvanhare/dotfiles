@@ -13,7 +13,7 @@ HYPHEN_INSENSITIVE="true"
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
-zstyle ':omz:update' mode auto        # update automatically without asking
+zstyle ':omz:update' mode auto # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
@@ -42,14 +42,12 @@ smart_source() {
 # Specify environment for heimdall. ############################################
 # Set the working directory. ###################################################
 export WKDIR=$HOME/Desktop/wkdir
-# # Add brew to the PATH. ########################################################
-# eval "$(/opt/homebrew/bin/brew shellenv)"
-# # Add homebrew cURL to the path. ###############################################
-# export PATH=$(brew --prefix curl)/bin:$PATH
-# # Add LLVM tools. ##############################################################
-# export PATH=$(brew --prefix llvm)/bin:$PATH
-# # Lmod environment settings. ###################################################
-# smart_source $(brew --prefix lmod)/init/zsh
+# Add homebrew cURL to the path. ###############################################
+export PATH=$(brew --prefix curl)/bin:$PATH
+# Add LLVM tools. ##############################################################
+export PATH=$(brew --prefix llvm)/bin:$PATH
+# Lmod environment settings. ###################################################
+smart_source $(brew --prefix lmod)/init/zsh
 # Specific MPI configuration on darwin. ########################################
 export PMIX_MCA_gds=hash
 export OMPI_MCA_btl=vader,self
@@ -61,7 +59,7 @@ export PATH=$WKDIR/$HOST/bin:$PATH
 # Lmod environment settings. ###################################################
 smart_source /usr/share/lmod/lmod/init/zsh
 {{ end }}
-# Use Ninja for CMake generator. ###############################################    
+# Use Ninja for CMake generator. ###############################################
 export CMAKE_GENERATOR="Ninja"
 # Export the temporary directory. ##############################################
 export TMPDIR=/tmp
