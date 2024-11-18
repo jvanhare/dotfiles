@@ -53,7 +53,7 @@
           "type": "text",
           "style": "plain",
           "foreground": "yellow",
-          "template": "{{ if .Env.HPC_ENVIRONMENT }}<b>\ueace {{ .Env.HPC_ENVIRONMENT }}</b> {{ end }}"
+          "template": "{{ if .Env.HPC_ENVIRONMENT }}\ueace {{ .Env.HPC_ENVIRONMENT }} {{ end }}"
         },
         {
           "type": "executiontime",
