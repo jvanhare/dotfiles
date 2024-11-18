@@ -40,7 +40,7 @@
           "foreground": "magenta",
           "properties": {
             "fetch_status": true,
-            "branch_icon": "\ue0a0 "
+            "fetch_upstream_icon": true
           }
         }
       ],
@@ -59,7 +59,7 @@
           "type": "executiontime",
           "style": "plain",
           "foreground": "lightRed",
-          "template": "<b>\uf254 {{ .FormattedMs }}</b> ",
+          "template": "\uf254 {{ .FormattedMs }} ",
           "properties": {
             "threshold": 500,
             "style": "austin",
@@ -70,15 +70,26 @@
           "type": "status",
           "style": "plain",
           "foreground": "lightRed",
-          "template": "<b>\udb80\ude06 {{ .String }}</b>",
+          "template": "\udb80\ude06 {{ .String }} ",
           "properties": {
             "always_enabled": true
           }
         }
       ],
       "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "style": "plain",
+          "template": "# ",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
     }
   ],
-  "final_space": true,
-  "version": 2
+  "final_space": false,
+  "version": 3
 }
