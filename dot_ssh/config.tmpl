@@ -1,4 +1,3 @@
-{{ if eq .chezmoi.hostname "heimdall" }}
 # INRIA bastion. ###############################################################
 Host ssh-sif
 HostName ssh-sif.inria.fr
@@ -18,4 +17,3 @@ User jvanhare
 ProxyCommand ssh -A -l jvanhare ssh.plafrim.fr -W plafrim:22
 
 # EOF. #########################################################################
-{{ end }}

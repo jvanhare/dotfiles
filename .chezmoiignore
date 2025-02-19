@@ -1,2 +1,6 @@
 LICENSE
 README.md
+{{- if ne .chezmoi.hostname "heimdall" }}
+.ssh/config # Only manage SSH config on heimdall.
+.ssh/id_rsa.pub # Only manage SSH public key on heimdall.
+{{- end }}

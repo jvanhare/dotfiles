@@ -1,5 +1,6 @@
 # Set the language environment. ################################################
 export LANG=en_US.UTF-8
+export LC_ALL=$LANG
 
 # Source if and only if the file exists. #######################################
 smart_source() {
@@ -9,14 +10,18 @@ smart_source() {
     fi
 }
 
+# Oh My Zsh configuration.
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+source $ZSH/oh-my-zsh.sh
+
 {{ if eq .chezmoi.hostname "heimdall" }}
 # Specify environment for heimdall. ############################################
 # Set the working directory. ###################################################
 export WKDIR=$HOME/Desktop/wkdir
 # Add brew to the PATH. ########################################################
 eval "$(/opt/homebrew/bin/brew shellenv)"
-# Oh My Posh configuration. ####################################################
-eval "$(oh-my-posh init zsh --config ~/.jvanhare.omp.json)"
 # Add homebrew cURL to the path. ###############################################
 export PATH=$(brew --prefix curl)/bin:$PATH
 # Add LLVM tools. ##############################################################
