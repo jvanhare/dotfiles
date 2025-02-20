@@ -1,6 +1,6 @@
 #!/bin/sh
 
-{{ if eq .chezmoi.hostname "heimdall" }}
+{{ if eq .chezmoi.os "darwin" }}
 brew install curl
 brew install emacs
 brew install git
