@@ -88,6 +88,7 @@
 
 (use-package lsp-ui)
 
+(require 'flycheck)
 (use-package flycheck
   :ensure t
   :init (global-flycheck-mode))
@@ -95,6 +96,7 @@
 (global-set-key (kbd "C-c f") 'clang-format-buffer)
 (setenv "PATH" (concat "/usr/bin:" (getenv "PATH")))
 
+(require 'dired-sidebar)
 (use-package dired-sidebar
   :bind (("C-x C-n" . dired-sidebar-toggle-sidebar))
   :ensure t
@@ -115,3 +117,18 @@
 
 (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   '("11819dd7a24f40a766c0b632d11f60aaf520cf96bd6d8f35bae3399880937970"
+     default))
+ '(package-selected-packages nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
