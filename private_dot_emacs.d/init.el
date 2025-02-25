@@ -88,8 +88,6 @@
 
 (use-package lsp-ui)
 
-(setq flycheck-emacs-lisp-load-path 'inherit)
-(require 'flycheck)
 (use-package flycheck
   :ensure t
   :init (global-flycheck-mode))
