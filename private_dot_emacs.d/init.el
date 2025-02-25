@@ -31,23 +31,11 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   '("541282f66e5cc83918994002667d2268f0a563205117860e71b7cb823c1a11e9" "aff0396925324838889f011fd3f5a0b91652b88f5fd0611f7b10021cc76f9e09" "0325a6b5eea7e5febae709dab35ec8648908af12cf2d2b569bedc8da0a3a81c1" "11819dd7a24f40a766c0b632d11f60aaf520cf96bd6d8f35bae3399880937970" "a75aff58f0d5bbf230e5d1a02169ac2fbf45c930f816f3a21563304d5140d245" "fbf73690320aa26f8daffdd1210ef234ed1b0c59f3d001f342b9c0bbf49f531c" default))
- '(package-selected-packages
-   '(all-the-icons-dired all-the-icons nerd-icons-dired nerd-icons dired-sidebar clang-format ef-themes doom-themes dracula-theme lsp-ui dap-mode helm-xref which-key company flycheck helm-lsp lsp-treemacs yasnippet lsp-mode magit vertico projectile ivy)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+
 
 ;; Load theme.
+(use-package dracula-theme
+  :ensure t)
 (load-theme 'dracula)
 
 ;; Remenber recently edited files
