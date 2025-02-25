@@ -31,12 +31,12 @@ smart_source $(brew --prefix lmod)/init/zsh
 # Specific MPI configuration on darwin. ########################################
 export PMIX_MCA_gds=hash
 export OMPI_MCA_btl=vader,self
+# Module use. ##################################################################
+module use $WKDIR/mod
 {{ end }}
 
 # Export the temporary directory. ##############################################
 export TMPDIR=/tmp
 # Aliases configuration. #######################################################
 alias ls="ls -ltrGh --color=auto"
-# Module use. ##################################################################
-module use $WKDIR/mod
 # EOF. #########################################################################
