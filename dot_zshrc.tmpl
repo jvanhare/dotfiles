@@ -11,8 +11,10 @@ smart_source() {
 }
 
 # Oh My Zsh configuration.
+export ZSH_CUSTOM=$HOME/.oh-my-zsh/custom
+cp $HOME/.jvanhare.zsh-theme $ZSH_CUSTOM
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
+ZSH_THEME="jvanhare"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
