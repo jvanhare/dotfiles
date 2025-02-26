@@ -8,7 +8,7 @@ get_guix_environment() {
 }
 
 set_prompt() {
-  PROMPT="%(?:%{$fg_bold[green]%}%1{➜%} :%{$fg_bold[red]%}%1{➜%})%{$fg[magenta]%}[${OS}/${ARCHI}/%m]%{$reset_color%}%{$fg_bold[yellow]%}$(get_guix_environment)%{$reset_color%} %{$fg[cyan]%}%c%{$reset_color%}"
+  PROMPT="%(?:%{$fg_bold[green]%}%1{➜%} :%{$fg_bold[red]%}%1{➜%})%{$fg[magenta]%}[${OS}/${ARCHI}/%m]%{$reset_color%}%{$fg_bold[yellow]%}$(get_guix_environment)%{$reset_color%} %{$fg_bold[cyan]%}%c%{$reset_color%}"
   PROMPT+=' $(git_prompt_info)'
 }
 
