@@ -31,6 +31,8 @@ export PATH=$(brew --prefix curl)/bin:$PATH
 export PATH=$(brew --prefix llvm)/bin:$PATH
 export CC=$(brew --prefix llvm)/bin/clang
 export CXX=$(brew --prefix llvm)/bin/clang++
+export HOMEBREW_CC=$(brew --prefix llvm)/bin/clang
+export HOMEBREW_CXX=$(brew --prefix llvm)/bin/clang++
 export LDFLAGS="-L$(brew --prefix llvm)/lib"
 export CPPFLAGS="-I$(brew --prefix llvm)/include"
 # Lmod environment settings. ###################################################
