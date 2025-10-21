@@ -27,6 +27,10 @@ export ORBENV=WKDIR
 eval "$(/opt/homebrew/bin/brew shellenv)"
 # Add homebrew cURL to the path. ###############################################
 export PATH=$(brew --prefix curl)/bin:$PATH
+# Add LLVM tools. ##############################################################
+export PATH=$(brew --prefix llvm)/bin:$PATH
+export LDFLAGS="-L$(brew --prefix llvm)/lib/c++"
+export CPPFLAGS="-I$(brew --prefix llvm)/include"
 # Lmod environment settings. ###################################################
 smart_source $(brew --prefix lmod)/init/zsh
 # Specific MPI configuration on darwin. ########################################
