@@ -37,7 +37,7 @@ smart_source $(brew --prefix lmod)/init/zsh
 export PMIX_MCA_gds=hash
 export OMPI_MCA_btl=vader,self
 # Module use. ##################################################################
-module use $WKDIR/mod
+module use $WKDIR/env/mod
 {{ end }}
 
 # Export the temporary directory. ##############################################
