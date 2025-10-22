@@ -1,3 +1,8 @@
+# Added by OrbStack: 'orb' SSH host for Linux machines
+# This only works if it's at the top of ssh_config (before any Host blocks).
+# This won't be added again if you remove it.
+Include ~/.orbstack/ssh/config
+
 # INRIA bastion. ###############################################################
 Host ssh-sif
 HostName ssh-sif.inria.fr
@@ -7,7 +12,7 @@ ProxyJump ssh-sif
 
 # INRIA PlaFRIM. ###############################################################
 Host ssh.plafrim.fr
-IdentityFile ~/.ssh/id_rsa
+IdentityFile ~/.ssh/id_ed25519
 IdentitiesOnly yes
 
 Host plafrim
