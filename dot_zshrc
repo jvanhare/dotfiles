@@ -17,7 +17,6 @@ cp $HOME/.$ZSH_THEME.zsh-theme $ZSH_CUSTOM/$ZSH_THEME.zsh-theme
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
-{{ if eq .chezmoi.os "darwin" }}
 # Specify environment for darwin. ##############################################
 # Set the working directory. ###################################################
 export WKDIR=$HOME/Desktop/wkdir
@@ -30,7 +29,9 @@ export PATH=$(brew --prefix llvm)/bin:$PATH
 # Specific MPI configuration on darwin. ########################################
 export PMIX_MCA_gds=hash
 export OMPI_MCA_btl=vader,self
-{{ end }}
+
+export PATH=/Users/jvanhare/.local/bin:$PATH
+export PATH=$WKDIR/bin:$PATH
 
 # Export the temporary directory. ##############################################
 export TMPDIR=/tmp
