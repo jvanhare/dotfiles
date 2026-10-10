@@ -5,6 +5,8 @@ Include ~/.orbstack/ssh/config
 
 # INRIA bastion. ###############################################################
 Host ssh-sif
+ForwardAgent yes
+ForwardX11 yes
 HostName ssh-sif.inria.fr
 
 Host *.inria.fr !gitlab.inria.fr
@@ -31,5 +33,11 @@ Host *.g5k
 User jvanhare
 ProxyCommand ssh g5k -W "$(basename %h .g5k):%p"
 ForwardAgent no
+
+Host adastra
+    HostName adastra.cines.fr
+    User jvanharen
+    ProxyJump jvanhare@ssh-mc-ext.inria.fr
+    IdentityFile ~/.ssh/id_ed25519
 
 # EOF. #########################################################################
